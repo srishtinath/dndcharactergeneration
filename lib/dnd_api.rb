@@ -14,9 +14,7 @@ class DndApi
         end
     end
 
-    def class_details(job)
-        @request_hash = self.class.get('/#{find_class.url}').parsed_response
-    end
+    
 end
 
 # api = DndApi.new 

@@ -2297,3 +2297,1987 @@ Completed 404 Not Found in 322ms (ActiveRecord: 21.4ms | Allocations: 45024)
 ActiveRecord::RecordNotFound (Couldn't find Job with 'id'=229):
   
 app/controllers/jobs_controller.rb:22:in `find_job'
+Started GET "/jobs/" for ::1 at 2020-05-26 19:21:03 -0400
+Processing by JobsController#index as HTML
+  [1m[36mJob Destroy (1.7ms)[0m  [1m[31mDELETE FROM "jobs"[0m
+  ↳ lib/dnd_api.rb:11:in `classes'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[36mJob Create (0.3ms)[0m  [1m[32mINSERT INTO "jobs" ("name", "created_at", "updated_at", "url", "index") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Barbarian"], ["created_at", "2020-05-26 23:21:03.750356"], ["updated_at", "2020-05-26 23:21:03.750356"], ["url", "/api/classes/barbarian"], ["index", "barbarian"]]
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[36mJob Create (0.6ms)[0m  [1m[32mINSERT INTO "jobs" ("name", "created_at", "updated_at", "url", "index") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Bard"], ["created_at", "2020-05-26 23:21:03.755066"], ["updated_at", "2020-05-26 23:21:03.755066"], ["url", "/api/classes/bard"], ["index", "bard"]]
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[36mJob Create (0.3ms)[0m  [1m[32mINSERT INTO "jobs" ("name", "created_at", "updated_at", "url", "index") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Cleric"], ["created_at", "2020-05-26 23:21:03.759847"], ["updated_at", "2020-05-26 23:21:03.759847"], ["url", "/api/classes/cleric"], ["index", "cleric"]]
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[36mJob Create (0.3ms)[0m  [1m[32mINSERT INTO "jobs" ("name", "created_at", "updated_at", "url", "index") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Druid"], ["created_at", "2020-05-26 23:21:03.764019"], ["updated_at", "2020-05-26 23:21:03.764019"], ["url", "/api/classes/druid"], ["index", "druid"]]
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[36mJob Create (0.3ms)[0m  [1m[32mINSERT INTO "jobs" ("name", "created_at", "updated_at", "url", "index") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Fighter"], ["created_at", "2020-05-26 23:21:03.767767"], ["updated_at", "2020-05-26 23:21:03.767767"], ["url", "/api/classes/fighter"], ["index", "fighter"]]
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[36mJob Create (0.3ms)[0m  [1m[32mINSERT INTO "jobs" ("name", "created_at", "updated_at", "url", "index") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Monk"], ["created_at", "2020-05-26 23:21:03.771464"], ["updated_at", "2020-05-26 23:21:03.771464"], ["url", "/api/classes/monk"], ["index", "monk"]]
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[36mJob Create (0.6ms)[0m  [1m[32mINSERT INTO "jobs" ("name", "created_at", "updated_at", "url", "index") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Paladin"], ["created_at", "2020-05-26 23:21:03.775439"], ["updated_at", "2020-05-26 23:21:03.775439"], ["url", "/api/classes/paladin"], ["index", "paladin"]]
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[36mJob Create (0.3ms)[0m  [1m[32mINSERT INTO "jobs" ("name", "created_at", "updated_at", "url", "index") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Ranger"], ["created_at", "2020-05-26 23:21:03.779744"], ["updated_at", "2020-05-26 23:21:03.779744"], ["url", "/api/classes/ranger"], ["index", "ranger"]]
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[36mJob Create (0.4ms)[0m  [1m[32mINSERT INTO "jobs" ("name", "created_at", "updated_at", "url", "index") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Rogue"], ["created_at", "2020-05-26 23:21:03.783726"], ["updated_at", "2020-05-26 23:21:03.783726"], ["url", "/api/classes/rogue"], ["index", "rogue"]]
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[36mJob Create (0.5ms)[0m  [1m[32mINSERT INTO "jobs" ("name", "created_at", "updated_at", "url", "index") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Sorcerer"], ["created_at", "2020-05-26 23:21:03.788176"], ["updated_at", "2020-05-26 23:21:03.788176"], ["url", "/api/classes/sorcerer"], ["index", "sorcerer"]]
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[36mJob Create (0.4ms)[0m  [1m[32mINSERT INTO "jobs" ("name", "created_at", "updated_at", "url", "index") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Warlock"], ["created_at", "2020-05-26 23:21:03.795714"], ["updated_at", "2020-05-26 23:21:03.795714"], ["url", "/api/classes/warlock"], ["index", "warlock"]]
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (4.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[36mJob Create (0.5ms)[0m  [1m[32mINSERT INTO "jobs" ("name", "created_at", "updated_at", "url", "index") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Wizard"], ["created_at", "2020-05-26 23:21:03.806383"], ["updated_at", "2020-05-26 23:21:03.806383"], ["url", "/api/classes/wizard"], ["index", "wizard"]]
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  Rendering jobs/index.html.erb within layouts/application
+  [1m[36mJob Load (0.1ms)[0m  [1m[34mSELECT "jobs".* FROM "jobs"[0m
+  ↳ app/views/jobs/index.html.erb:1
+  Rendered jobs/index.html.erb within layouts/application (Duration: 1.5ms | Allocations: 1682)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 348ms (Views: 39.1ms | ActiveRecord: 24.5ms | Allocations: 69350)
+
+
+Started GET "/jobs/260" for ::1 at 2020-05-26 19:21:05 -0400
+Processing by JobsController#show as HTML
+  Parameters: {"id"=>"260"}
+  [1m[36mJob Destroy (2.8ms)[0m  [1m[31mDELETE FROM "jobs"[0m
+  ↳ lib/dnd_api.rb:11:in `classes'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[36mJob Create (0.8ms)[0m  [1m[32mINSERT INTO "jobs" ("name", "created_at", "updated_at", "url", "index") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Barbarian"], ["created_at", "2020-05-26 23:21:05.252096"], ["updated_at", "2020-05-26 23:21:05.252096"], ["url", "/api/classes/barbarian"], ["index", "barbarian"]]
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[36mJob Create (0.3ms)[0m  [1m[32mINSERT INTO "jobs" ("name", "created_at", "updated_at", "url", "index") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Bard"], ["created_at", "2020-05-26 23:21:05.267935"], ["updated_at", "2020-05-26 23:21:05.267935"], ["url", "/api/classes/bard"], ["index", "bard"]]
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[36mJob Create (0.3ms)[0m  [1m[32mINSERT INTO "jobs" ("name", "created_at", "updated_at", "url", "index") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Cleric"], ["created_at", "2020-05-26 23:21:05.273310"], ["updated_at", "2020-05-26 23:21:05.273310"], ["url", "/api/classes/cleric"], ["index", "cleric"]]
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[36mJob Create (0.3ms)[0m  [1m[32mINSERT INTO "jobs" ("name", "created_at", "updated_at", "url", "index") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Druid"], ["created_at", "2020-05-26 23:21:05.278707"], ["updated_at", "2020-05-26 23:21:05.278707"], ["url", "/api/classes/druid"], ["index", "druid"]]
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[36mJob Create (0.3ms)[0m  [1m[32mINSERT INTO "jobs" ("name", "created_at", "updated_at", "url", "index") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Fighter"], ["created_at", "2020-05-26 23:21:05.283242"], ["updated_at", "2020-05-26 23:21:05.283242"], ["url", "/api/classes/fighter"], ["index", "fighter"]]
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[36mJob Create (0.4ms)[0m  [1m[32mINSERT INTO "jobs" ("name", "created_at", "updated_at", "url", "index") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Monk"], ["created_at", "2020-05-26 23:21:05.287328"], ["updated_at", "2020-05-26 23:21:05.287328"], ["url", "/api/classes/monk"], ["index", "monk"]]
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[36mJob Create (0.5ms)[0m  [1m[32mINSERT INTO "jobs" ("name", "created_at", "updated_at", "url", "index") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Paladin"], ["created_at", "2020-05-26 23:21:05.291555"], ["updated_at", "2020-05-26 23:21:05.291555"], ["url", "/api/classes/paladin"], ["index", "paladin"]]
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[36mJob Create (0.4ms)[0m  [1m[32mINSERT INTO "jobs" ("name", "created_at", "updated_at", "url", "index") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Ranger"], ["created_at", "2020-05-26 23:21:05.296058"], ["updated_at", "2020-05-26 23:21:05.296058"], ["url", "/api/classes/ranger"], ["index", "ranger"]]
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[36mJob Create (0.3ms)[0m  [1m[32mINSERT INTO "jobs" ("name", "created_at", "updated_at", "url", "index") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Rogue"], ["created_at", "2020-05-26 23:21:05.300201"], ["updated_at", "2020-05-26 23:21:05.300201"], ["url", "/api/classes/rogue"], ["index", "rogue"]]
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[36mJob Create (0.3ms)[0m  [1m[32mINSERT INTO "jobs" ("name", "created_at", "updated_at", "url", "index") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Sorcerer"], ["created_at", "2020-05-26 23:21:05.304258"], ["updated_at", "2020-05-26 23:21:05.304258"], ["url", "/api/classes/sorcerer"], ["index", "sorcerer"]]
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[36mJob Create (0.3ms)[0m  [1m[32mINSERT INTO "jobs" ("name", "created_at", "updated_at", "url", "index") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Warlock"], ["created_at", "2020-05-26 23:21:05.307645"], ["updated_at", "2020-05-26 23:21:05.307645"], ["url", "/api/classes/warlock"], ["index", "warlock"]]
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[36mJob Create (0.4ms)[0m  [1m[32mINSERT INTO "jobs" ("name", "created_at", "updated_at", "url", "index") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Wizard"], ["created_at", "2020-05-26 23:21:05.312006"], ["updated_at", "2020-05-26 23:21:05.312006"], ["url", "/api/classes/wizard"], ["index", "wizard"]]
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[36mJob Load (0.1ms)[0m  [1m[34mSELECT "jobs".* FROM "jobs" WHERE "jobs"."id" = ? LIMIT ?[0m  [["id", 260], ["LIMIT", 1]]
+  ↳ app/controllers/jobs_controller.rb:22:in `find_job'
+Completed 404 Not Found in 236ms (ActiveRecord: 20.9ms | Allocations: 40123)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Job with 'id'=260):
+  
+app/controllers/jobs_controller.rb:22:in `find_job'
+  [1m[35m (2.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mJob Load (0.2ms)[0m  [1m[34mSELECT "jobs".* FROM "jobs" ORDER BY "jobs"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+Started GET "/jobs/" for ::1 at 2020-05-26 19:21:37 -0400
+Processing by JobsController#index as HTML
+  [1m[36mJob Destroy (2.9ms)[0m  [1m[31mDELETE FROM "jobs"[0m
+  ↳ lib/dnd_api.rb:11:in `classes'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[36mJob Create (0.5ms)[0m  [1m[32mINSERT INTO "jobs" ("name", "created_at", "updated_at", "url", "index") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Barbarian"], ["created_at", "2020-05-26 23:21:37.963591"], ["updated_at", "2020-05-26 23:21:37.963591"], ["url", "/api/classes/barbarian"], ["index", "barbarian"]]
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (2.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[36mJob Create (0.4ms)[0m  [1m[32mINSERT INTO "jobs" ("name", "created_at", "updated_at", "url", "index") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Bard"], ["created_at", "2020-05-26 23:21:37.972115"], ["updated_at", "2020-05-26 23:21:37.972115"], ["url", "/api/classes/bard"], ["index", "bard"]]
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[36mJob Create (0.5ms)[0m  [1m[32mINSERT INTO "jobs" ("name", "created_at", "updated_at", "url", "index") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Cleric"], ["created_at", "2020-05-26 23:21:37.976502"], ["updated_at", "2020-05-26 23:21:37.976502"], ["url", "/api/classes/cleric"], ["index", "cleric"]]
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[36mJob Create (0.3ms)[0m  [1m[32mINSERT INTO "jobs" ("name", "created_at", "updated_at", "url", "index") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Druid"], ["created_at", "2020-05-26 23:21:37.980922"], ["updated_at", "2020-05-26 23:21:37.980922"], ["url", "/api/classes/druid"], ["index", "druid"]]
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[36mJob Create (0.4ms)[0m  [1m[32mINSERT INTO "jobs" ("name", "created_at", "updated_at", "url", "index") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Fighter"], ["created_at", "2020-05-26 23:21:37.984873"], ["updated_at", "2020-05-26 23:21:37.984873"], ["url", "/api/classes/fighter"], ["index", "fighter"]]
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[36mJob Create (0.3ms)[0m  [1m[32mINSERT INTO "jobs" ("name", "created_at", "updated_at", "url", "index") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Monk"], ["created_at", "2020-05-26 23:21:37.989492"], ["updated_at", "2020-05-26 23:21:37.989492"], ["url", "/api/classes/monk"], ["index", "monk"]]
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[36mJob Create (0.4ms)[0m  [1m[32mINSERT INTO "jobs" ("name", "created_at", "updated_at", "url", "index") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Paladin"], ["created_at", "2020-05-26 23:21:37.993740"], ["updated_at", "2020-05-26 23:21:37.993740"], ["url", "/api/classes/paladin"], ["index", "paladin"]]
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[36mJob Create (0.3ms)[0m  [1m[32mINSERT INTO "jobs" ("name", "created_at", "updated_at", "url", "index") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Ranger"], ["created_at", "2020-05-26 23:21:37.998369"], ["updated_at", "2020-05-26 23:21:37.998369"], ["url", "/api/classes/ranger"], ["index", "ranger"]]
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[36mJob Create (0.3ms)[0m  [1m[32mINSERT INTO "jobs" ("name", "created_at", "updated_at", "url", "index") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Rogue"], ["created_at", "2020-05-26 23:21:38.002612"], ["updated_at", "2020-05-26 23:21:38.002612"], ["url", "/api/classes/rogue"], ["index", "rogue"]]
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[36mJob Create (0.4ms)[0m  [1m[32mINSERT INTO "jobs" ("name", "created_at", "updated_at", "url", "index") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Sorcerer"], ["created_at", "2020-05-26 23:21:38.006710"], ["updated_at", "2020-05-26 23:21:38.006710"], ["url", "/api/classes/sorcerer"], ["index", "sorcerer"]]
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[36mJob Create (0.3ms)[0m  [1m[32mINSERT INTO "jobs" ("name", "created_at", "updated_at", "url", "index") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Warlock"], ["created_at", "2020-05-26 23:21:38.010533"], ["updated_at", "2020-05-26 23:21:38.010533"], ["url", "/api/classes/warlock"], ["index", "warlock"]]
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[36mJob Create (0.3ms)[0m  [1m[32mINSERT INTO "jobs" ("name", "created_at", "updated_at", "url", "index") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Wizard"], ["created_at", "2020-05-26 23:21:38.014439"], ["updated_at", "2020-05-26 23:21:38.014439"], ["url", "/api/classes/wizard"], ["index", "wizard"]]
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  Rendering jobs/index.html.erb within layouts/application
+  [1m[36mJob Load (0.1ms)[0m  [1m[34mSELECT "jobs".* FROM "jobs"[0m
+  ↳ app/views/jobs/index.html.erb:1
+  Rendered jobs/index.html.erb within layouts/application (Duration: 1.2ms | Allocations: 1089)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 233ms (Views: 6.7ms | ActiveRecord: 24.2ms | Allocations: 38912)
+
+
+Started GET "/jobs/277" for ::1 at 2020-05-26 19:21:39 -0400
+Processing by JobsController#show as HTML
+  Parameters: {"id"=>"277"}
+  [1m[36mJob Destroy (1.2ms)[0m  [1m[31mDELETE FROM "jobs"[0m
+  ↳ lib/dnd_api.rb:11:in `classes'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[36mJob Create (0.6ms)[0m  [1m[32mINSERT INTO "jobs" ("name", "created_at", "updated_at", "url", "index") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Barbarian"], ["created_at", "2020-05-26 23:21:39.533450"], ["updated_at", "2020-05-26 23:21:39.533450"], ["url", "/api/classes/barbarian"], ["index", "barbarian"]]
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (2.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[36mJob Create (0.4ms)[0m  [1m[32mINSERT INTO "jobs" ("name", "created_at", "updated_at", "url", "index") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Bard"], ["created_at", "2020-05-26 23:21:39.541835"], ["updated_at", "2020-05-26 23:21:39.541835"], ["url", "/api/classes/bard"], ["index", "bard"]]
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[36mJob Create (0.5ms)[0m  [1m[32mINSERT INTO "jobs" ("name", "created_at", "updated_at", "url", "index") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Cleric"], ["created_at", "2020-05-26 23:21:39.546000"], ["updated_at", "2020-05-26 23:21:39.546000"], ["url", "/api/classes/cleric"], ["index", "cleric"]]
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[36mJob Create (0.3ms)[0m  [1m[32mINSERT INTO "jobs" ("name", "created_at", "updated_at", "url", "index") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Druid"], ["created_at", "2020-05-26 23:21:39.550475"], ["updated_at", "2020-05-26 23:21:39.550475"], ["url", "/api/classes/druid"], ["index", "druid"]]
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[36mJob Create (0.3ms)[0m  [1m[32mINSERT INTO "jobs" ("name", "created_at", "updated_at", "url", "index") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Fighter"], ["created_at", "2020-05-26 23:21:39.553729"], ["updated_at", "2020-05-26 23:21:39.553729"], ["url", "/api/classes/fighter"], ["index", "fighter"]]
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[36mJob Create (0.3ms)[0m  [1m[32mINSERT INTO "jobs" ("name", "created_at", "updated_at", "url", "index") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Monk"], ["created_at", "2020-05-26 23:21:39.557935"], ["updated_at", "2020-05-26 23:21:39.557935"], ["url", "/api/classes/monk"], ["index", "monk"]]
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[36mJob Create (0.4ms)[0m  [1m[32mINSERT INTO "jobs" ("name", "created_at", "updated_at", "url", "index") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Paladin"], ["created_at", "2020-05-26 23:21:39.562192"], ["updated_at", "2020-05-26 23:21:39.562192"], ["url", "/api/classes/paladin"], ["index", "paladin"]]
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[36mJob Create (0.3ms)[0m  [1m[32mINSERT INTO "jobs" ("name", "created_at", "updated_at", "url", "index") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Ranger"], ["created_at", "2020-05-26 23:21:39.565515"], ["updated_at", "2020-05-26 23:21:39.565515"], ["url", "/api/classes/ranger"], ["index", "ranger"]]
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[36mJob Create (0.5ms)[0m  [1m[32mINSERT INTO "jobs" ("name", "created_at", "updated_at", "url", "index") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Rogue"], ["created_at", "2020-05-26 23:21:39.568714"], ["updated_at", "2020-05-26 23:21:39.568714"], ["url", "/api/classes/rogue"], ["index", "rogue"]]
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[36mJob Create (0.3ms)[0m  [1m[32mINSERT INTO "jobs" ("name", "created_at", "updated_at", "url", "index") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Sorcerer"], ["created_at", "2020-05-26 23:21:39.572594"], ["updated_at", "2020-05-26 23:21:39.572594"], ["url", "/api/classes/sorcerer"], ["index", "sorcerer"]]
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[36mJob Create (0.3ms)[0m  [1m[32mINSERT INTO "jobs" ("name", "created_at", "updated_at", "url", "index") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Warlock"], ["created_at", "2020-05-26 23:21:39.576632"], ["updated_at", "2020-05-26 23:21:39.576632"], ["url", "/api/classes/warlock"], ["index", "warlock"]]
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[36mJob Create (0.3ms)[0m  [1m[32mINSERT INTO "jobs" ("name", "created_at", "updated_at", "url", "index") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Wizard"], ["created_at", "2020-05-26 23:21:39.580482"], ["updated_at", "2020-05-26 23:21:39.580482"], ["url", "/api/classes/wizard"], ["index", "wizard"]]
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[36mJob Load (0.1ms)[0m  [1m[34mSELECT "jobs".* FROM "jobs" WHERE "jobs"."id" = ? LIMIT ?[0m  [["id", 277], ["LIMIT", 1]]
+  ↳ app/controllers/jobs_controller.rb:22:in `find_job'
+Completed 404 Not Found in 187ms (ActiveRecord: 21.1ms | Allocations: 35036)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Job with 'id'=277):
+  
+app/controllers/jobs_controller.rb:22:in `find_job'
+Started GET "/jobs/" for ::1 at 2020-05-26 19:21:41 -0400
+Processing by JobsController#index as HTML
+  [1m[36mJob Destroy (3.0ms)[0m  [1m[31mDELETE FROM "jobs"[0m
+  ↳ lib/dnd_api.rb:11:in `classes'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[36mJob Create (0.5ms)[0m  [1m[32mINSERT INTO "jobs" ("name", "created_at", "updated_at", "url", "index") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Barbarian"], ["created_at", "2020-05-26 23:21:41.781289"], ["updated_at", "2020-05-26 23:21:41.781289"], ["url", "/api/classes/barbarian"], ["index", "barbarian"]]
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (1.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[36mJob Create (0.4ms)[0m  [1m[32mINSERT INTO "jobs" ("name", "created_at", "updated_at", "url", "index") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Bard"], ["created_at", "2020-05-26 23:21:41.788302"], ["updated_at", "2020-05-26 23:21:41.788302"], ["url", "/api/classes/bard"], ["index", "bard"]]
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[36mJob Create (0.6ms)[0m  [1m[32mINSERT INTO "jobs" ("name", "created_at", "updated_at", "url", "index") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Cleric"], ["created_at", "2020-05-26 23:21:41.792601"], ["updated_at", "2020-05-26 23:21:41.792601"], ["url", "/api/classes/cleric"], ["index", "cleric"]]
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[36mJob Create (0.3ms)[0m  [1m[32mINSERT INTO "jobs" ("name", "created_at", "updated_at", "url", "index") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Druid"], ["created_at", "2020-05-26 23:21:41.797623"], ["updated_at", "2020-05-26 23:21:41.797623"], ["url", "/api/classes/druid"], ["index", "druid"]]
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[36mJob Create (0.3ms)[0m  [1m[32mINSERT INTO "jobs" ("name", "created_at", "updated_at", "url", "index") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Fighter"], ["created_at", "2020-05-26 23:21:41.801972"], ["updated_at", "2020-05-26 23:21:41.801972"], ["url", "/api/classes/fighter"], ["index", "fighter"]]
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[36mJob Create (0.3ms)[0m  [1m[32mINSERT INTO "jobs" ("name", "created_at", "updated_at", "url", "index") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Monk"], ["created_at", "2020-05-26 23:21:41.805676"], ["updated_at", "2020-05-26 23:21:41.805676"], ["url", "/api/classes/monk"], ["index", "monk"]]
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[36mJob Create (0.4ms)[0m  [1m[32mINSERT INTO "jobs" ("name", "created_at", "updated_at", "url", "index") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Paladin"], ["created_at", "2020-05-26 23:21:41.809714"], ["updated_at", "2020-05-26 23:21:41.809714"], ["url", "/api/classes/paladin"], ["index", "paladin"]]
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[36mJob Create (0.4ms)[0m  [1m[32mINSERT INTO "jobs" ("name", "created_at", "updated_at", "url", "index") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Ranger"], ["created_at", "2020-05-26 23:21:41.814251"], ["updated_at", "2020-05-26 23:21:41.814251"], ["url", "/api/classes/ranger"], ["index", "ranger"]]
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[36mJob Create (0.4ms)[0m  [1m[32mINSERT INTO "jobs" ("name", "created_at", "updated_at", "url", "index") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Rogue"], ["created_at", "2020-05-26 23:21:41.818304"], ["updated_at", "2020-05-26 23:21:41.818304"], ["url", "/api/classes/rogue"], ["index", "rogue"]]
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[36mJob Create (0.4ms)[0m  [1m[32mINSERT INTO "jobs" ("name", "created_at", "updated_at", "url", "index") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Sorcerer"], ["created_at", "2020-05-26 23:21:41.822557"], ["updated_at", "2020-05-26 23:21:41.822557"], ["url", "/api/classes/sorcerer"], ["index", "sorcerer"]]
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[36mJob Create (0.3ms)[0m  [1m[32mINSERT INTO "jobs" ("name", "created_at", "updated_at", "url", "index") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Warlock"], ["created_at", "2020-05-26 23:21:41.827505"], ["updated_at", "2020-05-26 23:21:41.827505"], ["url", "/api/classes/warlock"], ["index", "warlock"]]
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[36mJob Create (0.6ms)[0m  [1m[32mINSERT INTO "jobs" ("name", "created_at", "updated_at", "url", "index") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Wizard"], ["created_at", "2020-05-26 23:21:41.831735"], ["updated_at", "2020-05-26 23:21:41.831735"], ["url", "/api/classes/wizard"], ["index", "wizard"]]
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  Rendering jobs/index.html.erb within layouts/application
+  [1m[36mJob Load (0.4ms)[0m  [1m[34mSELECT "jobs".* FROM "jobs"[0m
+  ↳ app/views/jobs/index.html.erb:1
+  Rendered jobs/index.html.erb within layouts/application (Duration: 2.9ms | Allocations: 1088)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 206ms (Views: 8.3ms | ActiveRecord: 22.7ms | Allocations: 38903)
+
+
+Started GET "/jobs/302" for ::1 at 2020-05-26 19:21:43 -0400
+Processing by JobsController#show as HTML
+  Parameters: {"id"=>"302"}
+  [1m[36mJob Destroy (1.4ms)[0m  [1m[31mDELETE FROM "jobs"[0m
+  ↳ lib/dnd_api.rb:11:in `classes'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[36mJob Create (0.7ms)[0m  [1m[32mINSERT INTO "jobs" ("name", "created_at", "updated_at", "url", "index") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Barbarian"], ["created_at", "2020-05-26 23:21:43.160331"], ["updated_at", "2020-05-26 23:21:43.160331"], ["url", "/api/classes/barbarian"], ["index", "barbarian"]]
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (2.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[36mJob Create (0.6ms)[0m  [1m[32mINSERT INTO "jobs" ("name", "created_at", "updated_at", "url", "index") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Bard"], ["created_at", "2020-05-26 23:21:43.168338"], ["updated_at", "2020-05-26 23:21:43.168338"], ["url", "/api/classes/bard"], ["index", "bard"]]
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[36mJob Create (0.4ms)[0m  [1m[32mINSERT INTO "jobs" ("name", "created_at", "updated_at", "url", "index") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Cleric"], ["created_at", "2020-05-26 23:21:43.174249"], ["updated_at", "2020-05-26 23:21:43.174249"], ["url", "/api/classes/cleric"], ["index", "cleric"]]
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[36mJob Create (0.3ms)[0m  [1m[32mINSERT INTO "jobs" ("name", "created_at", "updated_at", "url", "index") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Druid"], ["created_at", "2020-05-26 23:21:43.179209"], ["updated_at", "2020-05-26 23:21:43.179209"], ["url", "/api/classes/druid"], ["index", "druid"]]
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[36mJob Create (0.4ms)[0m  [1m[32mINSERT INTO "jobs" ("name", "created_at", "updated_at", "url", "index") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Fighter"], ["created_at", "2020-05-26 23:21:43.183102"], ["updated_at", "2020-05-26 23:21:43.183102"], ["url", "/api/classes/fighter"], ["index", "fighter"]]
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (1.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[36mJob Create (0.3ms)[0m  [1m[32mINSERT INTO "jobs" ("name", "created_at", "updated_at", "url", "index") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Monk"], ["created_at", "2020-05-26 23:21:43.187779"], ["updated_at", "2020-05-26 23:21:43.187779"], ["url", "/api/classes/monk"], ["index", "monk"]]
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[36mJob Create (0.3ms)[0m  [1m[32mINSERT INTO "jobs" ("name", "created_at", "updated_at", "url", "index") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Paladin"], ["created_at", "2020-05-26 23:21:43.191539"], ["updated_at", "2020-05-26 23:21:43.191539"], ["url", "/api/classes/paladin"], ["index", "paladin"]]
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[36mJob Create (0.3ms)[0m  [1m[32mINSERT INTO "jobs" ("name", "created_at", "updated_at", "url", "index") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Ranger"], ["created_at", "2020-05-26 23:21:43.195963"], ["updated_at", "2020-05-26 23:21:43.195963"], ["url", "/api/classes/ranger"], ["index", "ranger"]]
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[36mJob Create (0.3ms)[0m  [1m[32mINSERT INTO "jobs" ("name", "created_at", "updated_at", "url", "index") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Rogue"], ["created_at", "2020-05-26 23:21:43.200308"], ["updated_at", "2020-05-26 23:21:43.200308"], ["url", "/api/classes/rogue"], ["index", "rogue"]]
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[36mJob Create (0.3ms)[0m  [1m[32mINSERT INTO "jobs" ("name", "created_at", "updated_at", "url", "index") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Sorcerer"], ["created_at", "2020-05-26 23:21:43.203860"], ["updated_at", "2020-05-26 23:21:43.203860"], ["url", "/api/classes/sorcerer"], ["index", "sorcerer"]]
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[36mJob Create (0.3ms)[0m  [1m[32mINSERT INTO "jobs" ("name", "created_at", "updated_at", "url", "index") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Warlock"], ["created_at", "2020-05-26 23:21:43.208012"], ["updated_at", "2020-05-26 23:21:43.208012"], ["url", "/api/classes/warlock"], ["index", "warlock"]]
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[36mJob Create (0.3ms)[0m  [1m[32mINSERT INTO "jobs" ("name", "created_at", "updated_at", "url", "index") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Wizard"], ["created_at", "2020-05-26 23:21:43.211772"], ["updated_at", "2020-05-26 23:21:43.211772"], ["url", "/api/classes/wizard"], ["index", "wizard"]]
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[36mJob Load (0.1ms)[0m  [1m[34mSELECT "jobs".* FROM "jobs" WHERE "jobs"."id" = ? LIMIT ?[0m  [["id", 302], ["LIMIT", 1]]
+  ↳ app/controllers/jobs_controller.rb:22:in `find_job'
+Completed 404 Not Found in 197ms (ActiveRecord: 22.2ms | Allocations: 35036)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Job with 'id'=302):
+  
+app/controllers/jobs_controller.rb:22:in `find_job'
+Started GET "/jobs/" for ::1 at 2020-05-26 19:21:44 -0400
+Processing by JobsController#index as HTML
+  [1m[36mJob Destroy (2.8ms)[0m  [1m[31mDELETE FROM "jobs"[0m
+  ↳ lib/dnd_api.rb:11:in `classes'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[36mJob Create (0.5ms)[0m  [1m[32mINSERT INTO "jobs" ("name", "created_at", "updated_at", "url", "index") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Barbarian"], ["created_at", "2020-05-26 23:21:44.495973"], ["updated_at", "2020-05-26 23:21:44.495973"], ["url", "/api/classes/barbarian"], ["index", "barbarian"]]
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (2.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[36mJob Create (0.7ms)[0m  [1m[32mINSERT INTO "jobs" ("name", "created_at", "updated_at", "url", "index") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Bard"], ["created_at", "2020-05-26 23:21:44.504654"], ["updated_at", "2020-05-26 23:21:44.504654"], ["url", "/api/classes/bard"], ["index", "bard"]]
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[36mJob Create (0.3ms)[0m  [1m[32mINSERT INTO "jobs" ("name", "created_at", "updated_at", "url", "index") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Cleric"], ["created_at", "2020-05-26 23:21:44.509092"], ["updated_at", "2020-05-26 23:21:44.509092"], ["url", "/api/classes/cleric"], ["index", "cleric"]]
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[36mJob Create (0.6ms)[0m  [1m[32mINSERT INTO "jobs" ("name", "created_at", "updated_at", "url", "index") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Druid"], ["created_at", "2020-05-26 23:21:44.513313"], ["updated_at", "2020-05-26 23:21:44.513313"], ["url", "/api/classes/druid"], ["index", "druid"]]
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[36mJob Create (0.3ms)[0m  [1m[32mINSERT INTO "jobs" ("name", "created_at", "updated_at", "url", "index") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Fighter"], ["created_at", "2020-05-26 23:21:44.518204"], ["updated_at", "2020-05-26 23:21:44.518204"], ["url", "/api/classes/fighter"], ["index", "fighter"]]
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[36mJob Create (0.5ms)[0m  [1m[32mINSERT INTO "jobs" ("name", "created_at", "updated_at", "url", "index") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Monk"], ["created_at", "2020-05-26 23:21:44.531813"], ["updated_at", "2020-05-26 23:21:44.531813"], ["url", "/api/classes/monk"], ["index", "monk"]]
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[36mJob Create (0.7ms)[0m  [1m[32mINSERT INTO "jobs" ("name", "created_at", "updated_at", "url", "index") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Paladin"], ["created_at", "2020-05-26 23:21:44.536918"], ["updated_at", "2020-05-26 23:21:44.536918"], ["url", "/api/classes/paladin"], ["index", "paladin"]]
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[36mJob Create (0.3ms)[0m  [1m[32mINSERT INTO "jobs" ("name", "created_at", "updated_at", "url", "index") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Ranger"], ["created_at", "2020-05-26 23:21:44.542325"], ["updated_at", "2020-05-26 23:21:44.542325"], ["url", "/api/classes/ranger"], ["index", "ranger"]]
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[36mJob Create (0.4ms)[0m  [1m[32mINSERT INTO "jobs" ("name", "created_at", "updated_at", "url", "index") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Rogue"], ["created_at", "2020-05-26 23:21:44.546383"], ["updated_at", "2020-05-26 23:21:44.546383"], ["url", "/api/classes/rogue"], ["index", "rogue"]]
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[36mJob Create (0.5ms)[0m  [1m[32mINSERT INTO "jobs" ("name", "created_at", "updated_at", "url", "index") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Sorcerer"], ["created_at", "2020-05-26 23:21:44.552299"], ["updated_at", "2020-05-26 23:21:44.552299"], ["url", "/api/classes/sorcerer"], ["index", "sorcerer"]]
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[36mJob Create (0.4ms)[0m  [1m[32mINSERT INTO "jobs" ("name", "created_at", "updated_at", "url", "index") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Warlock"], ["created_at", "2020-05-26 23:21:44.557605"], ["updated_at", "2020-05-26 23:21:44.557605"], ["url", "/api/classes/warlock"], ["index", "warlock"]]
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[36mJob Create (1.0ms)[0m  [1m[32mINSERT INTO "jobs" ("name", "created_at", "updated_at", "url", "index") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Wizard"], ["created_at", "2020-05-26 23:21:44.561657"], ["updated_at", "2020-05-26 23:21:44.561657"], ["url", "/api/classes/wizard"], ["index", "wizard"]]
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  Rendering jobs/index.html.erb within layouts/application
+  [1m[36mJob Load (0.2ms)[0m  [1m[34mSELECT "jobs".* FROM "jobs"[0m
+  ↳ app/views/jobs/index.html.erb:1
+  Rendered jobs/index.html.erb within layouts/application (Duration: 2.0ms | Allocations: 1088)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 232ms (Views: 22.8ms | ActiveRecord: 24.5ms | Allocations: 50171)
+
+
+Started GET "/jobs/327" for ::1 at 2020-05-26 19:21:45 -0400
+Processing by JobsController#show as HTML
+  Parameters: {"id"=>"327"}
+  [1m[36mJob Destroy (2.5ms)[0m  [1m[31mDELETE FROM "jobs"[0m
+  ↳ lib/dnd_api.rb:11:in `classes'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[36mJob Create (0.7ms)[0m  [1m[32mINSERT INTO "jobs" ("name", "created_at", "updated_at", "url", "index") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Barbarian"], ["created_at", "2020-05-26 23:21:46.100276"], ["updated_at", "2020-05-26 23:21:46.100276"], ["url", "/api/classes/barbarian"], ["index", "barbarian"]]
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (2.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[36mJob Create (0.5ms)[0m  [1m[32mINSERT INTO "jobs" ("name", "created_at", "updated_at", "url", "index") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Bard"], ["created_at", "2020-05-26 23:21:46.108526"], ["updated_at", "2020-05-26 23:21:46.108526"], ["url", "/api/classes/bard"], ["index", "bard"]]
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[36mJob Create (0.4ms)[0m  [1m[32mINSERT INTO "jobs" ("name", "created_at", "updated_at", "url", "index") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Cleric"], ["created_at", "2020-05-26 23:21:46.113989"], ["updated_at", "2020-05-26 23:21:46.113989"], ["url", "/api/classes/cleric"], ["index", "cleric"]]
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[36mJob Create (0.4ms)[0m  [1m[32mINSERT INTO "jobs" ("name", "created_at", "updated_at", "url", "index") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Druid"], ["created_at", "2020-05-26 23:21:46.118470"], ["updated_at", "2020-05-26 23:21:46.118470"], ["url", "/api/classes/druid"], ["index", "druid"]]
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[36mJob Create (0.3ms)[0m  [1m[32mINSERT INTO "jobs" ("name", "created_at", "updated_at", "url", "index") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Fighter"], ["created_at", "2020-05-26 23:21:46.122890"], ["updated_at", "2020-05-26 23:21:46.122890"], ["url", "/api/classes/fighter"], ["index", "fighter"]]
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[36mJob Create (0.3ms)[0m  [1m[32mINSERT INTO "jobs" ("name", "created_at", "updated_at", "url", "index") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Monk"], ["created_at", "2020-05-26 23:21:46.126710"], ["updated_at", "2020-05-26 23:21:46.126710"], ["url", "/api/classes/monk"], ["index", "monk"]]
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[36mJob Create (0.3ms)[0m  [1m[32mINSERT INTO "jobs" ("name", "created_at", "updated_at", "url", "index") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Paladin"], ["created_at", "2020-05-26 23:21:46.130704"], ["updated_at", "2020-05-26 23:21:46.130704"], ["url", "/api/classes/paladin"], ["index", "paladin"]]
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[36mJob Create (0.3ms)[0m  [1m[32mINSERT INTO "jobs" ("name", "created_at", "updated_at", "url", "index") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Ranger"], ["created_at", "2020-05-26 23:21:46.134476"], ["updated_at", "2020-05-26 23:21:46.134476"], ["url", "/api/classes/ranger"], ["index", "ranger"]]
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[36mJob Create (0.3ms)[0m  [1m[32mINSERT INTO "jobs" ("name", "created_at", "updated_at", "url", "index") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Rogue"], ["created_at", "2020-05-26 23:21:46.138072"], ["updated_at", "2020-05-26 23:21:46.138072"], ["url", "/api/classes/rogue"], ["index", "rogue"]]
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[36mJob Create (0.3ms)[0m  [1m[32mINSERT INTO "jobs" ("name", "created_at", "updated_at", "url", "index") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Sorcerer"], ["created_at", "2020-05-26 23:21:46.141584"], ["updated_at", "2020-05-26 23:21:46.141584"], ["url", "/api/classes/sorcerer"], ["index", "sorcerer"]]
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[36mJob Create (0.3ms)[0m  [1m[32mINSERT INTO "jobs" ("name", "created_at", "updated_at", "url", "index") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Warlock"], ["created_at", "2020-05-26 23:21:46.156468"], ["updated_at", "2020-05-26 23:21:46.156468"], ["url", "/api/classes/warlock"], ["index", "warlock"]]
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[36mJob Create (1.5ms)[0m  [1m[32mINSERT INTO "jobs" ("name", "created_at", "updated_at", "url", "index") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Wizard"], ["created_at", "2020-05-26 23:21:46.161999"], ["updated_at", "2020-05-26 23:21:46.161999"], ["url", "/api/classes/wizard"], ["index", "wizard"]]
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[36mJob Load (0.2ms)[0m  [1m[34mSELECT "jobs".* FROM "jobs" WHERE "jobs"."id" = ? LIMIT ?[0m  [["id", 327], ["LIMIT", 1]]
+  ↳ app/controllers/jobs_controller.rb:22:in `find_job'
+Completed 404 Not Found in 223ms (ActiveRecord: 23.8ms | Allocations: 40435)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Job with 'id'=327):
+  
+app/controllers/jobs_controller.rb:22:in `find_job'
+Started GET "/jobs/" for ::1 at 2020-05-26 19:21:47 -0400
+Processing by JobsController#index as HTML
+  [1m[36mJob Destroy (2.9ms)[0m  [1m[31mDELETE FROM "jobs"[0m
+  ↳ lib/dnd_api.rb:11:in `classes'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[36mJob Create (0.8ms)[0m  [1m[32mINSERT INTO "jobs" ("name", "created_at", "updated_at", "url", "index") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Barbarian"], ["created_at", "2020-05-26 23:21:47.387272"], ["updated_at", "2020-05-26 23:21:47.387272"], ["url", "/api/classes/barbarian"], ["index", "barbarian"]]
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (2.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[36mJob Create (0.9ms)[0m  [1m[32mINSERT INTO "jobs" ("name", "created_at", "updated_at", "url", "index") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Bard"], ["created_at", "2020-05-26 23:21:47.395392"], ["updated_at", "2020-05-26 23:21:47.395392"], ["url", "/api/classes/bard"], ["index", "bard"]]
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[36mJob Create (0.4ms)[0m  [1m[32mINSERT INTO "jobs" ("name", "created_at", "updated_at", "url", "index") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Cleric"], ["created_at", "2020-05-26 23:21:47.401727"], ["updated_at", "2020-05-26 23:21:47.401727"], ["url", "/api/classes/cleric"], ["index", "cleric"]]
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[36mJob Create (0.3ms)[0m  [1m[32mINSERT INTO "jobs" ("name", "created_at", "updated_at", "url", "index") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Druid"], ["created_at", "2020-05-26 23:21:47.407091"], ["updated_at", "2020-05-26 23:21:47.407091"], ["url", "/api/classes/druid"], ["index", "druid"]]
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[36mJob Create (0.4ms)[0m  [1m[32mINSERT INTO "jobs" ("name", "created_at", "updated_at", "url", "index") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Fighter"], ["created_at", "2020-05-26 23:21:47.416400"], ["updated_at", "2020-05-26 23:21:47.416400"], ["url", "/api/classes/fighter"], ["index", "fighter"]]
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (1.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[36mJob Create (0.3ms)[0m  [1m[32mINSERT INTO "jobs" ("name", "created_at", "updated_at", "url", "index") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Monk"], ["created_at", "2020-05-26 23:21:47.424715"], ["updated_at", "2020-05-26 23:21:47.424715"], ["url", "/api/classes/monk"], ["index", "monk"]]
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[36mJob Create (0.4ms)[0m  [1m[32mINSERT INTO "jobs" ("name", "created_at", "updated_at", "url", "index") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Paladin"], ["created_at", "2020-05-26 23:21:47.432311"], ["updated_at", "2020-05-26 23:21:47.432311"], ["url", "/api/classes/paladin"], ["index", "paladin"]]
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[36mJob Create (0.4ms)[0m  [1m[32mINSERT INTO "jobs" ("name", "created_at", "updated_at", "url", "index") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Ranger"], ["created_at", "2020-05-26 23:21:47.439534"], ["updated_at", "2020-05-26 23:21:47.439534"], ["url", "/api/classes/ranger"], ["index", "ranger"]]
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (1.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[36mJob Create (0.4ms)[0m  [1m[32mINSERT INTO "jobs" ("name", "created_at", "updated_at", "url", "index") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Rogue"], ["created_at", "2020-05-26 23:21:47.447538"], ["updated_at", "2020-05-26 23:21:47.447538"], ["url", "/api/classes/rogue"], ["index", "rogue"]]
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[36mJob Create (0.6ms)[0m  [1m[32mINSERT INTO "jobs" ("name", "created_at", "updated_at", "url", "index") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Sorcerer"], ["created_at", "2020-05-26 23:21:47.453432"], ["updated_at", "2020-05-26 23:21:47.453432"], ["url", "/api/classes/sorcerer"], ["index", "sorcerer"]]
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[36mJob Create (0.4ms)[0m  [1m[32mINSERT INTO "jobs" ("name", "created_at", "updated_at", "url", "index") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Warlock"], ["created_at", "2020-05-26 23:21:47.460229"], ["updated_at", "2020-05-26 23:21:47.460229"], ["url", "/api/classes/warlock"], ["index", "warlock"]]
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[36mJob Create (1.9ms)[0m  [1m[32mINSERT INTO "jobs" ("name", "created_at", "updated_at", "url", "index") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Wizard"], ["created_at", "2020-05-26 23:21:47.469238"], ["updated_at", "2020-05-26 23:21:47.469238"], ["url", "/api/classes/wizard"], ["index", "wizard"]]
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  Rendering jobs/index.html.erb within layouts/application
+  [1m[36mJob Load (0.2ms)[0m  [1m[34mSELECT "jobs".* FROM "jobs"[0m
+  ↳ app/views/jobs/index.html.erb:1
+  Rendered jobs/index.html.erb within layouts/application (Duration: 34.4ms | Allocations: 2561)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 293ms (Views: 62.0ms | ActiveRecord: 25.9ms | Allocations: 59999)
+
+
+Started GET "/jobs/265" for ::1 at 2020-05-26 19:21:51 -0400
+Processing by JobsController#show as HTML
+  Parameters: {"id"=>"265"}
+  [1m[36mJob Destroy (1.4ms)[0m  [1m[31mDELETE FROM "jobs"[0m
+  ↳ lib/dnd_api.rb:11:in `classes'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[36mJob Create (0.4ms)[0m  [1m[32mINSERT INTO "jobs" ("name", "created_at", "updated_at", "url", "index") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Barbarian"], ["created_at", "2020-05-26 23:21:51.976023"], ["updated_at", "2020-05-26 23:21:51.976023"], ["url", "/api/classes/barbarian"], ["index", "barbarian"]]
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (2.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[36mJob Create (0.4ms)[0m  [1m[32mINSERT INTO "jobs" ("name", "created_at", "updated_at", "url", "index") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Bard"], ["created_at", "2020-05-26 23:21:51.994463"], ["updated_at", "2020-05-26 23:21:51.994463"], ["url", "/api/classes/bard"], ["index", "bard"]]
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[36mJob Create (0.4ms)[0m  [1m[32mINSERT INTO "jobs" ("name", "created_at", "updated_at", "url", "index") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Cleric"], ["created_at", "2020-05-26 23:21:51.999115"], ["updated_at", "2020-05-26 23:21:51.999115"], ["url", "/api/classes/cleric"], ["index", "cleric"]]
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[36mJob Create (0.4ms)[0m  [1m[32mINSERT INTO "jobs" ("name", "created_at", "updated_at", "url", "index") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Druid"], ["created_at", "2020-05-26 23:21:52.003914"], ["updated_at", "2020-05-26 23:21:52.003914"], ["url", "/api/classes/druid"], ["index", "druid"]]
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[36mJob Create (0.3ms)[0m  [1m[32mINSERT INTO "jobs" ("name", "created_at", "updated_at", "url", "index") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Fighter"], ["created_at", "2020-05-26 23:21:52.008119"], ["updated_at", "2020-05-26 23:21:52.008119"], ["url", "/api/classes/fighter"], ["index", "fighter"]]
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[36mJob Create (0.4ms)[0m  [1m[32mINSERT INTO "jobs" ("name", "created_at", "updated_at", "url", "index") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Monk"], ["created_at", "2020-05-26 23:21:52.012308"], ["updated_at", "2020-05-26 23:21:52.012308"], ["url", "/api/classes/monk"], ["index", "monk"]]
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[36mJob Create (0.4ms)[0m  [1m[32mINSERT INTO "jobs" ("name", "created_at", "updated_at", "url", "index") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Paladin"], ["created_at", "2020-05-26 23:21:52.016193"], ["updated_at", "2020-05-26 23:21:52.016193"], ["url", "/api/classes/paladin"], ["index", "paladin"]]
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[36mJob Create (0.3ms)[0m  [1m[32mINSERT INTO "jobs" ("name", "created_at", "updated_at", "url", "index") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Ranger"], ["created_at", "2020-05-26 23:21:52.020070"], ["updated_at", "2020-05-26 23:21:52.020070"], ["url", "/api/classes/ranger"], ["index", "ranger"]]
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[36mJob Create (0.3ms)[0m  [1m[32mINSERT INTO "jobs" ("name", "created_at", "updated_at", "url", "index") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Rogue"], ["created_at", "2020-05-26 23:21:52.024544"], ["updated_at", "2020-05-26 23:21:52.024544"], ["url", "/api/classes/rogue"], ["index", "rogue"]]
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[36mJob Create (0.3ms)[0m  [1m[32mINSERT INTO "jobs" ("name", "created_at", "updated_at", "url", "index") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Sorcerer"], ["created_at", "2020-05-26 23:21:52.028122"], ["updated_at", "2020-05-26 23:21:52.028122"], ["url", "/api/classes/sorcerer"], ["index", "sorcerer"]]
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[36mJob Create (0.4ms)[0m  [1m[32mINSERT INTO "jobs" ("name", "created_at", "updated_at", "url", "index") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Warlock"], ["created_at", "2020-05-26 23:21:52.031761"], ["updated_at", "2020-05-26 23:21:52.031761"], ["url", "/api/classes/warlock"], ["index", "warlock"]]
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[36mJob Create (0.5ms)[0m  [1m[32mINSERT INTO "jobs" ("name", "created_at", "updated_at", "url", "index") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Wizard"], ["created_at", "2020-05-26 23:21:52.036098"], ["updated_at", "2020-05-26 23:21:52.036098"], ["url", "/api/classes/wizard"], ["index", "wizard"]]
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[36mJob Load (0.1ms)[0m  [1m[34mSELECT "jobs".* FROM "jobs" WHERE "jobs"."id" = ? LIMIT ?[0m  [["id", 265], ["LIMIT", 1]]
+  ↳ app/controllers/jobs_controller.rb:22:in `find_job'
+Completed 404 Not Found in 198ms (ActiveRecord: 21.5ms | Allocations: 35029)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Job with 'id'=265):
+  
+app/controllers/jobs_controller.rb:22:in `find_job'
+  [1m[36mJob Load (0.4ms)[0m  [1m[34mSELECT "jobs".* FROM "jobs" ORDER BY "jobs"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "jobs"[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "jobs"."id" FROM "jobs"[0m
+Started GET "/jobs/" for ::1 at 2020-05-26 19:22:42 -0400
+Processing by JobsController#index as HTML
+  [1m[36mJob Destroy (2.5ms)[0m  [1m[31mDELETE FROM "jobs"[0m
+  ↳ lib/dnd_api.rb:11:in `classes'
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[36mJob Create (0.6ms)[0m  [1m[32mINSERT INTO "jobs" ("name", "created_at", "updated_at", "url", "index") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Barbarian"], ["created_at", "2020-05-26 23:22:42.731690"], ["updated_at", "2020-05-26 23:22:42.731690"], ["url", "/api/classes/barbarian"], ["index", "barbarian"]]
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (3.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[36mJob Create (0.4ms)[0m  [1m[32mINSERT INTO "jobs" ("name", "created_at", "updated_at", "url", "index") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Bard"], ["created_at", "2020-05-26 23:22:42.741417"], ["updated_at", "2020-05-26 23:22:42.741417"], ["url", "/api/classes/bard"], ["index", "bard"]]
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[36mJob Create (0.3ms)[0m  [1m[32mINSERT INTO "jobs" ("name", "created_at", "updated_at", "url", "index") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Cleric"], ["created_at", "2020-05-26 23:22:42.746399"], ["updated_at", "2020-05-26 23:22:42.746399"], ["url", "/api/classes/cleric"], ["index", "cleric"]]
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[36mJob Create (0.3ms)[0m  [1m[32mINSERT INTO "jobs" ("name", "created_at", "updated_at", "url", "index") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Druid"], ["created_at", "2020-05-26 23:22:42.750652"], ["updated_at", "2020-05-26 23:22:42.750652"], ["url", "/api/classes/druid"], ["index", "druid"]]
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[36mJob Create (0.3ms)[0m  [1m[32mINSERT INTO "jobs" ("name", "created_at", "updated_at", "url", "index") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Fighter"], ["created_at", "2020-05-26 23:22:42.754859"], ["updated_at", "2020-05-26 23:22:42.754859"], ["url", "/api/classes/fighter"], ["index", "fighter"]]
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[36mJob Create (0.3ms)[0m  [1m[32mINSERT INTO "jobs" ("name", "created_at", "updated_at", "url", "index") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Monk"], ["created_at", "2020-05-26 23:22:42.759003"], ["updated_at", "2020-05-26 23:22:42.759003"], ["url", "/api/classes/monk"], ["index", "monk"]]
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[36mJob Create (0.4ms)[0m  [1m[32mINSERT INTO "jobs" ("name", "created_at", "updated_at", "url", "index") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Paladin"], ["created_at", "2020-05-26 23:22:42.763362"], ["updated_at", "2020-05-26 23:22:42.763362"], ["url", "/api/classes/paladin"], ["index", "paladin"]]
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[36mJob Create (0.3ms)[0m  [1m[32mINSERT INTO "jobs" ("name", "created_at", "updated_at", "url", "index") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Ranger"], ["created_at", "2020-05-26 23:22:42.768173"], ["updated_at", "2020-05-26 23:22:42.768173"], ["url", "/api/classes/ranger"], ["index", "ranger"]]
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[36mJob Create (0.3ms)[0m  [1m[32mINSERT INTO "jobs" ("name", "created_at", "updated_at", "url", "index") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Rogue"], ["created_at", "2020-05-26 23:22:42.772944"], ["updated_at", "2020-05-26 23:22:42.772944"], ["url", "/api/classes/rogue"], ["index", "rogue"]]
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[36mJob Create (0.4ms)[0m  [1m[32mINSERT INTO "jobs" ("name", "created_at", "updated_at", "url", "index") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Sorcerer"], ["created_at", "2020-05-26 23:22:42.776963"], ["updated_at", "2020-05-26 23:22:42.776963"], ["url", "/api/classes/sorcerer"], ["index", "sorcerer"]]
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[36mJob Create (0.3ms)[0m  [1m[32mINSERT INTO "jobs" ("name", "created_at", "updated_at", "url", "index") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Warlock"], ["created_at", "2020-05-26 23:22:42.781064"], ["updated_at", "2020-05-26 23:22:42.781064"], ["url", "/api/classes/warlock"], ["index", "warlock"]]
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[36mJob Create (0.3ms)[0m  [1m[32mINSERT INTO "jobs" ("name", "created_at", "updated_at", "url", "index") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Wizard"], ["created_at", "2020-05-26 23:22:42.784865"], ["updated_at", "2020-05-26 23:22:42.784865"], ["url", "/api/classes/wizard"], ["index", "wizard"]]
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  Rendering jobs/index.html.erb within layouts/application
+  [1m[36mJob Load (0.1ms)[0m  [1m[34mSELECT "jobs".* FROM "jobs"[0m
+  ↳ app/views/jobs/index.html.erb:1
+  Rendered jobs/index.html.erb within layouts/application (Duration: 1.2ms | Allocations: 1088)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 298ms (Views: 7.2ms | ActiveRecord: 23.9ms | Allocations: 38898)
+
+
+Started GET "/jobs/373" for ::1 at 2020-05-26 19:22:43 -0400
+Processing by JobsController#show as HTML
+  Parameters: {"id"=>"373"}
+  [1m[36mJob Destroy (2.6ms)[0m  [1m[31mDELETE FROM "jobs"[0m
+  ↳ lib/dnd_api.rb:11:in `classes'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[36mJob Create (0.7ms)[0m  [1m[32mINSERT INTO "jobs" ("name", "created_at", "updated_at", "url", "index") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Barbarian"], ["created_at", "2020-05-26 23:22:43.986642"], ["updated_at", "2020-05-26 23:22:43.986642"], ["url", "/api/classes/barbarian"], ["index", "barbarian"]]
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (2.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[36mJob Create (0.4ms)[0m  [1m[32mINSERT INTO "jobs" ("name", "created_at", "updated_at", "url", "index") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Bard"], ["created_at", "2020-05-26 23:22:43.995509"], ["updated_at", "2020-05-26 23:22:43.995509"], ["url", "/api/classes/bard"], ["index", "bard"]]
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[36mJob Create (0.5ms)[0m  [1m[32mINSERT INTO "jobs" ("name", "created_at", "updated_at", "url", "index") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Cleric"], ["created_at", "2020-05-26 23:22:43.999698"], ["updated_at", "2020-05-26 23:22:43.999698"], ["url", "/api/classes/cleric"], ["index", "cleric"]]
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[36mJob Create (0.3ms)[0m  [1m[32mINSERT INTO "jobs" ("name", "created_at", "updated_at", "url", "index") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Druid"], ["created_at", "2020-05-26 23:22:44.003992"], ["updated_at", "2020-05-26 23:22:44.003992"], ["url", "/api/classes/druid"], ["index", "druid"]]
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[36mJob Create (0.3ms)[0m  [1m[32mINSERT INTO "jobs" ("name", "created_at", "updated_at", "url", "index") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Fighter"], ["created_at", "2020-05-26 23:22:44.009087"], ["updated_at", "2020-05-26 23:22:44.009087"], ["url", "/api/classes/fighter"], ["index", "fighter"]]
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[36mJob Create (0.3ms)[0m  [1m[32mINSERT INTO "jobs" ("name", "created_at", "updated_at", "url", "index") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Monk"], ["created_at", "2020-05-26 23:22:44.015278"], ["updated_at", "2020-05-26 23:22:44.015278"], ["url", "/api/classes/monk"], ["index", "monk"]]
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[36mJob Create (0.3ms)[0m  [1m[32mINSERT INTO "jobs" ("name", "created_at", "updated_at", "url", "index") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Paladin"], ["created_at", "2020-05-26 23:22:44.020343"], ["updated_at", "2020-05-26 23:22:44.020343"], ["url", "/api/classes/paladin"], ["index", "paladin"]]
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[36mJob Create (0.3ms)[0m  [1m[32mINSERT INTO "jobs" ("name", "created_at", "updated_at", "url", "index") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Ranger"], ["created_at", "2020-05-26 23:22:44.032879"], ["updated_at", "2020-05-26 23:22:44.032879"], ["url", "/api/classes/ranger"], ["index", "ranger"]]
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[36mJob Create (0.3ms)[0m  [1m[32mINSERT INTO "jobs" ("name", "created_at", "updated_at", "url", "index") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Rogue"], ["created_at", "2020-05-26 23:22:44.038035"], ["updated_at", "2020-05-26 23:22:44.038035"], ["url", "/api/classes/rogue"], ["index", "rogue"]]
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[36mJob Create (0.3ms)[0m  [1m[32mINSERT INTO "jobs" ("name", "created_at", "updated_at", "url", "index") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Sorcerer"], ["created_at", "2020-05-26 23:22:44.041881"], ["updated_at", "2020-05-26 23:22:44.041881"], ["url", "/api/classes/sorcerer"], ["index", "sorcerer"]]
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[36mJob Create (0.3ms)[0m  [1m[32mINSERT INTO "jobs" ("name", "created_at", "updated_at", "url", "index") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Warlock"], ["created_at", "2020-05-26 23:22:44.045467"], ["updated_at", "2020-05-26 23:22:44.045467"], ["url", "/api/classes/warlock"], ["index", "warlock"]]
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[36mJob Create (0.3ms)[0m  [1m[32mINSERT INTO "jobs" ("name", "created_at", "updated_at", "url", "index") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Wizard"], ["created_at", "2020-05-26 23:22:44.049529"], ["updated_at", "2020-05-26 23:22:44.049529"], ["url", "/api/classes/wizard"], ["index", "wizard"]]
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[36mJob Load (0.1ms)[0m  [1m[34mSELECT "jobs".* FROM "jobs" WHERE "jobs"."id" = ? LIMIT ?[0m  [["id", 373], ["LIMIT", 1]]
+  ↳ app/controllers/jobs_controller.rb:22:in `find_job'
+Completed 404 Not Found in 226ms (ActiveRecord: 21.8ms | Allocations: 44906)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Job with 'id'=373):
+  
+app/controllers/jobs_controller.rb:22:in `find_job'
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "jobs"."id" FROM "jobs"[0m
+Started GET "/jobs/" for ::1 at 2020-05-26 19:23:24 -0400
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by JobsController#index as HTML
+  [1m[36mJob Destroy (1.4ms)[0m  [1m[31mDELETE FROM "jobs"[0m
+  ↳ lib/dnd_api.rb:11:in `classes'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[36mJob Create (0.4ms)[0m  [1m[32mINSERT INTO "jobs" ("name", "created_at", "updated_at", "url", "index") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Barbarian"], ["created_at", "2020-05-26 23:23:24.740292"], ["updated_at", "2020-05-26 23:23:24.740292"], ["url", "/api/classes/barbarian"], ["index", "barbarian"]]
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (2.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[36mJob Create (0.4ms)[0m  [1m[32mINSERT INTO "jobs" ("name", "created_at", "updated_at", "url", "index") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Bard"], ["created_at", "2020-05-26 23:23:24.746644"], ["updated_at", "2020-05-26 23:23:24.746644"], ["url", "/api/classes/bard"], ["index", "bard"]]
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[36mJob Create (0.3ms)[0m  [1m[32mINSERT INTO "jobs" ("name", "created_at", "updated_at", "url", "index") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Cleric"], ["created_at", "2020-05-26 23:23:24.750366"], ["updated_at", "2020-05-26 23:23:24.750366"], ["url", "/api/classes/cleric"], ["index", "cleric"]]
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[36mJob Create (0.4ms)[0m  [1m[32mINSERT INTO "jobs" ("name", "created_at", "updated_at", "url", "index") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Druid"], ["created_at", "2020-05-26 23:23:24.754788"], ["updated_at", "2020-05-26 23:23:24.754788"], ["url", "/api/classes/druid"], ["index", "druid"]]
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[36mJob Create (0.4ms)[0m  [1m[32mINSERT INTO "jobs" ("name", "created_at", "updated_at", "url", "index") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Fighter"], ["created_at", "2020-05-26 23:23:24.762055"], ["updated_at", "2020-05-26 23:23:24.762055"], ["url", "/api/classes/fighter"], ["index", "fighter"]]
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[36mJob Create (0.3ms)[0m  [1m[32mINSERT INTO "jobs" ("name", "created_at", "updated_at", "url", "index") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Monk"], ["created_at", "2020-05-26 23:23:24.770507"], ["updated_at", "2020-05-26 23:23:24.770507"], ["url", "/api/classes/monk"], ["index", "monk"]]
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[36mJob Create (0.5ms)[0m  [1m[32mINSERT INTO "jobs" ("name", "created_at", "updated_at", "url", "index") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Paladin"], ["created_at", "2020-05-26 23:23:24.775947"], ["updated_at", "2020-05-26 23:23:24.775947"], ["url", "/api/classes/paladin"], ["index", "paladin"]]
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[36mJob Create (0.5ms)[0m  [1m[32mINSERT INTO "jobs" ("name", "created_at", "updated_at", "url", "index") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Ranger"], ["created_at", "2020-05-26 23:23:24.783075"], ["updated_at", "2020-05-26 23:23:24.783075"], ["url", "/api/classes/ranger"], ["index", "ranger"]]
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[36mJob Create (0.5ms)[0m  [1m[32mINSERT INTO "jobs" ("name", "created_at", "updated_at", "url", "index") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Rogue"], ["created_at", "2020-05-26 23:23:24.791354"], ["updated_at", "2020-05-26 23:23:24.791354"], ["url", "/api/classes/rogue"], ["index", "rogue"]]
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[36mJob Create (0.5ms)[0m  [1m[32mINSERT INTO "jobs" ("name", "created_at", "updated_at", "url", "index") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Sorcerer"], ["created_at", "2020-05-26 23:23:24.798095"], ["updated_at", "2020-05-26 23:23:24.798095"], ["url", "/api/classes/sorcerer"], ["index", "sorcerer"]]
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[36mJob Create (14.1ms)[0m  [1m[32mINSERT INTO "jobs" ("name", "created_at", "updated_at", "url", "index") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Warlock"], ["created_at", "2020-05-26 23:23:24.803760"], ["updated_at", "2020-05-26 23:23:24.803760"], ["url", "/api/classes/warlock"], ["index", "warlock"]]
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[36mJob Create (0.4ms)[0m  [1m[32mINSERT INTO "jobs" ("name", "created_at", "updated_at", "url", "index") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Wizard"], ["created_at", "2020-05-26 23:23:24.822189"], ["updated_at", "2020-05-26 23:23:24.822189"], ["url", "/api/classes/wizard"], ["index", "wizard"]]
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  Rendering jobs/index.html.erb within layouts/application
+  [1m[36mJob Load (0.2ms)[0m  [1m[34mSELECT "jobs".* FROM "jobs"[0m
+  ↳ app/views/jobs/index.html.erb:1
+  Rendered jobs/index.html.erb within layouts/application (Duration: 1.7ms | Allocations: 1125)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 253ms (Views: 7.3ms | ActiveRecord: 34.4ms | Allocations: 64766)
+
+
+Started GET "/jobs/397" for ::1 at 2020-05-26 19:23:26 -0400
+Processing by JobsController#show as HTML
+  Parameters: {"id"=>"397"}
+  [1m[36mJob Load (0.2ms)[0m  [1m[34mSELECT "jobs".* FROM "jobs" WHERE "jobs"."id" = ? LIMIT ?[0m  [["id", 397], ["LIMIT", 1]]
+  ↳ app/controllers/jobs_controller.rb:22:in `find_job'
+Completed 500 Internal Server Error in 24ms (ActiveRecord: 0.2ms | Allocations: 3111)
+
+
+  
+NoMethodError (undefined method `class_details' for #<Job:0x00007fa738252e98>
+Did you mean?  class_eval):
+  
+app/controllers/jobs_controller.rb:12:in `show'
+Started GET "/jobs/397" for ::1 at 2020-05-26 19:23:49 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by JobsController#show as HTML
+  Parameters: {"id"=>"397"}
+  [1m[36mJob Load (0.1ms)[0m  [1m[34mSELECT "jobs".* FROM "jobs" WHERE "jobs"."id" = ? LIMIT ?[0m  [["id", 397], ["LIMIT", 1]]
+  ↳ app/controllers/jobs_controller.rb:22:in `find_job'
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 0.6ms | Allocations: 8715)
+
+
+  
+NoMethodError (undefined method `job_details' for #<Job:0x00007fa73b0b33c8>):
+  
+app/controllers/jobs_controller.rb:12:in `show'
+Started GET "/jobs/397" for ::1 at 2020-05-26 19:24:15 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by JobsController#show as HTML
+  Parameters: {"id"=>"397"}
+  [1m[36mJob Load (0.1ms)[0m  [1m[34mSELECT "jobs".* FROM "jobs" WHERE "jobs"."id" = ? LIMIT ?[0m  [["id", 397], ["LIMIT", 1]]
+  ↳ app/controllers/jobs_controller.rb:22:in `find_job'
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 0.6ms | Allocations: 9453)
+
+
+  
+NoMethodError (undefined method `get' for #<Class:0x00007fa73b548848>
+Did you mean?  gem):
+  
+app/models/job.rb:5:in `job_details'
+app/controllers/jobs_controller.rb:12:in `show'
+Started GET "/jobs/397" for ::1 at 2020-05-26 19:24:49 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by JobsController#show as HTML
+  Parameters: {"id"=>"397"}
+  [1m[36mJob Load (0.1ms)[0m  [1m[34mSELECT "jobs".* FROM "jobs" WHERE "jobs"."id" = ? LIMIT ?[0m  [["id", 397], ["LIMIT", 1]]
+  ↳ app/controllers/jobs_controller.rb:22:in `find_job'
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.6ms | Allocations: 7317)
+
+
+  
+URI::InvalidURIError (bad URI(is not URI?): "/\#{find_class.url}"):
+  
+app/models/job.rb:13:in `job_details'
+app/controllers/jobs_controller.rb:12:in `show'
+Started GET "/jobs/397" for ::1 at 2020-05-26 19:25:07 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by JobsController#show as HTML
+  Parameters: {"id"=>"397"}
+  [1m[36mJob Load (0.2ms)[0m  [1m[34mSELECT "jobs".* FROM "jobs" WHERE "jobs"."id" = ? LIMIT ?[0m  [["id", 397], ["LIMIT", 1]]
+  ↳ app/controllers/jobs_controller.rb:22:in `find_job'
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 0.7ms | Allocations: 7337)
+
+
+  
+URI::InvalidURIError (bad URI(is not URI?): "\#{find_class.url}"):
+  
+app/models/job.rb:13:in `job_details'
+app/controllers/jobs_controller.rb:12:in `show'
+Started GET "/jobs/397" for ::1 at 2020-05-26 19:25:24 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by JobsController#show as HTML
+  Parameters: {"id"=>"397"}
+  [1m[36mJob Load (0.1ms)[0m  [1m[34mSELECT "jobs".* FROM "jobs" WHERE "jobs"."id" = ? LIMIT ?[0m  [["id", 397], ["LIMIT", 1]]
+  ↳ app/controllers/jobs_controller.rb:22:in `find_job'
+Completed 500 Internal Server Error in 19ms (ActiveRecord: 0.6ms | Allocations: 7319)
+
+
+  
+URI::InvalidURIError (bad URI(is not URI?): "/\#{find_class.url}"):
+  
+app/models/job.rb:13:in `job_details'
+app/controllers/jobs_controller.rb:12:in `show'
+Started GET "/jobs/397" for ::1 at 2020-05-26 19:25:37 -0400
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by JobsController#show as HTML
+  Parameters: {"id"=>"397"}
+  [1m[36mJob Load (0.2ms)[0m  [1m[34mSELECT "jobs".* FROM "jobs" WHERE "jobs"."id" = ? LIMIT ?[0m  [["id", 397], ["LIMIT", 1]]
+  ↳ app/controllers/jobs_controller.rb:22:in `find_job'
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 1.0ms | Allocations: 7334)
+
+
+  
+URI::InvalidURIError (bad URI(is not URI?): "/\#{find_class.url}"):
+  
+app/models/job.rb:14:in `job_details'
+app/controllers/jobs_controller.rb:12:in `show'
+Started GET "/jobs/397" for ::1 at 2020-05-26 19:26:49 -0400
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by JobsController#show as HTML
+  Parameters: {"id"=>"397"}
+  [1m[36mJob Load (0.1ms)[0m  [1m[34mSELECT "jobs".* FROM "jobs" WHERE "jobs"."id" = ? LIMIT ?[0m  [["id", 397], ["LIMIT", 1]]
+  ↳ app/controllers/jobs_controller.rb:22:in `find_job'
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 0.6ms | Allocations: 7319)
+
+
+  
+URI::InvalidURIError (bad URI(is not URI?): "/\#{job.url}"):
+  
+app/models/job.rb:14:in `job_details'
+app/controllers/jobs_controller.rb:12:in `show'
+Started PUT "/__web_console/repl_sessions/9e590e041d2da8c9dee332304f400d31" for ::1 at 2020-05-26 19:27:12 -0400
+Started PUT "/__web_console/repl_sessions/9e590e041d2da8c9dee332304f400d31" for ::1 at 2020-05-26 19:27:13 -0400
+Started PUT "/__web_console/repl_sessions/9e590e041d2da8c9dee332304f400d31" for ::1 at 2020-05-26 19:27:15 -0400
+Started GET "/jobs/397" for ::1 at 2020-05-26 19:28:29 -0400
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by JobsController#show as HTML
+  Parameters: {"id"=>"397"}
+  [1m[36mJob Load (0.2ms)[0m  [1m[34mSELECT "jobs".* FROM "jobs" WHERE "jobs"."id" = ? LIMIT ?[0m  [["id", 397], ["LIMIT", 1]]
+  ↳ app/controllers/jobs_controller.rb:22:in `find_job'
+Completed 406 Not Acceptable in 14ms (ActiveRecord: 0.7ms | Allocations: 8563)
+
+
+  
+ActionController::MissingExactTemplate (JobsController#show is missing a template for request formats: text/html):
+  
+actionpack (6.0.3.1) lib/action_controller/metal/implicit_render.rb:45:in `default_render'
+actionpack (6.0.3.1) lib/action_controller/metal/basic_implicit_render.rb:6:in `block in send_action'
+actionpack (6.0.3.1) lib/action_controller/metal/basic_implicit_render.rb:6:in `tap'
+actionpack (6.0.3.1) lib/action_controller/metal/basic_implicit_render.rb:6:in `send_action'
+actionpack (6.0.3.1) lib/abstract_controller/base.rb:195:in `process_action'
+actionpack (6.0.3.1) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (6.0.3.1) lib/abstract_controller/callbacks.rb:42:in `block in process_action'
+activesupport (6.0.3.1) lib/active_support/callbacks.rb:135:in `run_callbacks'
+actionpack (6.0.3.1) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (6.0.3.1) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (6.0.3.1) lib/action_controller/metal/instrumentation.rb:33:in `block in process_action'
+activesupport (6.0.3.1) lib/active_support/notifications.rb:180:in `block in instrument'
+activesupport (6.0.3.1) lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+activesupport (6.0.3.1) lib/active_support/notifications.rb:180:in `instrument'
+actionpack (6.0.3.1) lib/action_controller/metal/instrumentation.rb:32:in `process_action'
+actionpack (6.0.3.1) lib/action_controller/metal/params_wrapper.rb:245:in `process_action'
+activerecord (6.0.3.1) lib/active_record/railties/controller_runtime.rb:27:in `process_action'
+actionpack (6.0.3.1) lib/abstract_controller/base.rb:136:in `process'
+actionview (6.0.3.1) lib/action_view/rendering.rb:39:in `process'
+actionpack (6.0.3.1) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (6.0.3.1) lib/action_controller/metal.rb:254:in `dispatch'
+actionpack (6.0.3.1) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (6.0.3.1) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.0.3.1) lib/action_dispatch/journey/router.rb:49:in `block in serve'
+actionpack (6.0.3.1) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.0.3.1) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.0.3.1) lib/action_dispatch/routing/route_set.rb:834:in `call'
+rack (2.2.2) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.2) lib/rack/etag.rb:27:in `call'
+rack (2.2.2) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.2) lib/rack/head.rb:12:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.2) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.2) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/cookies.rb:648:in `call'
+activerecord (6.0.3.1) lib/active_record/migration.rb:567:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.3.1) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+web-console (4.0.2) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.2) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.2) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.2) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.2.2) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.1) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/jobs/397" for ::1 at 2020-05-26 19:28:57 -0400
+Processing by JobsController#show as HTML
+  Parameters: {"id"=>"397"}
+  [1m[36mJob Load (0.1ms)[0m  [1m[34mSELECT "jobs".* FROM "jobs" WHERE "jobs"."id" = ? LIMIT ?[0m  [["id", 397], ["LIMIT", 1]]
+  ↳ app/controllers/jobs_controller.rb:22:in `find_job'
+  Rendering jobs/show.html.erb within layouts/application
+  Rendered jobs/show.html.erb within layouts/application (Duration: 0.4ms | Allocations: 80)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 13ms (Views: 9.8ms | ActiveRecord: 0.1ms | Allocations: 5657)
+
+
+Started GET "/jobs/397" for ::1 at 2020-05-26 19:29:09 -0400
+Processing by JobsController#show as HTML
+  Parameters: {"id"=>"397"}
+  [1m[36mJob Load (0.4ms)[0m  [1m[34mSELECT "jobs".* FROM "jobs" WHERE "jobs"."id" = ? LIMIT ?[0m  [["id", 397], ["LIMIT", 1]]
+  ↳ app/controllers/jobs_controller.rb:22:in `find_job'
+  Rendering jobs/show.html.erb within layouts/application
+  Rendered jobs/show.html.erb within layouts/application (Duration: 0.4ms | Allocations: 87)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 11ms (Views: 7.6ms | ActiveRecord: 0.4ms | Allocations: 5659)
+
+
+Started GET "/jobs/" for ::1 at 2020-05-26 19:29:29 -0400
+Processing by JobsController#index as HTML
+  [1m[36mJob Destroy (1.4ms)[0m  [1m[31mDELETE FROM "jobs"[0m
+  ↳ lib/dnd_api.rb:11:in `classes'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[36mJob Create (0.5ms)[0m  [1m[32mINSERT INTO "jobs" ("name", "created_at", "updated_at", "url", "index") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Barbarian"], ["created_at", "2020-05-26 23:29:29.249452"], ["updated_at", "2020-05-26 23:29:29.249452"], ["url", "/api/classes/barbarian"], ["index", "barbarian"]]
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (3.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[36mJob Create (0.4ms)[0m  [1m[32mINSERT INTO "jobs" ("name", "created_at", "updated_at", "url", "index") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Bard"], ["created_at", "2020-05-26 23:29:29.259059"], ["updated_at", "2020-05-26 23:29:29.259059"], ["url", "/api/classes/bard"], ["index", "bard"]]
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[36mJob Create (0.4ms)[0m  [1m[32mINSERT INTO "jobs" ("name", "created_at", "updated_at", "url", "index") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Cleric"], ["created_at", "2020-05-26 23:29:29.265325"], ["updated_at", "2020-05-26 23:29:29.265325"], ["url", "/api/classes/cleric"], ["index", "cleric"]]
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[36mJob Create (0.5ms)[0m  [1m[32mINSERT INTO "jobs" ("name", "created_at", "updated_at", "url", "index") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Druid"], ["created_at", "2020-05-26 23:29:29.270071"], ["updated_at", "2020-05-26 23:29:29.270071"], ["url", "/api/classes/druid"], ["index", "druid"]]
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[36mJob Create (0.3ms)[0m  [1m[32mINSERT INTO "jobs" ("name", "created_at", "updated_at", "url", "index") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Fighter"], ["created_at", "2020-05-26 23:29:29.273557"], ["updated_at", "2020-05-26 23:29:29.273557"], ["url", "/api/classes/fighter"], ["index", "fighter"]]
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[36mJob Create (0.3ms)[0m  [1m[32mINSERT INTO "jobs" ("name", "created_at", "updated_at", "url", "index") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Monk"], ["created_at", "2020-05-26 23:29:29.277210"], ["updated_at", "2020-05-26 23:29:29.277210"], ["url", "/api/classes/monk"], ["index", "monk"]]
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[36mJob Create (0.4ms)[0m  [1m[32mINSERT INTO "jobs" ("name", "created_at", "updated_at", "url", "index") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Paladin"], ["created_at", "2020-05-26 23:29:29.281535"], ["updated_at", "2020-05-26 23:29:29.281535"], ["url", "/api/classes/paladin"], ["index", "paladin"]]
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[36mJob Create (0.9ms)[0m  [1m[32mINSERT INTO "jobs" ("name", "created_at", "updated_at", "url", "index") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Ranger"], ["created_at", "2020-05-26 23:29:29.286380"], ["updated_at", "2020-05-26 23:29:29.286380"], ["url", "/api/classes/ranger"], ["index", "ranger"]]
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[36mJob Create (0.3ms)[0m  [1m[32mINSERT INTO "jobs" ("name", "created_at", "updated_at", "url", "index") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Rogue"], ["created_at", "2020-05-26 23:29:29.293447"], ["updated_at", "2020-05-26 23:29:29.293447"], ["url", "/api/classes/rogue"], ["index", "rogue"]]
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[36mJob Create (0.3ms)[0m  [1m[32mINSERT INTO "jobs" ("name", "created_at", "updated_at", "url", "index") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Sorcerer"], ["created_at", "2020-05-26 23:29:29.297176"], ["updated_at", "2020-05-26 23:29:29.297176"], ["url", "/api/classes/sorcerer"], ["index", "sorcerer"]]
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[36mJob Create (0.3ms)[0m  [1m[32mINSERT INTO "jobs" ("name", "created_at", "updated_at", "url", "index") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Warlock"], ["created_at", "2020-05-26 23:29:29.300654"], ["updated_at", "2020-05-26 23:29:29.300654"], ["url", "/api/classes/warlock"], ["index", "warlock"]]
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[36mJob Create (0.3ms)[0m  [1m[32mINSERT INTO "jobs" ("name", "created_at", "updated_at", "url", "index") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Wizard"], ["created_at", "2020-05-26 23:29:29.304231"], ["updated_at", "2020-05-26 23:29:29.304231"], ["url", "/api/classes/wizard"], ["index", "wizard"]]
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  Rendering jobs/index.html.erb within layouts/application
+  [1m[36mJob Load (0.2ms)[0m  [1m[34mSELECT "jobs".* FROM "jobs"[0m
+  ↳ app/views/jobs/index.html.erb:1
+  Rendered jobs/index.html.erb within layouts/application (Duration: 1.9ms | Allocations: 1240)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 283ms (Views: 6.8ms | ActiveRecord: 21.9ms | Allocations: 39293)
+
+
+Started GET "/jobs/410" for ::1 at 2020-05-26 19:29:30 -0400
+Processing by JobsController#show as HTML
+  Parameters: {"id"=>"410"}
+  [1m[36mJob Load (0.1ms)[0m  [1m[34mSELECT "jobs".* FROM "jobs" WHERE "jobs"."id" = ? LIMIT ?[0m  [["id", 410], ["LIMIT", 1]]
+  ↳ app/controllers/jobs_controller.rb:22:in `find_job'
+  Rendering jobs/show.html.erb within layouts/application
+  Rendered jobs/show.html.erb within layouts/application (Duration: 0.0ms | Allocations: 5)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 8ms (Views: 6.4ms | ActiveRecord: 0.1ms | Allocations: 4659)
+
+
+Started GET "/jobs/410" for ::1 at 2020-05-26 19:30:55 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by JobsController#show as HTML
+  Parameters: {"id"=>"410"}
+  [1m[36mJob Load (0.1ms)[0m  [1m[34mSELECT "jobs".* FROM "jobs" WHERE "jobs"."id" = ? LIMIT ?[0m  [["id", 410], ["LIMIT", 1]]
+  ↳ app/controllers/jobs_controller.rb:22:in `find_job'
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 0.6ms | Allocations: 7321)
+
+
+  
+URI::InvalidURIError (bad URI(is not URI?): "/\#{self.url}"):
+  
+app/models/job.rb:14:in `job_details'
+app/controllers/jobs_controller.rb:12:in `show'
+Started GET "/jobs/410" for ::1 at 2020-05-26 19:31:17 -0400
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by JobsController#show as HTML
+  Parameters: {"id"=>"410"}
+  [1m[36mJob Load (0.1ms)[0m  [1m[34mSELECT "jobs".* FROM "jobs" WHERE "jobs"."id" = ? LIMIT ?[0m  [["id", 410], ["LIMIT", 1]]
+  ↳ app/controllers/jobs_controller.rb:22:in `find_job'
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 0.9ms | Allocations: 7368)
+
+
+  
+URI::InvalidURIError (bad URI(is not URI?): "\#{self.url}"):
+  
+app/models/job.rb:14:in `job_details'
+app/controllers/jobs_controller.rb:12:in `show'
+Started PUT "/__web_console/repl_sessions/6127fb967b9c276a219a90c0539d73b1" for ::1 at 2020-05-26 19:31:21 -0400
+Started PUT "/__web_console/repl_sessions/6127fb967b9c276a219a90c0539d73b1" for ::1 at 2020-05-26 19:31:22 -0400
+Started PUT "/__web_console/repl_sessions/6127fb967b9c276a219a90c0539d73b1" for ::1 at 2020-05-26 19:31:22 -0400
+Started PUT "/__web_console/repl_sessions/6127fb967b9c276a219a90c0539d73b1" for ::1 at 2020-05-26 19:31:35 -0400
+Started PUT "/__web_console/repl_sessions/6127fb967b9c276a219a90c0539d73b1" for ::1 at 2020-05-26 19:31:36 -0400
+Started PUT "/__web_console/repl_sessions/6127fb967b9c276a219a90c0539d73b1" for ::1 at 2020-05-26 19:31:37 -0400
+Started PUT "/__web_console/repl_sessions/6127fb967b9c276a219a90c0539d73b1" for ::1 at 2020-05-26 19:31:46 -0400
+Started PUT "/__web_console/repl_sessions/6127fb967b9c276a219a90c0539d73b1" for ::1 at 2020-05-26 19:31:52 -0400
+Started PUT "/__web_console/repl_sessions/6127fb967b9c276a219a90c0539d73b1" for ::1 at 2020-05-26 19:31:54 -0400
+Started GET "/jobs/410" for ::1 at 2020-05-26 19:32:29 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by JobsController#show as HTML
+  Parameters: {"id"=>"410"}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms | Allocations: 1440)
+
+
+  
+SyntaxError (/Users/srishtinath/Development/code/Mod2/mod2-project/dndcharactergeneration/app/models/job.rb:15: syntax error, unexpected end, expecting ')'
+    end
+    ^~~):
+  
+app/models/job.rb:15: syntax error, unexpected end, expecting ')'
+app/models/job.rb:15: syntax error, unexpected end, expecting ')'
+app/models/job.rb:15: syntax error, unexpected end, expecting ')'
+app/controllers/jobs_controller.rb:22:in `find_job'
+Started GET "/jobs/410" for ::1 at 2020-05-26 19:33:07 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by JobsController#show as HTML
+  Parameters: {"id"=>"410"}
+  [1m[36mJob Load (0.1ms)[0m  [1m[34mSELECT "jobs".* FROM "jobs" WHERE "jobs"."id" = ? LIMIT ?[0m  [["id", 410], ["LIMIT", 1]]
+  ↳ app/controllers/jobs_controller.rb:22:in `find_job'
+  Rendering jobs/show.html.erb within layouts/application
+  Rendered jobs/show.html.erb within layouts/application (Duration: 0.1ms | Allocations: 4)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 211ms (Views: 26.4ms | ActiveRecord: 0.6ms | Allocations: 11649)
+
+
+Started GET "/jobs/410" for ::1 at 2020-05-26 19:33:29 -0400
+Processing by JobsController#show as HTML
+  Parameters: {"id"=>"410"}
+  [1m[36mJob Load (0.2ms)[0m  [1m[34mSELECT "jobs".* FROM "jobs" WHERE "jobs"."id" = ? LIMIT ?[0m  [["id", 410], ["LIMIT", 1]]
+  ↳ app/controllers/jobs_controller.rb:22:in `find_job'
+  Rendering jobs/show.html.erb within layouts/application
+  Rendered jobs/show.html.erb within layouts/application (Duration: 0.9ms | Allocations: 321)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 154ms (Views: 12.1ms | ActiveRecord: 0.2ms | Allocations: 6784)
+
+
+Started GET "/jobs/410" for ::1 at 2020-05-26 19:33:56 -0400
+Processing by JobsController#show as HTML
+  Parameters: {"id"=>"410"}
+  [1m[36mJob Load (0.2ms)[0m  [1m[34mSELECT "jobs".* FROM "jobs" WHERE "jobs"."id" = ? LIMIT ?[0m  [["id", 410], ["LIMIT", 1]]
+  ↳ app/controllers/jobs_controller.rb:22:in `find_job'
+  Rendering jobs/show.html.erb within layouts/application
+  Rendered jobs/show.html.erb within layouts/application (Duration: 0.7ms | Allocations: 244)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 154ms (Views: 9.4ms | ActiveRecord: 0.2ms | Allocations: 6708)
+
+
+Started GET "/jobs/410" for ::1 at 2020-05-26 19:35:39 -0400
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by JobsController#show as HTML
+  Parameters: {"id"=>"410"}
+  [1m[36mJob Load (0.1ms)[0m  [1m[34mSELECT "jobs".* FROM "jobs" WHERE "jobs"."id" = ? LIMIT ?[0m  [["id", 410], ["LIMIT", 1]]
+  ↳ app/controllers/jobs_controller.rb:22:in `find_job'
+  Rendering jobs/show.html.erb within layouts/application
+  Rendered jobs/show.html.erb within layouts/application (Duration: 0.9ms | Allocations: 976)
+Completed 500 Internal Server Error in 205ms (ActiveRecord: 0.6ms | Allocations: 9740)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <% @job_details["proficiency_choices"].each |prof} %>
+<%= prof["name"] %>
+<% end %>
+
+):
+1:    <% @job_details["proficiency_choices"].each |prof} %>
+2:    <%= prof["name"] %>
+3:    <% end %>
+  
+app/views/jobs/show.html.erb:1: syntax error, unexpected tSTRING_DEND, expecting end
+app/views/jobs/show.html.erb:5: syntax error, unexpected end, expecting end-of-input
+app/views/jobs/show.html.erb:1: syntax error, unexpected tSTRING_DEND, expecting end
+app/views/jobs/show.html.erb:5: syntax error, unexpected end, expecting end-of-input
+app/views/jobs/show.html.erb:1: syntax error, unexpected tSTRING_DEND, expecting end
+app/views/jobs/show.html.erb:5: syntax error, unexpected end, expecting end-of-input
+app/views/jobs/show.html.erb:1: syntax error, unexpected tSTRING_DEND, expecting end
+app/views/jobs/show.html.erb:5: syntax error, unexpected end, expecting end-of-input
+app/views/jobs/show.html.erb:1: syntax error, unexpected tSTRING_DEND, expecting end
+app/views/jobs/show.html.erb:5: syntax error, unexpected end, expecting end-of-input
+app/views/jobs/show.html.erb:1: syntax error, unexpected tSTRING_DEND, expecting end
+app/views/jobs/show.html.erb:5: syntax error, unexpected end, expecting end-of-input
+Started GET "/jobs/410" for ::1 at 2020-05-26 19:35:47 -0400
+Processing by JobsController#show as HTML
+  Parameters: {"id"=>"410"}
+  [1m[36mJob Load (0.4ms)[0m  [1m[34mSELECT "jobs".* FROM "jobs" WHERE "jobs"."id" = ? LIMIT ?[0m  [["id", 410], ["LIMIT", 1]]
+  ↳ app/controllers/jobs_controller.rb:22:in `find_job'
+  Rendering jobs/show.html.erb within layouts/application
+  Rendered jobs/show.html.erb within layouts/application (Duration: 0.8ms | Allocations: 1021)
+Completed 500 Internal Server Error in 192ms (ActiveRecord: 0.4ms | Allocations: 3849)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <% @job_details["proficiency_choices"].each |prof| %>
+<%= prof["name"] %>
+<% end %>
+
+):
+1:    <% @job_details["proficiency_choices"].each |prof| %>
+2:    <%= prof["name"] %>
+3:    <% end %>
+  
+app/views/jobs/show.html.erb:5: syntax error, unexpected end, expecting end-of-input
+app/views/jobs/show.html.erb:5: syntax error, unexpected end, expecting end-of-input
+app/views/jobs/show.html.erb:5: syntax error, unexpected end, expecting end-of-input
+app/views/jobs/show.html.erb:5: syntax error, unexpected end, expecting end-of-input
+app/views/jobs/show.html.erb:5: syntax error, unexpected end, expecting end-of-input
+app/views/jobs/show.html.erb:5: syntax error, unexpected end, expecting end-of-input
+Started PUT "/__web_console/repl_sessions/61776d7ec47324b014d791c84f2402d2" for ::1 at 2020-05-26 19:35:57 -0400
+Started PUT "/__web_console/repl_sessions/61776d7ec47324b014d791c84f2402d2" for ::1 at 2020-05-26 19:35:57 -0400
+Started GET "/jobs/410" for ::1 at 2020-05-26 19:36:15 -0400
+Processing by JobsController#show as HTML
+  Parameters: {"id"=>"410"}
+  [1m[36mJob Load (0.2ms)[0m  [1m[34mSELECT "jobs".* FROM "jobs" WHERE "jobs"."id" = ? LIMIT ?[0m  [["id", 410], ["LIMIT", 1]]
+  ↳ app/controllers/jobs_controller.rb:22:in `find_job'
+  Rendering jobs/show.html.erb within layouts/application
+  Rendered jobs/show.html.erb within layouts/application (Duration: 0.8ms | Allocations: 124)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 152ms (Views: 23.1ms | ActiveRecord: 0.2ms | Allocations: 6593)
+
+
+Started GET "/jobs/410" for ::1 at 2020-05-26 19:36:24 -0400
+Processing by JobsController#show as HTML
+  Parameters: {"id"=>"410"}
+  [1m[36mJob Load (0.2ms)[0m  [1m[34mSELECT "jobs".* FROM "jobs" WHERE "jobs"."id" = ? LIMIT ?[0m  [["id", 410], ["LIMIT", 1]]
+  ↳ app/controllers/jobs_controller.rb:22:in `find_job'
+  Rendering jobs/show.html.erb within layouts/application
+  Rendered jobs/show.html.erb within layouts/application (Duration: 0.1ms | Allocations: 4)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 139ms (Views: 8.8ms | ActiveRecord: 0.2ms | Allocations: 5547)
+
+
+Started GET "/jobs/410" for ::1 at 2020-05-26 19:36:37 -0400
+Processing by JobsController#show as HTML
+  Parameters: {"id"=>"410"}
+  [1m[36mJob Load (0.1ms)[0m  [1m[34mSELECT "jobs".* FROM "jobs" WHERE "jobs"."id" = ? LIMIT ?[0m  [["id", 410], ["LIMIT", 1]]
+  ↳ app/controllers/jobs_controller.rb:22:in `find_job'
+  Rendering jobs/show.html.erb within layouts/application
+  Rendered jobs/show.html.erb within layouts/application (Duration: 1.2ms | Allocations: 278)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 153ms (Views: 11.3ms | ActiveRecord: 0.1ms | Allocations: 6743)
+
+
+Started GET "/jobs/410" for ::1 at 2020-05-26 19:37:08 -0400
+Processing by JobsController#show as HTML
+  Parameters: {"id"=>"410"}
+  [1m[36mJob Load (0.3ms)[0m  [1m[34mSELECT "jobs".* FROM "jobs" WHERE "jobs"."id" = ? LIMIT ?[0m  [["id", 410], ["LIMIT", 1]]
+  ↳ app/controllers/jobs_controller.rb:22:in `find_job'
+  Rendering jobs/show.html.erb within layouts/application
+  Rendered jobs/show.html.erb within layouts/application (Duration: 23.7ms | Allocations: 995)
+Completed 500 Internal Server Error in 214ms (ActiveRecord: 0.3ms | Allocations: 3818)
+
+
+  
+ActionView::Template::Error (no implicit conversion of String into Integer):
+    1: <% @job_details["proficiency_choices"]["from"].each do |prof| %>
+    2: <%= prof["name"] %>
+    3: <% end %>
+  
+app/views/jobs/show.html.erb:1:in `[]'
+app/views/jobs/show.html.erb:1
+Started GET "/jobs" for ::1 at 2020-05-26 19:37:34 -0400
+Processing by JobsController#index as HTML
+  [1m[36mJob Destroy (1.4ms)[0m  [1m[31mDELETE FROM "jobs"[0m
+  ↳ lib/dnd_api.rb:11:in `classes'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[36mJob Create (0.6ms)[0m  [1m[32mINSERT INTO "jobs" ("name", "created_at", "updated_at", "url", "index") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Barbarian"], ["created_at", "2020-05-26 23:37:34.428193"], ["updated_at", "2020-05-26 23:37:34.428193"], ["url", "/api/classes/barbarian"], ["index", "barbarian"]]
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (2.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[36mJob Create (0.4ms)[0m  [1m[32mINSERT INTO "jobs" ("name", "created_at", "updated_at", "url", "index") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Bard"], ["created_at", "2020-05-26 23:37:34.436890"], ["updated_at", "2020-05-26 23:37:34.436890"], ["url", "/api/classes/bard"], ["index", "bard"]]
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[36mJob Create (0.5ms)[0m  [1m[32mINSERT INTO "jobs" ("name", "created_at", "updated_at", "url", "index") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Cleric"], ["created_at", "2020-05-26 23:37:34.441729"], ["updated_at", "2020-05-26 23:37:34.441729"], ["url", "/api/classes/cleric"], ["index", "cleric"]]
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[36mJob Create (0.3ms)[0m  [1m[32mINSERT INTO "jobs" ("name", "created_at", "updated_at", "url", "index") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Druid"], ["created_at", "2020-05-26 23:37:34.446999"], ["updated_at", "2020-05-26 23:37:34.446999"], ["url", "/api/classes/druid"], ["index", "druid"]]
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[36mJob Create (0.3ms)[0m  [1m[32mINSERT INTO "jobs" ("name", "created_at", "updated_at", "url", "index") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Fighter"], ["created_at", "2020-05-26 23:37:34.451145"], ["updated_at", "2020-05-26 23:37:34.451145"], ["url", "/api/classes/fighter"], ["index", "fighter"]]
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[36mJob Create (0.3ms)[0m  [1m[32mINSERT INTO "jobs" ("name", "created_at", "updated_at", "url", "index") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Monk"], ["created_at", "2020-05-26 23:37:34.455102"], ["updated_at", "2020-05-26 23:37:34.455102"], ["url", "/api/classes/monk"], ["index", "monk"]]
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[36mJob Create (0.3ms)[0m  [1m[32mINSERT INTO "jobs" ("name", "created_at", "updated_at", "url", "index") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Paladin"], ["created_at", "2020-05-26 23:37:34.458801"], ["updated_at", "2020-05-26 23:37:34.458801"], ["url", "/api/classes/paladin"], ["index", "paladin"]]
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[36mJob Create (0.3ms)[0m  [1m[32mINSERT INTO "jobs" ("name", "created_at", "updated_at", "url", "index") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Ranger"], ["created_at", "2020-05-26 23:37:34.476530"], ["updated_at", "2020-05-26 23:37:34.476530"], ["url", "/api/classes/ranger"], ["index", "ranger"]]
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[36mJob Create (0.5ms)[0m  [1m[32mINSERT INTO "jobs" ("name", "created_at", "updated_at", "url", "index") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Rogue"], ["created_at", "2020-05-26 23:37:34.480741"], ["updated_at", "2020-05-26 23:37:34.480741"], ["url", "/api/classes/rogue"], ["index", "rogue"]]
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[36mJob Create (0.4ms)[0m  [1m[32mINSERT INTO "jobs" ("name", "created_at", "updated_at", "url", "index") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Sorcerer"], ["created_at", "2020-05-26 23:37:34.485916"], ["updated_at", "2020-05-26 23:37:34.485916"], ["url", "/api/classes/sorcerer"], ["index", "sorcerer"]]
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[36mJob Create (0.4ms)[0m  [1m[32mINSERT INTO "jobs" ("name", "created_at", "updated_at", "url", "index") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Warlock"], ["created_at", "2020-05-26 23:37:34.491765"], ["updated_at", "2020-05-26 23:37:34.491765"], ["url", "/api/classes/warlock"], ["index", "warlock"]]
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[36mJob Create (0.3ms)[0m  [1m[32mINSERT INTO "jobs" ("name", "created_at", "updated_at", "url", "index") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Wizard"], ["created_at", "2020-05-26 23:37:34.498888"], ["updated_at", "2020-05-26 23:37:34.498888"], ["url", "/api/classes/wizard"], ["index", "wizard"]]
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  Rendering jobs/index.html.erb within layouts/application
+  [1m[36mJob Load (0.3ms)[0m  [1m[34mSELECT "jobs".* FROM "jobs"[0m
+  ↳ app/views/jobs/index.html.erb:1
+  Rendered jobs/index.html.erb within layouts/application (Duration: 6.0ms | Allocations: 3476)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 236ms (Views: 24.2ms | ActiveRecord: 21.7ms | Allocations: 63247)
+
+
+Started GET "/jobs/421" for ::1 at 2020-05-26 19:37:35 -0400
+Processing by JobsController#show as HTML
+  Parameters: {"id"=>"421"}
+  [1m[36mJob Load (0.1ms)[0m  [1m[34mSELECT "jobs".* FROM "jobs" WHERE "jobs"."id" = ? LIMIT ?[0m  [["id", 421], ["LIMIT", 1]]
+  ↳ app/controllers/jobs_controller.rb:22:in `find_job'
+  Rendering jobs/show.html.erb within layouts/application
+  Rendered jobs/show.html.erb within layouts/application (Duration: 0.5ms | Allocations: 124)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 151ms (Views: 7.2ms | ActiveRecord: 0.1ms | Allocations: 5678)
+
+
+Started GET "/jobs/421" for ::1 at 2020-05-26 19:37:49 -0400
+Processing by JobsController#show as HTML
+  Parameters: {"id"=>"421"}
+  [1m[36mJob Load (0.3ms)[0m  [1m[34mSELECT "jobs".* FROM "jobs" WHERE "jobs"."id" = ? LIMIT ?[0m  [["id", 421], ["LIMIT", 1]]
+  ↳ app/controllers/jobs_controller.rb:22:in `find_job'
+  Rendering jobs/show.html.erb within layouts/application
+  Rendered jobs/show.html.erb within layouts/application (Duration: 0.5ms | Allocations: 160)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 138ms (Views: 9.1ms | ActiveRecord: 0.3ms | Allocations: 6497)
+
+
+Started GET "/jobs/421" for ::1 at 2020-05-26 19:39:31 -0400
+Processing by JobsController#show as HTML
+  Parameters: {"id"=>"421"}
+  [1m[36mJob Load (0.3ms)[0m  [1m[34mSELECT "jobs".* FROM "jobs" WHERE "jobs"."id" = ? LIMIT ?[0m  [["id", 421], ["LIMIT", 1]]
+  ↳ app/controllers/jobs_controller.rb:22:in `find_job'
+  Rendering jobs/show.html.erb within layouts/application
+  Rendered jobs/show.html.erb within layouts/application (Duration: 0.5ms | Allocations: 999)
+Completed 500 Internal Server Error in 228ms (ActiveRecord: 0.3ms | Allocations: 3693)
+
+
+  
+ActionView::Template::Error (no implicit conversion of String into Integer):
+    1: <%= @job_details["proficiency_choices"]["from"] %>
+    2: 
+    3: # .each do |prof| %>
+    4:  <%# <%= prof %> 
+  
+app/views/jobs/show.html.erb:1:in `[]'
+app/views/jobs/show.html.erb:1
+Started GET "/jobs" for ::1 at 2020-05-26 19:39:55 -0400
+Processing by JobsController#index as HTML
+  [1m[36mJob Destroy (1.0ms)[0m  [1m[31mDELETE FROM "jobs"[0m
+  ↳ lib/dnd_api.rb:11:in `classes'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[36mJob Create (0.5ms)[0m  [1m[32mINSERT INTO "jobs" ("name", "created_at", "updated_at", "url", "index") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Barbarian"], ["created_at", "2020-05-26 23:39:55.220993"], ["updated_at", "2020-05-26 23:39:55.220993"], ["url", "/api/classes/barbarian"], ["index", "barbarian"]]
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[36mJob Create (0.3ms)[0m  [1m[32mINSERT INTO "jobs" ("name", "created_at", "updated_at", "url", "index") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Bard"], ["created_at", "2020-05-26 23:39:55.227093"], ["updated_at", "2020-05-26 23:39:55.227093"], ["url", "/api/classes/bard"], ["index", "bard"]]
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[36mJob Create (0.3ms)[0m  [1m[32mINSERT INTO "jobs" ("name", "created_at", "updated_at", "url", "index") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Cleric"], ["created_at", "2020-05-26 23:39:55.231226"], ["updated_at", "2020-05-26 23:39:55.231226"], ["url", "/api/classes/cleric"], ["index", "cleric"]]
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[36mJob Create (0.3ms)[0m  [1m[32mINSERT INTO "jobs" ("name", "created_at", "updated_at", "url", "index") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Druid"], ["created_at", "2020-05-26 23:39:55.235277"], ["updated_at", "2020-05-26 23:39:55.235277"], ["url", "/api/classes/druid"], ["index", "druid"]]
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[36mJob Create (0.3ms)[0m  [1m[32mINSERT INTO "jobs" ("name", "created_at", "updated_at", "url", "index") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Fighter"], ["created_at", "2020-05-26 23:39:55.239329"], ["updated_at", "2020-05-26 23:39:55.239329"], ["url", "/api/classes/fighter"], ["index", "fighter"]]
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[36mJob Create (0.3ms)[0m  [1m[32mINSERT INTO "jobs" ("name", "created_at", "updated_at", "url", "index") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Monk"], ["created_at", "2020-05-26 23:39:55.243392"], ["updated_at", "2020-05-26 23:39:55.243392"], ["url", "/api/classes/monk"], ["index", "monk"]]
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[36mJob Create (0.4ms)[0m  [1m[32mINSERT INTO "jobs" ("name", "created_at", "updated_at", "url", "index") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Paladin"], ["created_at", "2020-05-26 23:39:55.247512"], ["updated_at", "2020-05-26 23:39:55.247512"], ["url", "/api/classes/paladin"], ["index", "paladin"]]
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[36mJob Create (0.3ms)[0m  [1m[32mINSERT INTO "jobs" ("name", "created_at", "updated_at", "url", "index") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Ranger"], ["created_at", "2020-05-26 23:39:55.251743"], ["updated_at", "2020-05-26 23:39:55.251743"], ["url", "/api/classes/ranger"], ["index", "ranger"]]
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[36mJob Create (0.4ms)[0m  [1m[32mINSERT INTO "jobs" ("name", "created_at", "updated_at", "url", "index") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Rogue"], ["created_at", "2020-05-26 23:39:55.270572"], ["updated_at", "2020-05-26 23:39:55.270572"], ["url", "/api/classes/rogue"], ["index", "rogue"]]
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[36mJob Create (0.6ms)[0m  [1m[32mINSERT INTO "jobs" ("name", "created_at", "updated_at", "url", "index") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Sorcerer"], ["created_at", "2020-05-26 23:39:55.275711"], ["updated_at", "2020-05-26 23:39:55.275711"], ["url", "/api/classes/sorcerer"], ["index", "sorcerer"]]
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[36mJob Create (0.4ms)[0m  [1m[32mINSERT INTO "jobs" ("name", "created_at", "updated_at", "url", "index") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Warlock"], ["created_at", "2020-05-26 23:39:55.281690"], ["updated_at", "2020-05-26 23:39:55.281690"], ["url", "/api/classes/warlock"], ["index", "warlock"]]
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[36mJob Create (0.4ms)[0m  [1m[32mINSERT INTO "jobs" ("name", "created_at", "updated_at", "url", "index") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Wizard"], ["created_at", "2020-05-26 23:39:55.286544"], ["updated_at", "2020-05-26 23:39:55.286544"], ["url", "/api/classes/wizard"], ["index", "wizard"]]
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  Rendering jobs/index.html.erb within layouts/application
+  [1m[36mJob Load (0.1ms)[0m  [1m[34mSELECT "jobs".* FROM "jobs"[0m
+  ↳ app/views/jobs/index.html.erb:1
+  Rendered jobs/index.html.erb within layouts/application (Duration: 3.0ms | Allocations: 2546)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 246ms (Views: 26.7ms | ActiveRecord: 19.9ms | Allocations: 66389)
+
+
+Started GET "/jobs/439" for ::1 at 2020-05-26 19:40:20 -0400
+Processing by JobsController#show as HTML
+  Parameters: {"id"=>"439"}
+  [1m[36mJob Load (0.2ms)[0m  [1m[34mSELECT "jobs".* FROM "jobs" WHERE "jobs"."id" = ? LIMIT ?[0m  [["id", 439], ["LIMIT", 1]]
+  ↳ app/controllers/jobs_controller.rb:22:in `find_job'
+  Rendering jobs/show.html.erb within layouts/application
+  Rendered jobs/show.html.erb within layouts/application (Duration: 0.7ms | Allocations: 166)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 151ms (Views: 7.7ms | ActiveRecord: 0.2ms | Allocations: 5719)
+
+
+Started GET "/jobs/439" for ::1 at 2020-05-26 19:40:43 -0400
+Processing by JobsController#show as HTML
+  Parameters: {"id"=>"439"}
+  [1m[36mJob Load (0.3ms)[0m  [1m[34mSELECT "jobs".* FROM "jobs" WHERE "jobs"."id" = ? LIMIT ?[0m  [["id", 439], ["LIMIT", 1]]
+  ↳ app/controllers/jobs_controller.rb:22:in `find_job'
+  Rendering jobs/show.html.erb within layouts/application
+  Rendered jobs/show.html.erb within layouts/application (Duration: 0.6ms | Allocations: 161)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 139ms (Views: 10.4ms | ActiveRecord: 0.3ms | Allocations: 6493)
+
+
+Started GET "/jobs/439" for ::1 at 2020-05-26 19:41:28 -0400
+Processing by JobsController#show as HTML
+  Parameters: {"id"=>"439"}
+  [1m[36mJob Load (0.1ms)[0m  [1m[34mSELECT "jobs".* FROM "jobs" WHERE "jobs"."id" = ? LIMIT ?[0m  [["id", 439], ["LIMIT", 1]]
+  ↳ app/controllers/jobs_controller.rb:22:in `find_job'
+  Rendering jobs/show.html.erb within layouts/application
+  Rendered jobs/show.html.erb within layouts/application (Duration: 0.5ms | Allocations: 157)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 177ms (Views: 8.4ms | ActiveRecord: 0.1ms | Allocations: 6493)
+
+
+Started GET "/jobs/439" for ::1 at 2020-05-26 19:41:40 -0400
+Processing by JobsController#show as HTML
+  Parameters: {"id"=>"439"}
+  [1m[36mJob Load (0.3ms)[0m  [1m[34mSELECT "jobs".* FROM "jobs" WHERE "jobs"."id" = ? LIMIT ?[0m  [["id", 439], ["LIMIT", 1]]
+  ↳ app/controllers/jobs_controller.rb:22:in `find_job'
+  Rendering jobs/show.html.erb within layouts/application
+  Rendered jobs/show.html.erb within layouts/application (Duration: 0.6ms | Allocations: 161)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 148ms (Views: 9.6ms | ActiveRecord: 0.3ms | Allocations: 6506)
+
+
+Started GET "/jobs/439" for ::1 at 2020-05-26 19:42:13 -0400
+Processing by JobsController#show as HTML
+  Parameters: {"id"=>"439"}
+  [1m[36mJob Load (0.2ms)[0m  [1m[34mSELECT "jobs".* FROM "jobs" WHERE "jobs"."id" = ? LIMIT ?[0m  [["id", 439], ["LIMIT", 1]]
+  ↳ app/controllers/jobs_controller.rb:22:in `find_job'
+  Rendering jobs/show.html.erb within layouts/application
+  Rendered jobs/show.html.erb within layouts/application (Duration: 0.6ms | Allocations: 176)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 183ms (Views: 9.9ms | ActiveRecord: 0.2ms | Allocations: 6507)
+
+
+Started GET "/jobs/439" for ::1 at 2020-05-26 19:42:23 -0400
+Processing by JobsController#show as HTML
+  Parameters: {"id"=>"439"}
+  [1m[36mJob Load (0.1ms)[0m  [1m[34mSELECT "jobs".* FROM "jobs" WHERE "jobs"."id" = ? LIMIT ?[0m  [["id", 439], ["LIMIT", 1]]
+  ↳ app/controllers/jobs_controller.rb:22:in `find_job'
+  Rendering jobs/show.html.erb within layouts/application
+  Rendered jobs/show.html.erb within layouts/application (Duration: 0.5ms | Allocations: 182)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 135ms (Views: 9.8ms | ActiveRecord: 0.1ms | Allocations: 6515)
+
+
+Started GET "/jobs" for ::1 at 2020-05-26 19:42:28 -0400
+Processing by JobsController#index as HTML
+  [1m[36mJob Destroy (2.7ms)[0m  [1m[31mDELETE FROM "jobs"[0m
+  ↳ lib/dnd_api.rb:11:in `classes'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[36mJob Create (0.3ms)[0m  [1m[32mINSERT INTO "jobs" ("name", "created_at", "updated_at", "url", "index") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Barbarian"], ["created_at", "2020-05-26 23:42:28.298779"], ["updated_at", "2020-05-26 23:42:28.298779"], ["url", "/api/classes/barbarian"], ["index", "barbarian"]]
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (2.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[36mJob Create (0.5ms)[0m  [1m[32mINSERT INTO "jobs" ("name", "created_at", "updated_at", "url", "index") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Bard"], ["created_at", "2020-05-26 23:42:28.304356"], ["updated_at", "2020-05-26 23:42:28.304356"], ["url", "/api/classes/bard"], ["index", "bard"]]
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[36mJob Create (0.3ms)[0m  [1m[32mINSERT INTO "jobs" ("name", "created_at", "updated_at", "url", "index") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Cleric"], ["created_at", "2020-05-26 23:42:28.308699"], ["updated_at", "2020-05-26 23:42:28.308699"], ["url", "/api/classes/cleric"], ["index", "cleric"]]
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[36mJob Create (0.3ms)[0m  [1m[32mINSERT INTO "jobs" ("name", "created_at", "updated_at", "url", "index") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Druid"], ["created_at", "2020-05-26 23:42:28.312064"], ["updated_at", "2020-05-26 23:42:28.312064"], ["url", "/api/classes/druid"], ["index", "druid"]]
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[36mJob Create (0.3ms)[0m  [1m[32mINSERT INTO "jobs" ("name", "created_at", "updated_at", "url", "index") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Fighter"], ["created_at", "2020-05-26 23:42:28.316079"], ["updated_at", "2020-05-26 23:42:28.316079"], ["url", "/api/classes/fighter"], ["index", "fighter"]]
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[36mJob Create (0.4ms)[0m  [1m[32mINSERT INTO "jobs" ("name", "created_at", "updated_at", "url", "index") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Monk"], ["created_at", "2020-05-26 23:42:28.320212"], ["updated_at", "2020-05-26 23:42:28.320212"], ["url", "/api/classes/monk"], ["index", "monk"]]
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (1.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[36mJob Create (0.3ms)[0m  [1m[32mINSERT INTO "jobs" ("name", "created_at", "updated_at", "url", "index") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Paladin"], ["created_at", "2020-05-26 23:42:28.325178"], ["updated_at", "2020-05-26 23:42:28.325178"], ["url", "/api/classes/paladin"], ["index", "paladin"]]
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[36mJob Create (0.3ms)[0m  [1m[32mINSERT INTO "jobs" ("name", "created_at", "updated_at", "url", "index") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Ranger"], ["created_at", "2020-05-26 23:42:28.329156"], ["updated_at", "2020-05-26 23:42:28.329156"], ["url", "/api/classes/ranger"], ["index", "ranger"]]
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[36mJob Create (0.3ms)[0m  [1m[32mINSERT INTO "jobs" ("name", "created_at", "updated_at", "url", "index") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Rogue"], ["created_at", "2020-05-26 23:42:28.333406"], ["updated_at", "2020-05-26 23:42:28.333406"], ["url", "/api/classes/rogue"], ["index", "rogue"]]
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[36mJob Create (0.4ms)[0m  [1m[32mINSERT INTO "jobs" ("name", "created_at", "updated_at", "url", "index") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Sorcerer"], ["created_at", "2020-05-26 23:42:28.337859"], ["updated_at", "2020-05-26 23:42:28.337859"], ["url", "/api/classes/sorcerer"], ["index", "sorcerer"]]
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[36mJob Create (0.3ms)[0m  [1m[32mINSERT INTO "jobs" ("name", "created_at", "updated_at", "url", "index") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Warlock"], ["created_at", "2020-05-26 23:42:28.342269"], ["updated_at", "2020-05-26 23:42:28.342269"], ["url", "/api/classes/warlock"], ["index", "warlock"]]
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[36mJob Create (0.3ms)[0m  [1m[32mINSERT INTO "jobs" ("name", "created_at", "updated_at", "url", "index") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Wizard"], ["created_at", "2020-05-26 23:42:28.345698"], ["updated_at", "2020-05-26 23:42:28.345698"], ["url", "/api/classes/wizard"], ["index", "wizard"]]
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  Rendering jobs/index.html.erb within layouts/application
+  [1m[36mJob Load (0.1ms)[0m  [1m[34mSELECT "jobs".* FROM "jobs"[0m
+  ↳ app/views/jobs/index.html.erb:1
+  Rendered jobs/index.html.erb within layouts/application (Duration: 1.5ms | Allocations: 1218)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 198ms (Views: 6.0ms | ActiveRecord: 22.6ms | Allocations: 39176)
+
+

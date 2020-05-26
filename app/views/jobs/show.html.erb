@@ -1,0 +1,6 @@
+<h1>Choose <%= @job_details["proficiency_choices"][0]["choose"] %></h1>
+
+<% @job_details["proficiency_choices"][0]["from"].each do |prof| %>
+ <p><%= prof["name"] %></p>
+ <% end %>
+ 
