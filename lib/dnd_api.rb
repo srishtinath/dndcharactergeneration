@@ -14,10 +14,17 @@ class DndApi
             name["name"]
         end
     end
+
+    def abilities
+        @request_hash = self.class.get('/features').parsed_response
+        @request_hash["results"].map do |ability|
+            ability
+        end
+    end
 # byebug
 end
 
-# api = DndApi.new 
-# byebug
-# api.classes
-# byebug
+api = DndApi.new 
+byebug
+api.abilities
+byebug

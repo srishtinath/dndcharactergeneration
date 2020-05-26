@@ -5,3 +5,22 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+require 'dnd_api'
+
+@api = DndApi.new
+
+@jobs = @api.classes
+@abilities = @api.abilities
+
+@jobs.each do |name|
+    Job.create(name: name)
+end
+
+@abilities.each do |ability|
+    Ability.create(name: ability["name"])
+end
+# create_table "abilities", force: :cascade do |t|
+#     t.string "name"
+#     t.string "description"
+
