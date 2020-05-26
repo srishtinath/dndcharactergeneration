@@ -4,7 +4,6 @@ class JobsController < ApplicationController
 before_action :dnd_api
 
     def index
-        # byebug
         @jobs = @api.classes
     end
 
