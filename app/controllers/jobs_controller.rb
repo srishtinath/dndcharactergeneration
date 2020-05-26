@@ -14,8 +14,10 @@ before_action :find_job, only: [:show]
 
 private
     def dnd_api 
-        @api = DndApi.new
-        @api.classes
+        @jobs = DndApi.new
+        @jobs.classes
+        @abilities = DndApi.new
+        @abilities.abilities
     end
 
     def find_job

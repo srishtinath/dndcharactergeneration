@@ -14,6 +14,12 @@ class DndApi
         end
     end
 
+    def abilities
+        request_hash = self.class.get('/api/features'.parsed_response)
+        request_hash["results"].each do |result|
+            Ability.create(index: result["index"], name: result["name"], url: result["url"])
+        end
+    end
     
 end
 

@@ -4281,3 +4281,186 @@ Processing by JobsController#index as HTML
 Completed 200 OK in 198ms (Views: 6.0ms | ActiveRecord: 22.6ms | Allocations: 39176)
 
 
+Started GET "/jobs" for ::1 at 2020-05-26 19:44:05 -0400
+Processing by JobsController#index as HTML
+  [1m[36mJob Destroy (1.7ms)[0m  [1m[31mDELETE FROM "jobs"[0m
+  ↳ lib/dnd_api.rb:11:in `classes'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[36mJob Create (0.4ms)[0m  [1m[32mINSERT INTO "jobs" ("name", "created_at", "updated_at", "url", "index") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Barbarian"], ["created_at", "2020-05-26 23:44:06.088945"], ["updated_at", "2020-05-26 23:44:06.088945"], ["url", "/api/classes/barbarian"], ["index", "barbarian"]]
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[36mJob Create (0.7ms)[0m  [1m[32mINSERT INTO "jobs" ("name", "created_at", "updated_at", "url", "index") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Bard"], ["created_at", "2020-05-26 23:44:06.094274"], ["updated_at", "2020-05-26 23:44:06.094274"], ["url", "/api/classes/bard"], ["index", "bard"]]
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[36mJob Create (0.5ms)[0m  [1m[32mINSERT INTO "jobs" ("name", "created_at", "updated_at", "url", "index") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Cleric"], ["created_at", "2020-05-26 23:44:06.099348"], ["updated_at", "2020-05-26 23:44:06.099348"], ["url", "/api/classes/cleric"], ["index", "cleric"]]
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[36mJob Create (0.3ms)[0m  [1m[32mINSERT INTO "jobs" ("name", "created_at", "updated_at", "url", "index") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Druid"], ["created_at", "2020-05-26 23:44:06.103969"], ["updated_at", "2020-05-26 23:44:06.103969"], ["url", "/api/classes/druid"], ["index", "druid"]]
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[36mJob Create (0.6ms)[0m  [1m[32mINSERT INTO "jobs" ("name", "created_at", "updated_at", "url", "index") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Fighter"], ["created_at", "2020-05-26 23:44:06.108088"], ["updated_at", "2020-05-26 23:44:06.108088"], ["url", "/api/classes/fighter"], ["index", "fighter"]]
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[36mJob Create (0.3ms)[0m  [1m[32mINSERT INTO "jobs" ("name", "created_at", "updated_at", "url", "index") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Monk"], ["created_at", "2020-05-26 23:44:06.113120"], ["updated_at", "2020-05-26 23:44:06.113120"], ["url", "/api/classes/monk"], ["index", "monk"]]
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[36mJob Create (0.3ms)[0m  [1m[32mINSERT INTO "jobs" ("name", "created_at", "updated_at", "url", "index") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Paladin"], ["created_at", "2020-05-26 23:44:06.117596"], ["updated_at", "2020-05-26 23:44:06.117596"], ["url", "/api/classes/paladin"], ["index", "paladin"]]
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[36mJob Create (0.3ms)[0m  [1m[32mINSERT INTO "jobs" ("name", "created_at", "updated_at", "url", "index") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Ranger"], ["created_at", "2020-05-26 23:44:06.120698"], ["updated_at", "2020-05-26 23:44:06.120698"], ["url", "/api/classes/ranger"], ["index", "ranger"]]
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[36mJob Create (0.5ms)[0m  [1m[32mINSERT INTO "jobs" ("name", "created_at", "updated_at", "url", "index") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Rogue"], ["created_at", "2020-05-26 23:44:06.124747"], ["updated_at", "2020-05-26 23:44:06.124747"], ["url", "/api/classes/rogue"], ["index", "rogue"]]
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[36mJob Create (0.4ms)[0m  [1m[32mINSERT INTO "jobs" ("name", "created_at", "updated_at", "url", "index") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Sorcerer"], ["created_at", "2020-05-26 23:44:06.129199"], ["updated_at", "2020-05-26 23:44:06.129199"], ["url", "/api/classes/sorcerer"], ["index", "sorcerer"]]
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[36mJob Create (0.5ms)[0m  [1m[32mINSERT INTO "jobs" ("name", "created_at", "updated_at", "url", "index") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Warlock"], ["created_at", "2020-05-26 23:44:06.135419"], ["updated_at", "2020-05-26 23:44:06.135419"], ["url", "/api/classes/warlock"], ["index", "warlock"]]
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[36mJob Create (0.3ms)[0m  [1m[32mINSERT INTO "jobs" ("name", "created_at", "updated_at", "url", "index") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Wizard"], ["created_at", "2020-05-26 23:44:06.152916"], ["updated_at", "2020-05-26 23:44:06.152916"], ["url", "/api/classes/wizard"], ["index", "wizard"]]
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/dnd_api.rb:14:in `block in classes'
+  Rendering jobs/index.html.erb within layouts/application
+  [1m[36mJob Load (0.1ms)[0m  [1m[34mSELECT "jobs".* FROM "jobs"[0m
+  ↳ app/views/jobs/index.html.erb:1
+  Rendered jobs/index.html.erb within layouts/application (Duration: 1.7ms | Allocations: 1879)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 257ms (Views: 18.1ms | ActiveRecord: 21.2ms | Allocations: 77982)
+
+
+Started GET "/jobs/466" for ::1 at 2020-05-26 19:44:08 -0400
+Processing by JobsController#show as HTML
+  Parameters: {"id"=>"466"}
+  [1m[36mJob Load (0.1ms)[0m  [1m[34mSELECT "jobs".* FROM "jobs" WHERE "jobs"."id" = ? LIMIT ?[0m  [["id", 466], ["LIMIT", 1]]
+  ↳ app/controllers/jobs_controller.rb:22:in `find_job'
+  Rendering jobs/show.html.erb within layouts/application
+  Rendered jobs/show.html.erb within layouts/application (Duration: 0.1ms | Allocations: 18)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 158ms (Views: 8.9ms | ActiveRecord: 0.1ms | Allocations: 5435)
+
+
+Started GET "/jobs/468" for ::1 at 2020-05-26 19:44:15 -0400
+Processing by JobsController#show as HTML
+  Parameters: {"id"=>"468"}
+  [1m[36mJob Load (0.1ms)[0m  [1m[34mSELECT "jobs".* FROM "jobs" WHERE "jobs"."id" = ? LIMIT ?[0m  [["id", 468], ["LIMIT", 1]]
+  ↳ app/controllers/jobs_controller.rb:22:in `find_job'
+  Rendering jobs/show.html.erb within layouts/application
+  Rendered jobs/show.html.erb within layouts/application (Duration: 0.1ms | Allocations: 18)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 167ms (Views: 7.7ms | ActiveRecord: 0.1ms | Allocations: 5435)
+
+
+Started GET "/jobs/465" for ::1 at 2020-05-26 19:44:17 -0400
+Processing by JobsController#show as HTML
+  Parameters: {"id"=>"465"}
+  [1m[36mJob Load (0.1ms)[0m  [1m[34mSELECT "jobs".* FROM "jobs" WHERE "jobs"."id" = ? LIMIT ?[0m  [["id", 465], ["LIMIT", 1]]
+  ↳ app/controllers/jobs_controller.rb:22:in `find_job'
+  Rendering jobs/show.html.erb within layouts/application
+  Rendered jobs/show.html.erb within layouts/application (Duration: 0.1ms | Allocations: 28)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 165ms (Views: 8.1ms | ActiveRecord: 0.1ms | Allocations: 5486)
+
+
+Started GET "/jobs/461" for ::1 at 2020-05-26 19:44:22 -0400
+Processing by JobsController#show as HTML
+  Parameters: {"id"=>"461"}
+  [1m[36mJob Load (0.1ms)[0m  [1m[34mSELECT "jobs".* FROM "jobs" WHERE "jobs"."id" = ? LIMIT ?[0m  [["id", 461], ["LIMIT", 1]]
+  ↳ app/controllers/jobs_controller.rb:22:in `find_job'
+  Rendering jobs/show.html.erb within layouts/application
+  Rendered jobs/show.html.erb within layouts/application (Duration: 0.1ms | Allocations: 22)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 157ms (Views: 7.7ms | ActiveRecord: 0.1ms | Allocations: 5442)
+
+
+Started GET "/jobs/458" for ::1 at 2020-05-26 19:44:26 -0400
+Processing by JobsController#show as HTML
+  Parameters: {"id"=>"458"}
+  [1m[36mJob Load (0.1ms)[0m  [1m[34mSELECT "jobs".* FROM "jobs" WHERE "jobs"."id" = ? LIMIT ?[0m  [["id", 458], ["LIMIT", 1]]
+  ↳ app/controllers/jobs_controller.rb:22:in `find_job'
+  Rendering jobs/show.html.erb within layouts/application
+  Rendered jobs/show.html.erb within layouts/application (Duration: 0.2ms | Allocations: 42)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 147ms (Views: 8.4ms | ActiveRecord: 0.1ms | Allocations: 5588)
+
+
+Started GET "/jobs/460" for ::1 at 2020-05-26 19:44:31 -0400
+Processing by JobsController#show as HTML
+  Parameters: {"id"=>"460"}
+  [1m[36mJob Load (0.1ms)[0m  [1m[34mSELECT "jobs".* FROM "jobs" WHERE "jobs"."id" = ? LIMIT ?[0m  [["id", 460], ["LIMIT", 1]]
+  ↳ app/controllers/jobs_controller.rb:22:in `find_job'
+  Rendering jobs/show.html.erb within layouts/application
+  Rendered jobs/show.html.erb within layouts/application (Duration: 0.2ms | Allocations: 22)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 137ms (Views: 9.3ms | ActiveRecord: 0.1ms | Allocations: 5496)
+
+
+Started GET "/jobs/459" for ::1 at 2020-05-26 19:44:33 -0400
+Processing by JobsController#show as HTML
+  Parameters: {"id"=>"459"}
+  [1m[36mJob Load (0.1ms)[0m  [1m[34mSELECT "jobs".* FROM "jobs" WHERE "jobs"."id" = ? LIMIT ?[0m  [["id", 459], ["LIMIT", 1]]
+  ↳ app/controllers/jobs_controller.rb:22:in `find_job'
+  Rendering jobs/show.html.erb within layouts/application
+  Rendered jobs/show.html.erb within layouts/application (Duration: 0.1ms | Allocations: 16)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 140ms (Views: 9.2ms | ActiveRecord: 0.1ms | Allocations: 5425)
+
+
+Started GET "/jobs/463" for ::1 at 2020-05-26 19:46:12 -0400
+Processing by JobsController#show as HTML
+  Parameters: {"id"=>"463"}
+  [1m[36mJob Load (0.1ms)[0m  [1m[34mSELECT "jobs".* FROM "jobs" WHERE "jobs"."id" = ? LIMIT ?[0m  [["id", 463], ["LIMIT", 1]]
+  ↳ app/controllers/jobs_controller.rb:22:in `find_job'
+  Rendering jobs/show.html.erb within layouts/application
+  Rendered jobs/show.html.erb within layouts/application (Duration: 0.1ms | Allocations: 18)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 261ms (Views: 41.7ms | ActiveRecord: 0.1ms | Allocations: 5433)
+
+
+Started GET "/jobs/457" for ::1 at 2020-05-26 19:46:14 -0400
+Processing by JobsController#show as HTML
+  Parameters: {"id"=>"457"}
+  [1m[36mJob Load (0.2ms)[0m  [1m[34mSELECT "jobs".* FROM "jobs" WHERE "jobs"."id" = ? LIMIT ?[0m  [["id", 457], ["LIMIT", 1]]
+  ↳ app/controllers/jobs_controller.rb:22:in `find_job'
+  Rendering jobs/show.html.erb within layouts/application
+  Rendered jobs/show.html.erb within layouts/application (Duration: 0.2ms | Allocations: 18)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 164ms (Views: 8.6ms | ActiveRecord: 0.2ms | Allocations: 5426)
+
+
