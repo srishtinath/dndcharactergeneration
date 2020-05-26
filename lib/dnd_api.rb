@@ -5,22 +5,18 @@ class DndApi
     include HTTParty
     format :json
 
-    base_uri 'https://www.dnd5eapi.co/api'
+    base_uri 'https://www.dnd5eapi.co'
 
     def classes
-        Job.delete_all
-        @request_hash = self.class.get('/classes').parsed_response
-        @request_hash["results"].each do |result|
+        request_hash = self.class.get('/api/classes').parsed_response
+        request_hash["results"].each do |result|
             Job.create(index: result["index"], name: result["name"], url: result["url"])
         end
     end
 
-    # def class_details(job)
-    #     @class_info = Job.find(index: job)
-    #     @class_info.each
-    #     @class_info["results"]["url"]
-    #     @class_hash = 
-    # end
+    def class_details(job)
+        @request_hash = self.class.get('/#{find_class.url}').parsed_response
+    end
 end
 
 # api = DndApi.new 
