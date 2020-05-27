@@ -1,4 +1,4 @@
-class CharacterController < ApplicationController
+class CharactersController < ApplicationController
   before_action :find_char, except: [:index, :new]
 
   def index
