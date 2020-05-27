@@ -2,11 +2,10 @@
 <h1>Create a new character!</h1>
 
 <%= form_for @character do |f| %>
-<p><%= f.label :name, "Name" %></p>
+<%= f.label :name, "Name" %>
 <%= f.text_field :name %>
-
-<p><%= f.label :job_id, "Choose Class" %></p>
+<p></p>
+<%= f.label :job_id, "Choose Class" %>
 <%= f.collection_select(:job_id, @jobs, :id, :name) %>
-
 <%= f.submit %>
 <% end %>

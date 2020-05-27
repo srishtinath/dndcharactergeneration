@@ -27701,3 +27701,1410 @@ Migrating to AddColumnToAbilities (20200527161654)
   ↳ lib/dnd_api.rb:57:in `block in abilities'
   [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
   ↳ lib/dnd_api.rb:57:in `block in abilities'
+Started GET "/characters/new" for ::1 at 2020-05-27 17:03:01 -0400
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+Zeitwerk::NameError (expected file /Users/srishtinath/Development/code/Mod2/mod2-project/dndcharactergeneration/app/controllers/character_controller.rb to define constant CharacterController, but didn't):
+  
+zeitwerk (2.3.0) lib/zeitwerk/loader/callbacks.rb:17:in `on_file_autoloaded'
+zeitwerk (2.3.0) lib/zeitwerk/kernel.rb:17:in `block in require'
+zeitwerk (2.3.0) lib/zeitwerk/kernel.rb:16:in `tap'
+zeitwerk (2.3.0) lib/zeitwerk/kernel.rb:16:in `require'
+activesupport (6.0.3.1) lib/active_support/inflector/methods.rb:282:in `const_get'
+activesupport (6.0.3.1) lib/active_support/inflector/methods.rb:282:in `block in constantize'
+activesupport (6.0.3.1) lib/active_support/inflector/methods.rb:280:in `each'
+activesupport (6.0.3.1) lib/active_support/inflector/methods.rb:280:in `inject'
+activesupport (6.0.3.1) lib/active_support/inflector/methods.rb:280:in `constantize'
+activesupport (6.0.3.1) lib/active_support/dependencies/zeitwerk_integration.rb:19:in `constantize'
+actionpack (6.0.3.1) lib/action_dispatch/http/request.rb:89:in `controller_class_for'
+actionpack (6.0.3.1) lib/action_dispatch/http/parameters.rb:100:in `binary_params_for?'
+actionpack (6.0.3.1) lib/action_dispatch/http/parameters.rb:91:in `set_binary_encoding'
+actionpack (6.0.3.1) lib/action_dispatch/http/parameters.rb:69:in `path_parameters='
+actionpack (6.0.3.1) lib/action_dispatch/journey/router.rb:47:in `block in serve'
+actionpack (6.0.3.1) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.0.3.1) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.0.3.1) lib/action_dispatch/routing/route_set.rb:834:in `call'
+rack (2.2.2) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.2) lib/rack/etag.rb:27:in `call'
+rack (2.2.2) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.2) lib/rack/head.rb:12:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.2) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.2) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/cookies.rb:648:in `call'
+activerecord (6.0.3.1) lib/active_record/migration.rb:567:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.3.1) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+web-console (4.0.2) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.2) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.2) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.2) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.2.2) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.1) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/characters/new" for ::1 at 2020-05-27 17:03:36 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  
+LoadError (cannot load such file -- /Users/srishtinath/Development/code/Mod2/mod2-project/dndcharactergeneration/app/controllers/character_controller.rb):
+  
+bootsnap (1.4.6) lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:23:in `require'
+bootsnap (1.4.6) lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:23:in `block in require_with_bootsnap_lfi'
+bootsnap (1.4.6) lib/bootsnap/load_path_cache/loaded_features_index.rb:92:in `register'
+bootsnap (1.4.6) lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:22:in `require_with_bootsnap_lfi'
+bootsnap (1.4.6) lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:31:in `require'
+zeitwerk (2.3.0) lib/zeitwerk/kernel.rb:23:in `require'
+activesupport (6.0.3.1) lib/active_support/inflector/methods.rb:282:in `const_get'
+activesupport (6.0.3.1) lib/active_support/inflector/methods.rb:282:in `block in constantize'
+activesupport (6.0.3.1) lib/active_support/inflector/methods.rb:280:in `each'
+activesupport (6.0.3.1) lib/active_support/inflector/methods.rb:280:in `inject'
+activesupport (6.0.3.1) lib/active_support/inflector/methods.rb:280:in `constantize'
+activesupport (6.0.3.1) lib/active_support/dependencies/zeitwerk_integration.rb:19:in `constantize'
+actionpack (6.0.3.1) lib/action_dispatch/http/request.rb:89:in `controller_class_for'
+actionpack (6.0.3.1) lib/action_dispatch/http/parameters.rb:100:in `binary_params_for?'
+actionpack (6.0.3.1) lib/action_dispatch/http/parameters.rb:91:in `set_binary_encoding'
+actionpack (6.0.3.1) lib/action_dispatch/http/parameters.rb:69:in `path_parameters='
+actionpack (6.0.3.1) lib/action_dispatch/journey/router.rb:47:in `block in serve'
+actionpack (6.0.3.1) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.0.3.1) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.0.3.1) lib/action_dispatch/routing/route_set.rb:834:in `call'
+rack (2.2.2) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.2) lib/rack/etag.rb:27:in `call'
+rack (2.2.2) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.2) lib/rack/head.rb:12:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.2) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.2) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/cookies.rb:648:in `call'
+activerecord (6.0.3.1) lib/active_record/migration.rb:567:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.3.1) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+web-console (4.0.2) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.2) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.2) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.2) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.2.2) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.1) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/characters/new" for ::1 at 2020-05-27 17:04:35 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  
+LoadError (cannot load such file -- /Users/srishtinath/Development/code/Mod2/mod2-project/dndcharactergeneration/app/controllers/character_controller.rb):
+  
+bootsnap (1.4.6) lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:23:in `require'
+bootsnap (1.4.6) lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:23:in `block in require_with_bootsnap_lfi'
+bootsnap (1.4.6) lib/bootsnap/load_path_cache/loaded_features_index.rb:92:in `register'
+bootsnap (1.4.6) lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:22:in `require_with_bootsnap_lfi'
+bootsnap (1.4.6) lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:31:in `require'
+zeitwerk (2.3.0) lib/zeitwerk/kernel.rb:23:in `require'
+activesupport (6.0.3.1) lib/active_support/inflector/methods.rb:282:in `const_get'
+activesupport (6.0.3.1) lib/active_support/inflector/methods.rb:282:in `block in constantize'
+activesupport (6.0.3.1) lib/active_support/inflector/methods.rb:280:in `each'
+activesupport (6.0.3.1) lib/active_support/inflector/methods.rb:280:in `inject'
+activesupport (6.0.3.1) lib/active_support/inflector/methods.rb:280:in `constantize'
+activesupport (6.0.3.1) lib/active_support/dependencies/zeitwerk_integration.rb:19:in `constantize'
+actionpack (6.0.3.1) lib/action_dispatch/http/request.rb:89:in `controller_class_for'
+actionpack (6.0.3.1) lib/action_dispatch/http/parameters.rb:100:in `binary_params_for?'
+actionpack (6.0.3.1) lib/action_dispatch/http/parameters.rb:91:in `set_binary_encoding'
+actionpack (6.0.3.1) lib/action_dispatch/http/parameters.rb:69:in `path_parameters='
+actionpack (6.0.3.1) lib/action_dispatch/journey/router.rb:47:in `block in serve'
+actionpack (6.0.3.1) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.0.3.1) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.0.3.1) lib/action_dispatch/routing/route_set.rb:834:in `call'
+rack (2.2.2) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.2) lib/rack/etag.rb:27:in `call'
+rack (2.2.2) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.2) lib/rack/head.rb:12:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.2) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.2) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/cookies.rb:648:in `call'
+activerecord (6.0.3.1) lib/active_record/migration.rb:567:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.3.1) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+web-console (4.0.2) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.2) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.2) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.2) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.2.2) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.1) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/characters/new" for ::1 at 2020-05-27 17:04:37 -0400
+  
+LoadError (cannot load such file -- /Users/srishtinath/Development/code/Mod2/mod2-project/dndcharactergeneration/app/controllers/character_controller.rb):
+  
+bootsnap (1.4.6) lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:23:in `require'
+bootsnap (1.4.6) lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:23:in `block in require_with_bootsnap_lfi'
+bootsnap (1.4.6) lib/bootsnap/load_path_cache/loaded_features_index.rb:92:in `register'
+bootsnap (1.4.6) lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:22:in `require_with_bootsnap_lfi'
+bootsnap (1.4.6) lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:31:in `require'
+zeitwerk (2.3.0) lib/zeitwerk/kernel.rb:23:in `require'
+activesupport (6.0.3.1) lib/active_support/inflector/methods.rb:282:in `const_get'
+activesupport (6.0.3.1) lib/active_support/inflector/methods.rb:282:in `block in constantize'
+activesupport (6.0.3.1) lib/active_support/inflector/methods.rb:280:in `each'
+activesupport (6.0.3.1) lib/active_support/inflector/methods.rb:280:in `inject'
+activesupport (6.0.3.1) lib/active_support/inflector/methods.rb:280:in `constantize'
+activesupport (6.0.3.1) lib/active_support/dependencies/zeitwerk_integration.rb:19:in `constantize'
+actionpack (6.0.3.1) lib/action_dispatch/http/request.rb:89:in `controller_class_for'
+actionpack (6.0.3.1) lib/action_dispatch/http/parameters.rb:100:in `binary_params_for?'
+actionpack (6.0.3.1) lib/action_dispatch/http/parameters.rb:91:in `set_binary_encoding'
+actionpack (6.0.3.1) lib/action_dispatch/http/parameters.rb:69:in `path_parameters='
+actionpack (6.0.3.1) lib/action_dispatch/journey/router.rb:47:in `block in serve'
+actionpack (6.0.3.1) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.0.3.1) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.0.3.1) lib/action_dispatch/routing/route_set.rb:834:in `call'
+rack (2.2.2) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.2) lib/rack/etag.rb:27:in `call'
+rack (2.2.2) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.2) lib/rack/head.rb:12:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.2) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.2) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/cookies.rb:648:in `call'
+activerecord (6.0.3.1) lib/active_record/migration.rb:567:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.3.1) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+web-console (4.0.2) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.2) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.2) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.2) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.2.2) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.1) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/characters/new" for ::1 at 2020-05-27 17:04:38 -0400
+  
+LoadError (cannot load such file -- /Users/srishtinath/Development/code/Mod2/mod2-project/dndcharactergeneration/app/controllers/character_controller.rb):
+  
+bootsnap (1.4.6) lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:23:in `require'
+bootsnap (1.4.6) lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:23:in `block in require_with_bootsnap_lfi'
+bootsnap (1.4.6) lib/bootsnap/load_path_cache/loaded_features_index.rb:92:in `register'
+bootsnap (1.4.6) lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:22:in `require_with_bootsnap_lfi'
+bootsnap (1.4.6) lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:31:in `require'
+zeitwerk (2.3.0) lib/zeitwerk/kernel.rb:23:in `require'
+activesupport (6.0.3.1) lib/active_support/inflector/methods.rb:282:in `const_get'
+activesupport (6.0.3.1) lib/active_support/inflector/methods.rb:282:in `block in constantize'
+activesupport (6.0.3.1) lib/active_support/inflector/methods.rb:280:in `each'
+activesupport (6.0.3.1) lib/active_support/inflector/methods.rb:280:in `inject'
+activesupport (6.0.3.1) lib/active_support/inflector/methods.rb:280:in `constantize'
+activesupport (6.0.3.1) lib/active_support/dependencies/zeitwerk_integration.rb:19:in `constantize'
+actionpack (6.0.3.1) lib/action_dispatch/http/request.rb:89:in `controller_class_for'
+actionpack (6.0.3.1) lib/action_dispatch/http/parameters.rb:100:in `binary_params_for?'
+actionpack (6.0.3.1) lib/action_dispatch/http/parameters.rb:91:in `set_binary_encoding'
+actionpack (6.0.3.1) lib/action_dispatch/http/parameters.rb:69:in `path_parameters='
+actionpack (6.0.3.1) lib/action_dispatch/journey/router.rb:47:in `block in serve'
+actionpack (6.0.3.1) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.0.3.1) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.0.3.1) lib/action_dispatch/routing/route_set.rb:834:in `call'
+rack (2.2.2) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.2) lib/rack/etag.rb:27:in `call'
+rack (2.2.2) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.2) lib/rack/head.rb:12:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.2) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.2) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/cookies.rb:648:in `call'
+activerecord (6.0.3.1) lib/active_record/migration.rb:567:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.3.1) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+web-console (4.0.2) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.2) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.2) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.2) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.2.2) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.1) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/characters/new" for ::1 at 2020-05-27 17:05:32 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by CharactersController#new as HTML
+  Rendering characters/new.html.erb within layouts/application
+  [1m[36mJob Load (0.5ms)[0m  [1m[34mSELECT "jobs".* FROM "jobs"[0m
+  ↳ app/views/characters/new.html.erb:9
+  Rendered characters/new.html.erb within layouts/application (Duration: 25.0ms | Allocations: 10374)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 192ms (Views: 153.9ms | ActiveRecord: 1.8ms | Allocations: 57876)
+
+
+Started POST "/characters" for ::1 at 2020-05-27 17:05:40 -0400
+  
+ActionController::RoutingError (uninitialized constant CharactesrController
+Did you mean?  CharactersController
+               CharacterController):
+  
+actionpack (6.0.3.1) lib/action_dispatch/http/request.rb:92:in `rescue in controller_class_for'
+actionpack (6.0.3.1) lib/action_dispatch/http/request.rb:88:in `controller_class_for'
+actionpack (6.0.3.1) lib/action_dispatch/http/request.rb:81:in `controller_class'
+actionpack (6.0.3.1) lib/action_dispatch/routing/route_set.rb:44:in `controller'
+actionpack (6.0.3.1) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (6.0.3.1) lib/action_dispatch/journey/router.rb:49:in `block in serve'
+actionpack (6.0.3.1) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.0.3.1) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.0.3.1) lib/action_dispatch/routing/route_set.rb:834:in `call'
+rack (2.2.2) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.2) lib/rack/etag.rb:27:in `call'
+rack (2.2.2) lib/rack/conditional_get.rb:40:in `call'
+rack (2.2.2) lib/rack/head.rb:12:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.2) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.2) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/cookies.rb:648:in `call'
+activerecord (6.0.3.1) lib/active_record/migration.rb:567:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.3.1) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+web-console (4.0.2) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.2) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.2) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.2) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.2.2) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.1) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started POST "/characters" for ::1 at 2020-05-27 17:05:53 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by CharactersController#create as HTML
+  Parameters: {"authenticity_token"=>"mM7DODqmgqHIiDPjCwn6WbhOIoQPB89lfyRvllNpVJOnTNIK3iFDL6cpdKOnrqwg4EmsPVsvavBdhDDWVwK9Fg==", "character"=>{"name"=>"Elphaba", "job_id"=>"349"}, "commit"=>"Create Character"}
+Completed 404 Not Found in 14ms (ActiveRecord: 0.7ms | Allocations: 5924)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Character without an ID):
+  
+app/controllers/character_controller.rb:70:in `find_char'
+Started POST "/characters" for ::1 at 2020-05-27 17:06:44 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by CharactersController#create as HTML
+  Parameters: {"authenticity_token"=>"mM7DODqmgqHIiDPjCwn6WbhOIoQPB89lfyRvllNpVJOnTNIK3iFDL6cpdKOnrqwg4EmsPVsvavBdhDDWVwK9Fg==", "character"=>{"name"=>"Elphaba", "job_id"=>"349"}, "commit"=>"Create Character"}
+Completed 404 Not Found in 9ms (ActiveRecord: 0.9ms | Allocations: 6238)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Character without an ID):
+  
+app/controllers/character_controller.rb:70:in `find_char'
+Started GET "/characters/new" for ::1 at 2020-05-27 17:06:50 -0400
+Processing by CharactersController#new as HTML
+  Rendering characters/new.html.erb within layouts/application
+  [1m[36mJob Load (0.9ms)[0m  [1m[34mSELECT "jobs".* FROM "jobs"[0m
+  ↳ app/views/characters/new.html.erb:9
+  Rendered characters/new.html.erb within layouts/application (Duration: 9.0ms | Allocations: 6172)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 52ms (Views: 30.3ms | ActiveRecord: 1.3ms | Allocations: 23573)
+
+
+Started POST "/characters" for ::1 at 2020-05-27 17:06:54 -0400
+Processing by CharactersController#create as HTML
+  Parameters: {"authenticity_token"=>"7lRkxZ1TCU9CZzHa+/pEo2fiDyO+Jw5jeqKOyv6iXjrR1nX3edTIwS3GdppXXRLaP+WBmuoPq/ZYAtGK+sm3vw==", "character"=>{"name"=>"Elphaba", "job_id"=>"349"}, "commit"=>"Create Character"}
+Completed 404 Not Found in 2ms (ActiveRecord: 0.0ms | Allocations: 883)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Character without an ID):
+  
+app/controllers/character_controller.rb:70:in `find_char'
+Started POST "/characters" for ::1 at 2020-05-27 17:07:17 -0400
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by CharactersController#create as HTML
+  Parameters: {"authenticity_token"=>"7lRkxZ1TCU9CZzHa+/pEo2fiDyO+Jw5jeqKOyv6iXjrR1nX3edTIwS3GdppXXRLaP+WBmuoPq/ZYAtGK+sm3vw==", "character"=>{"name"=>"Elphaba", "job_id"=>"356"}, "commit"=>"Create Character"}
+Completed 404 Not Found in 7ms (ActiveRecord: 0.5ms | Allocations: 6227)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Character without an ID):
+  
+app/controllers/character_controller.rb:70:in `find_char'
+Started POST "/characters" for ::1 at 2020-05-27 17:09:36 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by CharactersController#create as HTML
+  Parameters: {"authenticity_token"=>"7lRkxZ1TCU9CZzHa+/pEo2fiDyO+Jw5jeqKOyv6iXjrR1nX3edTIwS3GdppXXRLaP+WBmuoPq/ZYAtGK+sm3vw==", "character"=>{"name"=>"Elphaba", "job_id"=>"356"}, "commit"=>"Create Character"}
+Completed 404 Not Found in 13ms (ActiveRecord: 0.5ms | Allocations: 6233)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Character without an ID):
+  
+app/controllers/character_controller.rb:70:in `find_char'
+Started GET "/characters/new" for ::1 at 2020-05-27 17:09:40 -0400
+Processing by CharactersController#new as HTML
+  Rendering characters/new.html.erb within layouts/application
+  [1m[36mJob Load (0.7ms)[0m  [1m[34mSELECT "jobs".* FROM "jobs"[0m
+  ↳ app/views/characters/new.html.erb:9
+  Rendered characters/new.html.erb within layouts/application (Duration: 11.3ms | Allocations: 6165)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 55ms (Views: 23.5ms | ActiveRecord: 1.8ms | Allocations: 23528)
+
+
+Started POST "/characters" for ::1 at 2020-05-27 17:09:44 -0400
+Processing by CharactersController#create as HTML
+  Parameters: {"authenticity_token"=>"7IeTLsWKPchuXYR7OhibE7iEF7uulnwww2Kw+Xa2WBzTBYIcIQ38RgH8wzuWv81q4IOZAvq+2aXhwu+5ct2xmQ==", "character"=>{"name"=>"sdkjb", "job_id"=>"355"}, "commit"=>"Create Character"}
+Completed 404 Not Found in 1ms (ActiveRecord: 0.0ms | Allocations: 887)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Character without an ID):
+  
+app/controllers/character_controller.rb:70:in `find_char'
+Started POST "/characters" for ::1 at 2020-05-27 17:10:42 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by CharactersController#create as HTML
+  Parameters: {"authenticity_token"=>"7IeTLsWKPchuXYR7OhibE7iEF7uulnwww2Kw+Xa2WBzTBYIcIQ38RgH8wzuWv81q4IOZAvq+2aXhwu+5ct2xmQ==", "character"=>{"name"=>"ksjrbgs", "job_id"=>"355"}, "commit"=>"Create Character"}
+Completed 404 Not Found in 9ms (ActiveRecord: 0.6ms | Allocations: 6233)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Character without an ID):
+  
+app/controllers/character_controller.rb:70:in `find_char'
+Started POST "/characters" for ::1 at 2020-05-27 17:11:33 -0400
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  
+ActionController::RoutingError (No route matches [POST] "/characters"):
+  
+actionpack (6.0.3.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.2) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.2) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.2) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.2) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.2.2) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.1) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started POST "/characters" for ::1 at 2020-05-27 17:13:18 -0400
+  
+ActionController::RoutingError (No route matches [POST] "/characters"):
+  
+actionpack (6.0.3.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.2) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.2) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.2) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.2) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.2.2) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.1) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/characters/new" for ::1 at 2020-05-27 17:13:22 -0400
+Processing by CharactersController#new as HTML
+  Rendering characters/new.html.erb within layouts/application
+  Rendered characters/new.html.erb within layouts/application (Duration: 0.8ms | Allocations: 1034)
+Completed 500 Internal Server Error in 103ms (ActiveRecord: 0.9ms | Allocations: 21278)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check 
+<h1>Create a new character!</h1>
+
+<%= form_for (@character, url: character_path(@character) )do |f| %>
+<p><%= f.label :name, "Name" %></p>
+<%= f.text_field :name %>
+
+<p><%= f.label :job_id, "Choose Class" %></p>
+<%= f.collection_select(:job_id, @jobs, :id, :name) %>
+
+<%= f.submit %>
+<% end %>
+):
+1:    
+2:    <h1>Create a new character!</h1>
+3:    
+4:    <%= form_for (@character, url: character_path(@character) )do |f| %>
+5:    <p><%= f.label :name, "Name" %></p>
+6:    <%= f.text_field :name %>
+7:    
+8:    <p><%= f.label :job_id, "Choose Class" %></p>
+9:    <%= f.collection_select(:job_id, @jobs, :id, :name) %>
+10:    
+11:    <%= f.submit %>
+12:    <% end %>
+  
+app/views/characters/new.html.erb:4: syntax error, unexpected tLABEL, expecting '='
+app/views/characters/new.html.erb:4: syntax error, unexpected ')', expecting end
+app/views/characters/new.html.erb:14: syntax error, unexpected end, expecting end-of-input
+app/views/characters/new.html.erb:4: syntax error, unexpected tLABEL, expecting '='
+app/views/characters/new.html.erb:4: syntax error, unexpected ')', expecting end
+app/views/characters/new.html.erb:14: syntax error, unexpected end, expecting end-of-input
+app/views/characters/new.html.erb:4: syntax error, unexpected tLABEL, expecting '='
+app/views/characters/new.html.erb:4: syntax error, unexpected ')', expecting end
+app/views/characters/new.html.erb:14: syntax error, unexpected end, expecting end-of-input
+app/views/characters/new.html.erb:4: syntax error, unexpected tLABEL, expecting '='
+app/views/characters/new.html.erb:4: syntax error, unexpected ')', expecting end
+app/views/characters/new.html.erb:14: syntax error, unexpected end, expecting end-of-input
+app/views/characters/new.html.erb:4: syntax error, unexpected tLABEL, expecting '='
+app/views/characters/new.html.erb:4: syntax error, unexpected ')', expecting end
+app/views/characters/new.html.erb:14: syntax error, unexpected end, expecting end-of-input
+app/views/characters/new.html.erb:4: syntax error, unexpected tLABEL, expecting '='
+app/views/characters/new.html.erb:4: syntax error, unexpected ')', expecting end
+app/views/characters/new.html.erb:14: syntax error, unexpected end, expecting end-of-input
+Started GET "/characters/new" for ::1 at 2020-05-27 17:13:55 -0400
+Processing by CharactersController#new as HTML
+  Rendering characters/new.html.erb within layouts/application
+  Rendered characters/new.html.erb within layouts/application (Duration: 0.7ms | Allocations: 1096)
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms | Allocations: 2522)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check 
+<h1>Create a new character!</h1>
+
+<%= form_for (@character, url: character_path(@character)) do |f| %>
+<p><%= f.label :name, "Name" %></p>
+<%= f.text_field :name %>
+
+<p><%= f.label :job_id, "Choose Class" %></p>
+<%= f.collection_select(:job_id, @jobs, :id, :name) %>
+
+<%= f.submit %>
+<% end %>
+):
+1:    
+2:    <h1>Create a new character!</h1>
+3:    
+4:    <%= form_for (@character, url: character_path(@character)) do |f| %>
+5:    <p><%= f.label :name, "Name" %></p>
+6:    <%= f.text_field :name %>
+7:    
+8:    <p><%= f.label :job_id, "Choose Class" %></p>
+9:    <%= f.collection_select(:job_id, @jobs, :id, :name) %>
+10:    
+11:    <%= f.submit %>
+12:    <% end %>
+  
+app/views/characters/new.html.erb:4: syntax error, unexpected tLABEL, expecting '='
+app/views/characters/new.html.erb:4: syntax error, unexpected ')', expecting end
+app/views/characters/new.html.erb:14: syntax error, unexpected end, expecting end-of-input
+app/views/characters/new.html.erb:4: syntax error, unexpected tLABEL, expecting '='
+app/views/characters/new.html.erb:4: syntax error, unexpected ')', expecting end
+app/views/characters/new.html.erb:14: syntax error, unexpected end, expecting end-of-input
+app/views/characters/new.html.erb:4: syntax error, unexpected tLABEL, expecting '='
+app/views/characters/new.html.erb:4: syntax error, unexpected ')', expecting end
+app/views/characters/new.html.erb:14: syntax error, unexpected end, expecting end-of-input
+app/views/characters/new.html.erb:4: syntax error, unexpected tLABEL, expecting '='
+app/views/characters/new.html.erb:4: syntax error, unexpected ')', expecting end
+app/views/characters/new.html.erb:14: syntax error, unexpected end, expecting end-of-input
+app/views/characters/new.html.erb:4: syntax error, unexpected tLABEL, expecting '='
+app/views/characters/new.html.erb:4: syntax error, unexpected ')', expecting end
+app/views/characters/new.html.erb:14: syntax error, unexpected end, expecting end-of-input
+app/views/characters/new.html.erb:4: syntax error, unexpected tLABEL, expecting '='
+app/views/characters/new.html.erb:4: syntax error, unexpected ')', expecting end
+app/views/characters/new.html.erb:14: syntax error, unexpected end, expecting end-of-input
+Started GET "/characters/new" for ::1 at 2020-05-27 17:14:07 -0400
+Processing by CharactersController#new as HTML
+  Rendering characters/new.html.erb within layouts/application
+  [1m[36mJob Load (5.5ms)[0m  [1m[34mSELECT "jobs".* FROM "jobs" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Job Load (0.0ms)[0m  [1m[34mSELECT "jobs".* FROM "jobs" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Job Load (0.0ms)[0m  [1m[34mSELECT "jobs".* FROM "jobs" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Job Load (0.0ms)[0m  [1m[34mSELECT "jobs".* FROM "jobs" LIMIT ?[0m  [["LIMIT", 11]]
+  Rendered characters/new.html.erb within layouts/application (Duration: 165.0ms | Allocations: 89643)
+Completed 500 Internal Server Error in 168ms (ActiveRecord: 6.1ms | Allocations: 91068)
+
+
+  
+ActionView::Template::Error (undefined method `character_path' for #<#<Class:0x00007f9735a5ecd0>:0x00007f9735a5cc78>):
+    1: 
+    2: <h1>Create a new character!</h1>
+    3: 
+    4: <%= form_for @character, url: character_path(@character) do |f| %>
+    5: <p><%= f.label :name, "Name" %></p>
+    6: <%= f.text_field :name %>
+    7: 
+  
+app/views/characters/new.html.erb:4
+Started GET "/characters/new" for ::1 at 2020-05-27 17:14:26 -0400
+Processing by CharactersController#new as HTML
+  Rendering characters/new.html.erb within layouts/application
+  [1m[36mJob Load (0.2ms)[0m  [1m[34mSELECT "jobs".* FROM "jobs" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Job Load (0.0ms)[0m  [1m[34mSELECT "jobs".* FROM "jobs" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Job Load (0.0ms)[0m  [1m[34mSELECT "jobs".* FROM "jobs" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Job Load (0.0ms)[0m  [1m[34mSELECT "jobs".* FROM "jobs" LIMIT ?[0m  [["LIMIT", 11]]
+  Rendered characters/new.html.erb within layouts/application (Duration: 151.7ms | Allocations: 84992)
+Completed 500 Internal Server Error in 156ms (ActiveRecord: 0.3ms | Allocations: 86417)
+
+
+  
+ActionView::Template::Error (undefined method `character_path' for #<#<Class:0x00007f97328e7260>:0x00007f97328f5c98>):
+    1: 
+    2: <h1>Create a new character!</h1>
+    3: 
+    4: <%= form_for @character, path: character_path(@character) do |f| %>
+    5: <p><%= f.label :name, "Name" %></p>
+    6: <%= f.text_field :name %>
+    7: 
+  
+app/views/characters/new.html.erb:4
+Started GET "/characters/new" for ::1 at 2020-05-27 17:15:25 -0400
+Processing by CharactersController#new as HTML
+  Rendering characters/new.html.erb within layouts/application
+  [1m[36mJob Load (0.2ms)[0m  [1m[34mSELECT "jobs".* FROM "jobs" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Job Load (0.0ms)[0m  [1m[34mSELECT "jobs".* FROM "jobs" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Job Load (0.0ms)[0m  [1m[34mSELECT "jobs".* FROM "jobs" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Job Load (0.0ms)[0m  [1m[34mSELECT "jobs".* FROM "jobs" LIMIT ?[0m  [["LIMIT", 11]]
+  Rendered characters/new.html.erb within layouts/application (Duration: 148.6ms | Allocations: 84983)
+Completed 500 Internal Server Error in 154ms (ActiveRecord: 0.2ms | Allocations: 86408)
+
+
+  
+ActionView::Template::Error (undefined method `character_path' for #<#<Class:0x00007f973295d708>:0x00007f973338b888>):
+    1: 
+    2: <h1>Create a new character!</h1>
+    3: 
+    4: <%= form_for @character, :url => character_path(@character) do |f| %>
+    5: <p><%= f.label :name, "Name" %></p>
+    6: <%= f.text_field :name %>
+    7: 
+  
+app/views/characters/new.html.erb:4
+Started GET "/characters/new" for ::1 at 2020-05-27 17:17:37 -0400
+Processing by CharactersController#new as HTML
+  Rendering characters/new.html.erb within layouts/application
+  [1m[36mJob Load (0.2ms)[0m  [1m[34mSELECT "jobs".* FROM "jobs" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Job Load (0.0ms)[0m  [1m[34mSELECT "jobs".* FROM "jobs" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Job Load (0.0ms)[0m  [1m[34mSELECT "jobs".* FROM "jobs" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Job Load (0.0ms)[0m  [1m[34mSELECT "jobs".* FROM "jobs" LIMIT ?[0m  [["LIMIT", 11]]
+  Rendered characters/new.html.erb within layouts/application (Duration: 151.2ms | Allocations: 84987)
+Completed 500 Internal Server Error in 160ms (ActiveRecord: 0.2ms | Allocations: 86412)
+
+
+  
+ActionView::Template::Error (undefined method `character_path' for #<#<Class:0x00007f9735b61d08>:0x00007f9735b6bb50>):
+    1: 
+    2: <h1>Create a new character!</h1>
+    3: 
+    4: <%= form_tag(:url => character_path(@character), method: 'post') do |f| %>
+    5: <p><%= f.label :name, "Name" %></p>
+    6: <%= f.text_field :name %>
+    7: 
+  
+app/views/characters/new.html.erb:4
+Started GET "/characters/new" for ::1 at 2020-05-27 17:18:05 -0400
+Processing by CharactersController#new as HTML
+  Rendering characters/new.html.erb within layouts/application
+  Rendered characters/new.html.erb within layouts/application (Duration: 2.0ms | Allocations: 2224)
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 0.0ms | Allocations: 3649)
+
+
+  
+ActionView::Template::Error (undefined method `label' for nil:NilClass):
+    2: <h1>Create a new character!</h1>
+    3: 
+    4: <%= form_tag(:url => new_character_path(@character), method: 'post') do |f| %>
+    5: <p><%= f.label :name, "Name" %></p>
+    6: <%= f.text_field :name %>
+    7: 
+    8: <p><%= f.label :job_id, "Choose Class" %></p>
+  
+app/views/characters/new.html.erb:5
+app/views/characters/new.html.erb:4
+Started GET "/characters/new" for ::1 at 2020-05-27 17:22:23 -0400
+Processing by CharactersController#new as HTML
+  Rendering characters/new.html.erb within layouts/application
+  [1m[36mJob Load (0.2ms)[0m  [1m[34mSELECT "jobs".* FROM "jobs" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Job Load (0.0ms)[0m  [1m[34mSELECT "jobs".* FROM "jobs" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Job Load (0.0ms)[0m  [1m[34mSELECT "jobs".* FROM "jobs" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Job Load (0.0ms)[0m  [1m[34mSELECT "jobs".* FROM "jobs" LIMIT ?[0m  [["LIMIT", 11]]
+  Rendered characters/new.html.erb within layouts/application (Duration: 197.0ms | Allocations: 85301)
+Completed 500 Internal Server Error in 203ms (ActiveRecord: 0.3ms | Allocations: 86726)
+
+
+  
+ActionView::Template::Error (undefined method `collection_select_tag' for #<#<Class:0x00007f973428a190>:0x00007f97342887c8>
+Did you mean?  collection_select):
+     6: <%= text_field_tag(:name) %>
+     7: 
+     8: <%= label_tag(:job_id, "Choose Class") %></p>
+     9: <%= collection_select_tag(:job_id, @jobs, :id, :name) %>
+    10: 
+    11: <%= submit_tag("Create!") %>
+    12: <% end %>
+  
+app/views/characters/new.html.erb:9
+app/views/characters/new.html.erb:4
+Started GET "/characters/new" for ::1 at 2020-05-27 17:22:33 -0400
+Processing by CharactersController#new as HTML
+  Rendering characters/new.html.erb within layouts/application
+  Rendered characters/new.html.erb within layouts/application (Duration: 1.2ms | Allocations: 1293)
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms | Allocations: 2718)
+
+
+  
+ActionView::Template::Error (wrong number of arguments (given 4, expected 5..7)):
+     6: <%= text_field_tag(:name) %>
+     7: 
+     8: <%= label_tag(:job_id, "Choose Class") %></p>
+     9: <%= collection_select(:job_id, @jobs, :id, :name) %>
+    10: 
+    11: <%= submit_tag("Create!") %>
+    12: <% end %>
+  
+app/views/characters/new.html.erb:9
+app/views/characters/new.html.erb:4
+Started GET "/characters/new" for ::1 at 2020-05-27 17:22:47 -0400
+Processing by CharactersController#new as HTML
+  Rendering characters/new.html.erb within layouts/application
+  [1m[36mJob Load (0.2ms)[0m  [1m[34mSELECT "jobs".* FROM "jobs"[0m
+  ↳ app/views/characters/new.html.erb:9
+  Rendered characters/new.html.erb within layouts/application (Duration: 2.6ms | Allocations: 2141)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 24ms (Views: 22.2ms | ActiveRecord: 0.2ms | Allocations: 7305)
+
+
+Started GET "/characters/new" for ::1 at 2020-05-27 17:22:57 -0400
+Processing by CharactersController#new as HTML
+  Rendering characters/new.html.erb within layouts/application
+  [1m[36mJob Load (0.2ms)[0m  [1m[34mSELECT "jobs".* FROM "jobs"[0m
+  ↳ app/views/characters/new.html.erb:9
+  Rendered characters/new.html.erb within layouts/application (Duration: 3.7ms | Allocations: 2121)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 13ms (Views: 11.4ms | ActiveRecord: 0.2ms | Allocations: 7270)
+
+
+Started POST "/characters/new?method=post&url=%2Fcharacters%2Fnew" for ::1 at 2020-05-27 17:23:06 -0400
+Processing by CharactersController#create as HTML
+  Parameters: {"authenticity_token"=>"PWeNcjQJWYy8v1TdX/RZgUCucFUxpfYUl21ocCw3l8IC5ZxA0I6YAtMeE53zUw/4GKn+7GWNU4G1zTcwKFx+Rw==", "name"=>"Travis", "#<Character:0x00007f9735ab8078>"=>{"job_id"=>"349"}, "commit"=>"Create!", "method"=>"post", "url"=>"/characters/new", "id"=>"new"}
+  [1m[36mCharacter Load (1.5ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = ? LIMIT ?[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/character_controller.rb:70:in `find_char'
+Completed 404 Not Found in 5ms (ActiveRecord: 1.5ms | Allocations: 1571)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Character with 'id'=new):
+  
+app/controllers/character_controller.rb:70:in `find_char'
+Started POST "/characters/new?method=post&url=%2Fcharacters%2Fnew" for ::1 at 2020-05-27 17:23:30 -0400
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by CharactersController#create as HTML
+  Parameters: {"authenticity_token"=>"PWeNcjQJWYy8v1TdX/RZgUCucFUxpfYUl21ocCw3l8IC5ZxA0I6YAtMeE53zUw/4GKn+7GWNU4G1zTcwKFx+Rw==", "name"=>"Travis", "#<Character:0x00007f9735ab8078>"=>{"job_id"=>"349"}, "commit"=>"Create!", "method"=>"post", "url"=>"/characters/new", "id"=>"new"}
+  [1m[36mCharacter Load (0.1ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = ? LIMIT ?[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/character_controller.rb:70:in `find_char'
+Completed 404 Not Found in 10ms (ActiveRecord: 0.7ms | Allocations: 6858)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Character with 'id'=new):
+  
+app/controllers/character_controller.rb:70:in `find_char'
+Started GET "/characters/new" for ::1 at 2020-05-27 17:23:35 -0400
+Processing by CharactersController#new as HTML
+  Rendering characters/new.html.erb within layouts/application
+  [1m[36mJob Load (3.1ms)[0m  [1m[34mSELECT "jobs".* FROM "jobs"[0m
+  ↳ app/views/characters/new.html.erb:9
+  Rendered characters/new.html.erb within layouts/application (Duration: 11.5ms | Allocations: 7072)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 105ms (Views: 22.7ms | ActiveRecord: 3.5ms | Allocations: 24356)
+
+
+Started POST "/characters/new?method=post&url=%2Fcharacters%2Fnew" for ::1 at 2020-05-27 17:23:42 -0400
+Processing by CharactersController#create as HTML
+  Parameters: {"authenticity_token"=>"TMIdby8N/70ATOzjKmIxyd8nDpeWt47axZAS7qV6VXVzQAxdy4o+M2/tq6OGxWewhyCALsKfK0/nME2uoRG88A==", "name"=>"Laura Bailey", "#<Character:0x00007f9737884458>"=>{"job_id"=>"356"}, "commit"=>"Create!", "method"=>"post", "url"=>"/characters/new", "id"=>"new"}
+  [1m[36mCharacter Load (0.1ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = ? LIMIT ?[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/character_controller.rb:70:in `find_char'
+Completed 404 Not Found in 2ms (ActiveRecord: 0.1ms | Allocations: 1370)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Character with 'id'=new):
+  
+app/controllers/character_controller.rb:70:in `find_char'
+Started GET "/characters/new" for ::1 at 2020-05-27 17:27:29 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by CharactersController#new as HTML
+  Rendering characters/new.html.erb within layouts/application
+  [1m[36mJob Load (0.7ms)[0m  [1m[34mSELECT "jobs".* FROM "jobs"[0m
+  ↳ app/views/characters/new.html.erb:9
+  Rendered characters/new.html.erb within layouts/application (Duration: 11.1ms | Allocations: 7005)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 127ms (Views: 39.7ms | ActiveRecord: 2.9ms | Allocations: 29619)
+
+
+Started POST "/characters/new?method=post&url=%2Fcharacters%2Fnew" for ::1 at 2020-05-27 17:27:37 -0400
+Processing by CharactersController#create as HTML
+  Parameters: {"authenticity_token"=>"JoP2ERxo56TscIM8venuJY3XTjMGUpgenK5+tzswYnoZAecj+O8mKoPRxHwRTrhc1dDAilJ6PYu+DiH3P1uL/w==", "name"=>"Marisha", "#<Character:0x00007f97336f0280>"=>{"job_id"=>"358"}, "commit"=>"Create!", "method"=>"post", "url"=>"/characters/new", "id"=>"new"}
+  [1m[36mCharacter Load (0.3ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = ? LIMIT ?[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/character_controller.rb:70:in `find_char'
+Completed 404 Not Found in 3ms (ActiveRecord: 0.3ms | Allocations: 1535)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Character with 'id'=new):
+  
+app/controllers/character_controller.rb:70:in `find_char'
+Started POST "/characters/new?method=post&url=%2Fcharacters%2Fnew" for ::1 at 2020-05-27 17:29:44 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by CharactersController#create as HTML
+  Parameters: {"authenticity_token"=>"JoP2ERxo56TscIM8venuJY3XTjMGUpgenK5+tzswYnoZAecj+O8mKoPRxHwRTrhc1dDAilJ6PYu+DiH3P1uL/w==", "name"=>"Marisha", "#<Character:0x00007f97336f0280>"=>{"job_id"=>"358"}, "commit"=>"Create!", "method"=>"post", "url"=>"/characters/new", "id"=>"new"}
+  [1m[36mCharacter Load (0.1ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = ? LIMIT ?[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/character_controller.rb:70:in `find_char'
+Completed 404 Not Found in 13ms (ActiveRecord: 0.9ms | Allocations: 6853)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Character with 'id'=new):
+  
+app/controllers/character_controller.rb:70:in `find_char'
+Started GET "/characters/new" for ::1 at 2020-05-27 17:29:49 -0400
+Processing by CharactersController#new as HTML
+  Rendering characters/new.html.erb within layouts/application
+  [1m[36mJob Load (0.4ms)[0m  [1m[34mSELECT "jobs".* FROM "jobs"[0m
+  ↳ app/views/characters/new.html.erb:9
+  Rendered characters/new.html.erb within layouts/application (Duration: 10.9ms | Allocations: 7065)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 102ms (Views: 23.1ms | ActiveRecord: 1.0ms | Allocations: 24318)
+
+
+Started POST "/characters/new?method=post&url=%2Fcharacters%2Fnew" for ::1 at 2020-05-27 17:29:53 -0400
+Processing by CharactersController#create as HTML
+  Parameters: {"authenticity_token"=>"OLoyH51ojQ7EPyhm+9ENeARZHNjdCn9UG4Yrnpw01HEHOCMtee9MgKuebyZXdlsBXF6SYYki2sE5JnTemF899A==", "name"=>"mhvj", "#<Character:0x00007f97378a51a8>"=>{"job_id"=>"354"}, "commit"=>"Create!", "method"=>"post", "url"=>"/characters/new", "id"=>"new"}
+  [1m[36mCharacter Load (0.1ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = ? LIMIT ?[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/character_controller.rb:70:in `find_char'
+Completed 404 Not Found in 3ms (ActiveRecord: 0.1ms | Allocations: 1367)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Character with 'id'=new):
+  
+app/controllers/character_controller.rb:70:in `find_char'
+Started POST "/characters/new?method=post&url=%2Fcharacters%2Fnew" for ::1 at 2020-05-27 17:30:41 -0400
+Processing by CharactersController#create as HTML
+  Parameters: {"authenticity_token"=>"OLoyH51ojQ7EPyhm+9ENeARZHNjdCn9UG4Yrnpw01HEHOCMtee9MgKuebyZXdlsBXF6SYYki2sE5JnTemF899A==", "name"=>"mhvj", "#<Character:0x00007f97378a51a8>"=>{"job_id"=>"354"}, "commit"=>"Create!", "method"=>"post", "url"=>"/characters/new", "id"=>"new"}
+  [1m[36mCharacter Load (0.1ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = ? LIMIT ?[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/character_controller.rb:70:in `find_char'
+Completed 404 Not Found in 3ms (ActiveRecord: 0.1ms | Allocations: 1366)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Character with 'id'=new):
+  
+app/controllers/character_controller.rb:70:in `find_char'
+Started GET "/characters/new" for ::1 at 2020-05-27 17:30:45 -0400
+Processing by CharactersController#new as HTML
+  Rendering characters/new.html.erb within layouts/application
+  [1m[36mJob Load (0.2ms)[0m  [1m[34mSELECT "jobs".* FROM "jobs"[0m
+  ↳ app/views/characters/new.html.erb:9
+  Rendered characters/new.html.erb within layouts/application (Duration: 3.3ms | Allocations: 2110)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 90ms (Views: 88.1ms | ActiveRecord: 0.2ms | Allocations: 7262)
+
+
+Started POST "/characters/new?method=post&url=%2Fcharacters%2Fnew" for ::1 at 2020-05-27 17:30:49 -0400
+Processing by CharactersController#create as HTML
+  Parameters: {"authenticity_token"=>"eSOIr/uUngQq3J8TRJgEXwqdZVmiZ6poNxet3OeGcOdGoZmdHxNfikV92FPoP1ImUprr4PZPD/0Vt/Kc4+2ZYg==", "name"=>"jhbvjh", "job_id"=>"353", "commit"=>"Create!", "method"=>"post", "url"=>"/characters/new", "id"=>"new"}
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = ? LIMIT ?[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/character_controller.rb:70:in `find_char'
+Completed 404 Not Found in 3ms (ActiveRecord: 0.2ms | Allocations: 1375)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Character with 'id'=new):
+  
+app/controllers/character_controller.rb:70:in `find_char'
+Started POST "/characters/new?method=post&url=%2Fcharacters%2Fnew" for ::1 at 2020-05-27 17:31:29 -0400
+Processing by CharactersController#create as HTML
+  Parameters: {"authenticity_token"=>"eSOIr/uUngQq3J8TRJgEXwqdZVmiZ6poNxet3OeGcOdGoZmdHxNfikV92FPoP1ImUprr4PZPD/0Vt/Kc4+2ZYg==", "name"=>"jhbvjh", "job_id"=>"353", "commit"=>"Create!", "method"=>"post", "url"=>"/characters/new", "id"=>"new"}
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = ? LIMIT ?[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/character_controller.rb:70:in `find_char'
+Completed 404 Not Found in 2ms (ActiveRecord: 0.2ms | Allocations: 1374)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Character with 'id'=new):
+  
+app/controllers/character_controller.rb:70:in `find_char'
+Started GET "/characters/new" for ::1 at 2020-05-27 17:31:33 -0400
+Processing by CharactersController#new as HTML
+  Rendering characters/new.html.erb within layouts/application
+  [1m[36mJob Load (1.4ms)[0m  [1m[34mSELECT "jobs".* FROM "jobs"[0m
+  ↳ app/views/characters/new.html.erb:9
+  Rendered characters/new.html.erb within layouts/application (Duration: 12.9ms | Allocations: 2110)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 45ms (Views: 42.0ms | ActiveRecord: 1.4ms | Allocations: 7274)
+
+
+Started POST "/characters/new?method=post&path=%2Fcharacters%2Fnew" for ::1 at 2020-05-27 17:31:36 -0400
+Processing by CharactersController#create as HTML
+  Parameters: {"authenticity_token"=>"18s8FsPOVjBlR5FkH5EnQqEYNmaqMEL4FvHYCt4iBqXoSS0kJ0mXvgrm1iSzNnE7+R+43/4Y5200UYdK2knvIA==", "name"=>"Phoenix", "job_id"=>"349", "commit"=>"Create!", "method"=>"post", "path"=>"/characters/new", "id"=>"new"}
+  [1m[36mCharacter Load (0.3ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = ? LIMIT ?[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/character_controller.rb:70:in `find_char'
+Completed 404 Not Found in 4ms (ActiveRecord: 0.3ms | Allocations: 1364)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Character with 'id'=new):
+  
+app/controllers/character_controller.rb:70:in `find_char'
+Started POST "/characters/new?method=post&path=%2Fcharacters%2Fnew" for ::1 at 2020-05-27 17:32:42 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by CharactersController#create as HTML
+  Parameters: {"authenticity_token"=>"18s8FsPOVjBlR5FkH5EnQqEYNmaqMEL4FvHYCt4iBqXoSS0kJ0mXvgrm1iSzNnE7+R+43/4Y5200UYdK2knvIA==", "name"=>"Phoenix", "job_id"=>"349", "commit"=>"Create!", "method"=>"post", "path"=>"/characters/new", "id"=>"new"}
+  [1m[36mCharacter Load (0.1ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = ? LIMIT ?[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/character_controller.rb:70:in `find_char'
+Completed 404 Not Found in 10ms (ActiveRecord: 0.7ms | Allocations: 6851)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Character with 'id'=new):
+  
+app/controllers/character_controller.rb:70:in `find_char'
+Started GET "/characters/new" for ::1 at 2020-05-27 17:32:46 -0400
+Processing by CharactersController#new as HTML
+  Rendering characters/new.html.erb within layouts/application
+  Rendered characters/new.html.erb within layouts/application (Duration: 1.1ms | Allocations: 1148)
+Completed 500 Internal Server Error in 67ms (ActiveRecord: 0.0ms | Allocations: 15576)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"create", :controller=>"characters", :id=>nil}, missing required keys: [:id]):
+    1: 
+    2: <h1>Create a new character!</h1>
+    3: 
+    4: <%= form_tag(:path => create_new_path(@character), method: 'post') do %>
+    5: <%= label_tag(:name, "Name") %>
+    6: <%= text_field_tag(:name) %>
+    7: <p></p>
+  
+app/views/characters/new.html.erb:4
+Started GET "/characters/new" for ::1 at 2020-05-27 17:33:20 -0400
+  [1m[35m (3.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by CharactersController#new as HTML
+  Rendering characters/new.html.erb within layouts/application
+  Rendered characters/new.html.erb within layouts/application (Duration: 6.8ms | Allocations: 2149)
+Completed 500 Internal Server Error in 72ms (ActiveRecord: 0.5ms | Allocations: 23509)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"create", :controller=>"characters", :id=>nil}, missing required keys: [:id]):
+    1: 
+    2: <h1>Create a new character!</h1>
+    3: 
+    4: <%= form_tag(:path => create_new_path(@character), method: 'post') do %>
+    5: <%= label_tag(:name, "Name") %>
+    6: <%= text_field_tag(:name) %>
+    7: <p></p>
+  
+app/views/characters/new.html.erb:4
+app/controllers/characters_controller.rb:12:in `new'
+Started GET "/characters/new" for ::1 at 2020-05-27 17:33:23 -0400
+Processing by CharactersController#new as HTML
+  Rendering characters/new.html.erb within layouts/application
+  Rendered characters/new.html.erb within layouts/application (Duration: 0.5ms | Allocations: 937)
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms | Allocations: 1641)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"create", :controller=>"characters", :id=>nil}, missing required keys: [:id]):
+    1: 
+    2: <h1>Create a new character!</h1>
+    3: 
+    4: <%= form_tag(:path => create_new_path(@character), method: 'post') do %>
+    5: <%= label_tag(:name, "Name") %>
+    6: <%= text_field_tag(:name) %>
+    7: <p></p>
+  
+app/views/characters/new.html.erb:4
+app/controllers/characters_controller.rb:12:in `new'
+Started GET "/characters/new" for ::1 at 2020-05-27 17:34:43 -0400
+Processing by CharactersController#new as HTML
+  Rendering characters/new.html.erb within layouts/application
+  Rendered characters/new.html.erb within layouts/application (Duration: 1.0ms | Allocations: 1150)
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 0.0ms | Allocations: 2573)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"create", :controller=>"characters", :id=>nil}, missing required keys: [:id]):
+    1: 
+    2: <h1>Create a new character!</h1>
+    3: 
+    4: <%= form_tag(:path => create_new_path(@character), method: 'post') do %>
+    5: <%= label_tag(:name, "Name") %>
+    6: <%= text_field_tag(:name) %>
+    7: <p></p>
+  
+app/views/characters/new.html.erb:4
+app/controllers/characters_controller.rb:12:in `new'
+Started GET "/characters/new" for ::1 at 2020-05-27 17:36:11 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by CharactersController#new as HTML
+  Rendering characters/new.html.erb within layouts/application
+  Rendered characters/new.html.erb within layouts/application (Duration: 35.8ms | Allocations: 2029)
+Completed 500 Internal Server Error in 63ms (ActiveRecord: 0.8ms | Allocations: 20352)
+
+
+  
+ActionView::Template::Error (undefined method `merge' for :name:Symbol):
+     6: <%= f.text_field :name %>
+     7: <p></p>
+     8: <%= f.label :job_id, "Choose Class" %>
+     9: <%= f.collection_select(@character.id, :job_id, @jobs, :id, :name) %>
+    10: <%= f.submit %>
+    11: <% end %>
+  
+app/views/characters/new.html.erb:9
+app/views/characters/new.html.erb:4
+app/controllers/characters_controller.rb:12:in `new'
+Started GET "/characters/new" for ::1 at 2020-05-27 17:36:25 -0400
+Processing by CharactersController#new as HTML
+  Rendering characters/new.html.erb within layouts/application
+  [1m[36mJob Load (0.6ms)[0m  [1m[34mSELECT "jobs".* FROM "jobs"[0m
+  ↳ app/views/characters/new.html.erb:9
+  Rendered characters/new.html.erb within layouts/application (Duration: 15.2ms | Allocations: 7661)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 47ms (Views: 45.4ms | ActiveRecord: 1.0ms | Allocations: 16000)
+
+
+Started POST "/characters" for ::1 at 2020-05-27 17:36:30 -0400
+Processing by CharactersController#create as HTML
+  Parameters: {"authenticity_token"=>"Tx+ZDBdYxGBKU0KOOjjGepRl763GTeR4szqQ/D7U7j9wnYg+898F7iXyBc6Wn5ADzGJhFJJlQe2Rms+8Or8Hug==", "character"=>{"name"=>"ok it works", "job_id"=>"349"}, "commit"=>"Create Character"}
+Completed 404 Not Found in 2ms (ActiveRecord: 0.0ms | Allocations: 1189)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Character without an ID):
+  
+app/controllers/characters_controller.rb:73:in `find_char'
+Started POST "/characters" for ::1 at 2020-05-27 17:37:29 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by CharactersController#create as HTML
+  Parameters: {"authenticity_token"=>"Tx+ZDBdYxGBKU0KOOjjGepRl763GTeR4szqQ/D7U7j9wnYg+898F7iXyBc6Wn5ADzGJhFJJlQe2Rms+8Or8Hug==", "character"=>{"name"=>"ok it works", "job_id"=>"349"}, "commit"=>"Create Character"}
+Completed 404 Not Found in 6ms (ActiveRecord: 0.5ms | Allocations: 4725)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Character without an ID):
+  
+app/controllers/characters_controller.rb:71:in `find_char'
+Started POST "/characters" for ::1 at 2020-05-27 17:38:44 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by CharactersController#create as HTML
+  Parameters: {"authenticity_token"=>"Tx+ZDBdYxGBKU0KOOjjGepRl763GTeR4szqQ/D7U7j9wnYg+898F7iXyBc6Wn5ADzGJhFJJlQe2Rms+8Or8Hug==", "character"=>{"name"=>"ok it works", "job_id"=>"349"}, "commit"=>"Create Character"}
+Completed 404 Not Found in 17548ms (ActiveRecord: 0.7ms | Allocations: 72517)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Character without an ID):
+  
+app/controllers/characters_controller.rb:72:in `find_char'
+Started POST "/characters" for ::1 at 2020-05-27 17:40:05 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by CharactersController#create as HTML
+  Parameters: {"authenticity_token"=>"Tx+ZDBdYxGBKU0KOOjjGepRl763GTeR4szqQ/D7U7j9wnYg+898F7iXyBc6Wn5ADzGJhFJJlQe2Rms+8Or8Hug==", "character"=>{"name"=>"ok it works", "job_id"=>"349"}, "commit"=>"Create Character"}
+[31mUnpermitted parameter: :job_id[0m
+Completed 500 Internal Server Error in 49ms (ActiveRecord: 0.5ms | Allocations: 22704)
+
+
+  
+ActionController::UrlGenerationError (No route matches {:action=>"new_abilities", :controller=>"characters", :id=>nil}, missing required keys: [:id]):
+  
+app/controllers/characters_controller.rb:16:in `create'
+Started POST "/characters" for ::1 at 2020-05-27 17:41:50 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by CharactersController#create as HTML
+  Parameters: {"authenticity_token"=>"Tx+ZDBdYxGBKU0KOOjjGepRl763GTeR4szqQ/D7U7j9wnYg+898F7iXyBc6Wn5ADzGJhFJJlQe2Rms+8Or8Hug==", "character"=>{"name"=>"ok it works", "job_id"=>"349"}, "commit"=>"Create Character"}
+[31mUnpermitted parameter: :job_id[0m
+Redirected to http://localhost:3000/characters
+Completed 302 Found in 43ms (ActiveRecord: 0.5ms | Allocations: 20340)
+
+
+Started GET "/characters" for ::1 at 2020-05-27 17:41:50 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/characters"):
+  
+actionpack (6.0.3.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.2) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.2) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.2) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.2) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.2.2) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.1) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/characters" for ::1 at 2020-05-27 17:42:22 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by CharactersController#index as HTML
+Completed 406 Not Acceptable in 6ms (ActiveRecord: 0.0ms | Allocations: 4931)
+
+
+  
+ActionController::MissingExactTemplate (CharactersController#index is missing a template for request formats: text/html):
+  
+actionpack (6.0.3.1) lib/action_controller/metal/implicit_render.rb:45:in `default_render'
+actionpack (6.0.3.1) lib/action_controller/metal/basic_implicit_render.rb:6:in `block in send_action'
+actionpack (6.0.3.1) lib/action_controller/metal/basic_implicit_render.rb:6:in `tap'
+actionpack (6.0.3.1) lib/action_controller/metal/basic_implicit_render.rb:6:in `send_action'
+actionpack (6.0.3.1) lib/abstract_controller/base.rb:195:in `process_action'
+actionpack (6.0.3.1) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (6.0.3.1) lib/abstract_controller/callbacks.rb:42:in `block in process_action'
+activesupport (6.0.3.1) lib/active_support/callbacks.rb:135:in `run_callbacks'
+actionpack (6.0.3.1) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (6.0.3.1) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (6.0.3.1) lib/action_controller/metal/instrumentation.rb:33:in `block in process_action'
+activesupport (6.0.3.1) lib/active_support/notifications.rb:180:in `block in instrument'
+activesupport (6.0.3.1) lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+activesupport (6.0.3.1) lib/active_support/notifications.rb:180:in `instrument'
+actionpack (6.0.3.1) lib/action_controller/metal/instrumentation.rb:32:in `process_action'
+actionpack (6.0.3.1) lib/action_controller/metal/params_wrapper.rb:245:in `process_action'
+activerecord (6.0.3.1) lib/active_record/railties/controller_runtime.rb:27:in `process_action'
+actionpack (6.0.3.1) lib/abstract_controller/base.rb:136:in `process'
+actionview (6.0.3.1) lib/action_view/rendering.rb:39:in `process'
+actionpack (6.0.3.1) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (6.0.3.1) lib/action_controller/metal.rb:254:in `dispatch'
+actionpack (6.0.3.1) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (6.0.3.1) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.0.3.1) lib/action_dispatch/journey/router.rb:49:in `block in serve'
+actionpack (6.0.3.1) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.0.3.1) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.0.3.1) lib/action_dispatch/routing/route_set.rb:834:in `call'
+rack (2.2.2) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.2) lib/rack/etag.rb:27:in `call'
+rack (2.2.2) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.2) lib/rack/head.rb:12:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.2) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.2) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/cookies.rb:648:in `call'
+activerecord (6.0.3.1) lib/active_record/migration.rb:567:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.3.1) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+web-console (4.0.2) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.2) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.2) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.2) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.2.2) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.1) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/characters/new" for ::1 at 2020-05-27 17:42:29 -0400
+Processing by CharactersController#new as HTML
+  Rendering characters/new.html.erb within layouts/application
+  [1m[36mJob Load (0.5ms)[0m  [1m[34mSELECT "jobs".* FROM "jobs"[0m
+  ↳ app/views/characters/new.html.erb:9
+  Rendered characters/new.html.erb within layouts/application (Duration: 14.4ms | Allocations: 6171)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 96ms (Views: 25.8ms | ActiveRecord: 2.4ms | Allocations: 24725)
+
+
+Started POST "/characters" for ::1 at 2020-05-27 17:42:33 -0400
+Processing by CharactersController#create as HTML
+  Parameters: {"authenticity_token"=>"OZIE2X//Vedoo+6DnfPKX26W8GYtSAwiD6UXOzLP1oIGEBXrm3iUaQcCqcMxVJwmNpF+33lgqbctBUh7NqQ/Bw==", "character"=>{"name"=>"dlkfnlkgn", "job_id"=>"353"}, "commit"=>"Create Character"}
+[31mUnpermitted parameter: :job_id[0m
+Redirected to http://localhost:3000/characters
+Completed 302 Found in 8ms (ActiveRecord: 0.0ms | Allocations: 3488)
+
+
+Started GET "/characters" for ::1 at 2020-05-27 17:42:33 -0400
+Processing by CharactersController#index as HTML
+Completed 406 Not Acceptable in 1ms (ActiveRecord: 0.0ms | Allocations: 876)
+
+
+  
+ActionController::MissingExactTemplate (CharactersController#index is missing a template for request formats: text/html):
+  
+actionpack (6.0.3.1) lib/action_controller/metal/implicit_render.rb:45:in `default_render'
+actionpack (6.0.3.1) lib/action_controller/metal/basic_implicit_render.rb:6:in `block in send_action'
+actionpack (6.0.3.1) lib/action_controller/metal/basic_implicit_render.rb:6:in `tap'
+actionpack (6.0.3.1) lib/action_controller/metal/basic_implicit_render.rb:6:in `send_action'
+actionpack (6.0.3.1) lib/abstract_controller/base.rb:195:in `process_action'
+actionpack (6.0.3.1) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (6.0.3.1) lib/abstract_controller/callbacks.rb:42:in `block in process_action'
+activesupport (6.0.3.1) lib/active_support/callbacks.rb:135:in `run_callbacks'
+actionpack (6.0.3.1) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (6.0.3.1) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (6.0.3.1) lib/action_controller/metal/instrumentation.rb:33:in `block in process_action'
+activesupport (6.0.3.1) lib/active_support/notifications.rb:180:in `block in instrument'
+activesupport (6.0.3.1) lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+activesupport (6.0.3.1) lib/active_support/notifications.rb:180:in `instrument'
+actionpack (6.0.3.1) lib/action_controller/metal/instrumentation.rb:32:in `process_action'
+actionpack (6.0.3.1) lib/action_controller/metal/params_wrapper.rb:245:in `process_action'
+activerecord (6.0.3.1) lib/active_record/railties/controller_runtime.rb:27:in `process_action'
+actionpack (6.0.3.1) lib/abstract_controller/base.rb:136:in `process'
+actionview (6.0.3.1) lib/action_view/rendering.rb:39:in `process'
+actionpack (6.0.3.1) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (6.0.3.1) lib/action_controller/metal.rb:254:in `dispatch'
+actionpack (6.0.3.1) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (6.0.3.1) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.0.3.1) lib/action_dispatch/journey/router.rb:49:in `block in serve'
+actionpack (6.0.3.1) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.0.3.1) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.0.3.1) lib/action_dispatch/routing/route_set.rb:834:in `call'
+rack (2.2.2) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.2) lib/rack/etag.rb:27:in `call'
+rack (2.2.2) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.2) lib/rack/head.rb:12:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.2) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.2) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/cookies.rb:648:in `call'
+activerecord (6.0.3.1) lib/active_record/migration.rb:567:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.3.1) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+web-console (4.0.2) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.2) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.2) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.2) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.2.2) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.1) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
