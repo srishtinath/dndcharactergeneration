@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
-  resources :jobs, :abilities, :spells, :characters, only: [:index, :show]
+  resources :jobs, :abilities, :spells, :characters, only: [:index, :show, :update]
   
   get 'characters/new', to: "character#new", as: 'new_character'
   get 'characters/:id/new_abilities', to: "character#new_abilities", as: 'new_abilities'
