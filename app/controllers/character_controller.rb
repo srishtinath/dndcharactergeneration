@@ -1,5 +1,6 @@
 class CharactersController < ApplicationController
   before_action :find_char, except: [:index, :new]
+  before_action :find_job, only: [:new_spells, :new_abilities, :edit_spells, :edit_abilities]
 
   def index
     @characters = Character.all
@@ -65,6 +66,10 @@ class CharactersController < ApplicationController
 
   def find_char
     @character = Character.find(params[:id])
+  end
+
+  def find_job
+    @job = Job.find_by(params[:job])
   end
 
   def char_params

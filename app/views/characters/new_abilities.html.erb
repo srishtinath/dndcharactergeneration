@@ -1,3 +1,10 @@
-<% @abilities.each do |abil|%>
-<%= abil %>
+
+<h1>Choose <%= @job_details["proficiency_choices"][0]["choose"].to_i %></h1>
+
+<% @job_details["proficiency_choices"][0]["from"].each do |prof| %>
+ <p><%= prof["name"] %></p>
+ <% end %>
+
+<% @abilities.each do |abilities|%>
+<%= abilities %>
 <% end %>

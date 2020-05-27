@@ -26,7 +26,7 @@ class DndApi
 
     def spell_class_info(url)
         @spell_hash = self.class.get(url).parsed_response
-        @spell_hash["classes"] #array of hashes
+        @spell_hash["classes"]
     end
 
     def spells
