@@ -27659,3 +27659,45 @@ Migrating to AddColumnToAbilities (20200527161654)
   [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "abilities"[0m
   [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "spells"[0m
   [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "job_spells"[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (6.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ lib/dnd_api.rb:56:in `block in abilities'
+  [1m[36mJob Load (0.4ms)[0m  [1m[34mSELECT "jobs".* FROM "jobs" WHERE "jobs"."name" = ? LIMIT ?[0m  [["name", "Fighter"], ["LIMIT", 1]]
+  ↳ lib/dnd_api.rb:56:in `block in abilities'
+  [1m[36mJob Load (0.2ms)[0m  [1m[34mSELECT "jobs".* FROM "jobs" WHERE "jobs"."name" = ? LIMIT ?[0m  [["name", "Fighter"], ["LIMIT", 1]]
+  ↳ lib/dnd_api.rb:56:in `block in abilities'
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mJob Load (1.0ms)[0m  [1m[34mSELECT "jobs".* FROM "jobs" ORDER BY "jobs"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mJob Load (0.2ms)[0m  [1m[34mSELECT "jobs".* FROM "jobs" ORDER BY "jobs"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mJob Load (0.7ms)[0m  [1m[34mSELECT "jobs".* FROM "jobs" ORDER BY "jobs"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mAbility Create (3.6ms)[0m  [1m[32mINSERT INTO "abilities" ("created_at", "updated_at", "job_id") VALUES (?, ?, ?)[0m  [["created_at", "2020-05-27 18:15:02.334618"], ["updated_at", "2020-05-27 18:15:02.334618"], ["job_id", 349]]
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mJob Load (0.3ms)[0m  [1m[34mSELECT "jobs".* FROM "jobs" WHERE "jobs"."id" = ? LIMIT ?[0m  [["id", 349], ["LIMIT", 1]]
+  [1m[36mAbility Load (0.2ms)[0m  [1m[34mSELECT "abilities".* FROM "abilities" WHERE "abilities"."job_id" = ? LIMIT ?[0m  [["job_id", 349], ["LIMIT", 11]]
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "abilities" WHERE "abilities"."job_id" = ?[0m  [["job_id", 349]]
+  [1m[35m (6.7ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ lib/dnd_api.rb:56:in `block in abilities'
+  [1m[36mJob Load (0.6ms)[0m  [1m[34mSELECT "jobs".* FROM "jobs" WHERE "jobs"."name" = ? LIMIT ?[0m  [["name", "Fighter"], ["LIMIT", 1]]
+  ↳ lib/dnd_api.rb:56:in `block in abilities'
+  [1m[35m (6.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ lib/dnd_api.rb:56:in `block in abilities'
+  [1m[36mJob Load (0.3ms)[0m  [1m[34mSELECT "jobs".* FROM "jobs" WHERE "jobs"."name" = ? LIMIT ?[0m  [["name", "Fighter"], ["LIMIT", 1]]
+  ↳ lib/dnd_api.rb:56:in `block in abilities'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/dnd_api.rb:57:in `block in abilities'
+  [1m[36mJob Load (0.1ms)[0m  [1m[34mSELECT "jobs".* FROM "jobs" WHERE "jobs"."id" = ? LIMIT ?[0m  [["id", 353], ["LIMIT", 1]]
+  ↳ lib/dnd_api.rb:57:in `block in abilities'
+  [1m[36mAbility Create (0.5ms)[0m  [1m[32mINSERT INTO "abilities" ("name", "description", "created_at", "updated_at", "job_id") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Action Surge (1 use)"], ["description", "Starting at 2nd level, you can push yourself beyond your normal limits for a moment. On your turn, you can take one additional action on top of your regular action and a possible bonus action."], ["created_at", "2020-05-27 18:20:19.468913"], ["updated_at", "2020-05-27 18:20:19.468913"], ["job_id", 353]]
+  ↳ lib/dnd_api.rb:57:in `block in abilities'
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/dnd_api.rb:57:in `block in abilities'

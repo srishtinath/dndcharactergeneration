@@ -53,7 +53,7 @@ class DndApi
             @description = description(@url)
             @job_name = abilities_class(@url)
             @job = Job.find_by(name: @job_name)
-            Ability.create(name: result["name"], description: @description, job_id: @job)
+            Ability.create(name: result["name"], description: @description, job_id: @job.id)
         end
     end
 
