@@ -1,6 +1,12 @@
 class Job < ApplicationRecord
     has_many :characters
     
+    has_many :job_spells
+    has_many :spells, through: :job_spells
+    
+    has_many :job_abilities
+    has_many :abilities, through: :job_abilities
+    
     require 'httparty'
     require 'byebug'
 
