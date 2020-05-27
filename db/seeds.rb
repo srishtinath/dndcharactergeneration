@@ -17,6 +17,9 @@ Ability.destroy_all
 
 api = DndApi.new
 
+puts "...Loading Classes"
 api.classes
+puts "...Loading Spells"
 api.spells
+puts "...Loading Abilities"
 api.abilities
