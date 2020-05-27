@@ -10559,3 +10559,82 @@ Completed 200 OK in 59239ms (Views: 73.5ms | ActiveRecord: 966.3ms | Allocations
   [1m[36mJob Load (0.3ms)[0m  [1m[34mSELECT "jobs".* FROM "jobs" LIMIT ?[0m  [["LIMIT", 11]]
   [1m[36mSpell Load (0.2ms)[0m  [1m[34mSELECT "spells".* FROM "spells" LIMIT ?[0m  [["LIMIT", 11]]
   [1m[36mAbility Load (0.2ms)[0m  [1m[34mSELECT "abilities".* FROM "abilities" LIMIT ?[0m  [["LIMIT", 11]]
+Started GET "/spells" for ::1 at 2020-05-26 20:42:57 -0400
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by SpellsController#index as HTML
+  Rendering spells/index.html.erb within layouts/application
+  [1m[36mSpell Load (1.1ms)[0m  [1m[34mSELECT "spells".* FROM "spells"[0m
+  ↳ app/views/spells/index.html.erb:1
+  Rendered spells/index.html.erb within layouts/application (Duration: 22.9ms | Allocations: 10572)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 66ms (Views: 49.9ms | ActiveRecord: 2.1ms | Allocations: 20698)
+
+
+Started GET "/abilities" for ::1 at 2020-05-26 20:43:08 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/abilities"):
+  
+actionpack (6.0.3.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.2) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.2) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.2) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.2) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.2.2) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.1) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/jobs" for ::1 at 2020-05-26 20:43:21 -0400
+Processing by JobsController#index as HTML
+  Rendering jobs/index.html.erb within layouts/application
+  [1m[36mJob Load (0.5ms)[0m  [1m[34mSELECT "jobs".* FROM "jobs"[0m
+  ↳ app/views/jobs/index.html.erb:1
+  Rendered jobs/index.html.erb within layouts/application (Duration: 12.0ms | Allocations: 5925)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 33ms (Views: 26.8ms | ActiveRecord: 1.3ms | Allocations: 11333)
+
+
+Started GET "/jobs/253" for ::1 at 2020-05-26 20:43:23 -0400
+Processing by JobsController#show as HTML
+  Parameters: {"id"=>"253"}
+  [1m[36mJob Load (0.3ms)[0m  [1m[34mSELECT "jobs".* FROM "jobs" WHERE "jobs"."id" = ? LIMIT ?[0m  [["id", 253], ["LIMIT", 1]]
+  ↳ app/controllers/jobs_controller.rb:22:in `find_job'
+Completed 500 Internal Server Error in 18ms (ActiveRecord: 0.3ms | Allocations: 3319)
+
+
+  
+NoMethodError (undefined method `class_details' for #<Job:0x00007fecd51c6ca8>
+Did you mean?  class_eval):
+  
+app/controllers/jobs_controller.rb:12:in `show'
+Started GET "/jobs" for ::1 at 2020-05-26 20:43:25 -0400
+Processing by JobsController#index as HTML
+  Rendering jobs/index.html.erb within layouts/application
+  [1m[36mJob Load (0.3ms)[0m  [1m[34mSELECT "jobs".* FROM "jobs"[0m
+  ↳ app/views/jobs/index.html.erb:1
+  Rendered jobs/index.html.erb within layouts/application (Duration: 5.8ms | Allocations: 1085)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 18ms (Views: 16.0ms | ActiveRecord: 0.3ms | Allocations: 5137)
+
+
