@@ -13,7 +13,6 @@ class DndApi
             Job.create(index: result["index"], name: result["name"])
         end
     end
-<<<<<<< HEAD
 
     def description(result)
         @desc_hash = self.class.get(result).parsed_response
@@ -47,9 +46,6 @@ class DndApi
     #     @request_hash = self.class.get('/#{find_class.url}').parsed_response
     # end
 
-=======
-    
->>>>>>> bfcb96954909dd024e68401854cb969c72fe2bf3
 end
 
 # api = DndApi.new 
