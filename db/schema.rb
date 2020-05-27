@@ -10,13 +10,14 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_05_27_152706) do
+ActiveRecord::Schema.define(version: 2020_05_27_161654) do
 
   create_table "abilities", force: :cascade do |t|
     t.string "name"
     t.string "description"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.integer "job_id"
   end
 
   create_table "character_abilities", force: :cascade do |t|
@@ -49,13 +50,6 @@ ActiveRecord::Schema.define(version: 2020_05_27_152706) do
     t.integer "passive_wisdom"
     t.integer "character_abilities_id"
     t.integer "character_spells_id"
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
-  end
-
-  create_table "job_abilities", force: :cascade do |t|
-    t.integer "job_id"
-    t.integer "ability_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end

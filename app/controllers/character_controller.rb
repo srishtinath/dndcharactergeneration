@@ -7,6 +7,7 @@ class CharacterController < ApplicationController
 
   def new
     @character = Character.new
+    @jobs = Job.all
   end
 
   def create
@@ -16,7 +17,7 @@ class CharacterController < ApplicationController
   end
   
   def new_abilities
-    @abilities = JobAbility.where(job: @character.job)
+    @abilities = Ability.where(job: @character.job)
   end
   
   def add_abilities
