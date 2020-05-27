@@ -13,6 +13,7 @@ class DndApi
             Job.create(index: result["index"], name: result["name"])
         end
     end
+<<<<<<< HEAD
 
     def description(result)
         @desc_hash = self.class.get(result).parsed_response
@@ -46,9 +47,25 @@ class DndApi
     #     @request_hash = self.class.get('/#{find_class.url}').parsed_response
     # end
 
+=======
+    
+>>>>>>> bfcb96954909dd024e68401854cb969c72fe2bf3
 end
 
 # api = DndApi.new 
 # # byebug
 # api.spells
 # byebug
+
+# def abilities
+#     request_hash = self.class.get('/api/features').parsed_response
+#     request_hash["results"].each do |result|
+#         @desc = description(result["url"])
+#         Ability.create(name: result["name"], description: @desc)
+#     end
+# end
+
+# def description(url)
+#     @desc_hash = self.class.get(url).parsed_response
+#     @desc_hash["desc"]
+# end
