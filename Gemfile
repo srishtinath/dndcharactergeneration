@@ -3,8 +3,8 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '2.6.1'
 
-# # pry
-# gem 'pry', '~> 0.10.3'
+#faker for seed names
+gem 'faker', '~> 1.6', '>= 1.6.6'
 # httparty for api calls
 gem 'httparty', '~> 0.13.7'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'

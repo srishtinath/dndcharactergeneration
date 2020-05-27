@@ -49,22 +49,15 @@ class DndApi
     def abilities
         request_hash = self.class.get('/api/features').parsed_response
         request_hash["results"].each do |result|
-            byebug
+      
             @url = result["url"]
             @description = description(@url)
     
             @job_name = abilities_class(@url)
         
             @job = Job.find_by(name: @job_name)
-            Ability.create(name: result["name"], description: @description, job_id: @job)
+            Ability.create(name: result["name"], description: @description, job_id: @job.id)
         end
     end
 
 end
-
-api = DndApi.new 
-byebug
-
-
-api.abilities
-byebug

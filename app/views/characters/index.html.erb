@@ -1,4 +1,4 @@
 <% @characters.each do |character|%>
-<p> <%= link_to character.name | character.level, character_path(character) %> </p>
+<p> <%= link_to character.name, character_path(character) %> </p>
 <p> <%= button_to 'Delete Character', character_path(character), method: :delete %></p>
 <% end %>
