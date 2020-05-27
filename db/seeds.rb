@@ -5,3 +5,21 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+require "dnd_api"
+
+puts "...Destroying all Jobs"
+Job.destroy_all
+puts "...Destroying all Spells"
+Spell.destroy_all
+puts "...Destroying all Abilities"
+Ability.destroy_all
+
+api = DndApi.new
+
+puts "...Loading Classes"
+api.classes
+puts "...Loading Spells"
+api.spells
+puts "...Loading Abilities"
+api.abilities
