@@ -16,8 +16,6 @@ private
     def dnd_api 
         @jobs = DndApi.new
         @jobs.classes
-        @abilities = DndApi.new
-        @abilities.abilities
     end
 
     def find_job
