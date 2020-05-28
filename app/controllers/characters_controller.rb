@@ -1,6 +1,5 @@
 class CharactersController < ApplicationController
-  before_action :find_char, except: [:index, :new, :create]
-  before_action :find_job, only: [:new_spells, :new_abilities, :edit_spells, :edit_abilities]
+  before_action :find_char, except: [:index, :new, :create, :stats]
 
   def index
     @characters = Character.all
@@ -13,28 +12,13 @@ class CharactersController < ApplicationController
 
   def create
     @character = Character.create(char_params)
-    redirect_to characters_path
+    flash[:character] = @character
+    redirect_to stats_path(@character)
   end
   
-  def new_abilities
-    @character_ability = CharacterAbility.new
-    byebug
-    @abilities = @job.abilities
-    byebug
-  end
-  
-  def add_abilities
-    #need to add char_abilities to join table with form
-    redirect_to new_spells_path(@character)
-  end
-
-  def new_spells
-    @spells = JobSpell.where(job: @character.job)
-  end
-  
-  def add_spells
-    #need to add char_spells to join table with form
-    redirect_to character_path(@character)
+  def stats
+    id = flash[:character]["id"].to_i
+    @character = Character.find(id)
   end
 
   def edit
@@ -43,39 +27,29 @@ class CharactersController < ApplicationController
   
   def update
     @character.update(char_params)
-    redirect_to character_path(@character)
+    if @character.level != nil
+      flash[:character] = @character
+      flash[:job] = @character.job
+      redirect_to new_character_ability_path
+    else
+      redirect_to character_path(@character)
+    end
+  end
+
+  def show
   end
   
-  def edit_abilities
-    @abilities = CharacterAbility.where(character: @character)
-  end
-
-  def update_abilities
-    #delete existing associations and add new ones
-    redirect_to character_path(@character)
-  end
-
-  def edit_spells
-    @spells = CharacterSpell.where(character: @character)
-  end
-  
-  def update_spells
-    #delete existing associations and add new ones
-    redirect_to character_path(@character)
-  end
-
   private
 
   def find_char
-    byebug
     @character = Character.find(params[:id])
   end
 
   def find_job
-    @job = Job.find_by(params[:job])
+    @job = Job.find(params[:job_id])
   end
 
   def char_params
-    params.require(:character).permit(:user, :job, :name, :level, :strength, :dexterity, :constitution, :intelligence, :wisdom, :charisma, :hp, :proficiency_bonus, :passive_wisdom, :character_abilities, :character_spells)
+    params.require(:character).permit(:user, :job_id, :name, :level, :strength, :dexterity, :constitution, :intelligence, :wisdom, :charisma, :hp)
   end
 end

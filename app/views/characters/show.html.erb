@@ -1,0 +1,12 @@
+<h1><%= @character.name %></h1>
+<p>Class: <%= @character.job.name %></p>
+
+<h2>Abilities</h2>
+<% @character.abilities.each do |ability| %>
+<p><%= ability.name %></p>
+<% end %>
+
+<h2>Spells</h2>
+<% @character.spells.each do |spell|%>
+<p><%= spell.name %></p>
+<% end %>

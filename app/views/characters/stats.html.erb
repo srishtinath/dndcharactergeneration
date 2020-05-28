@@ -1,0 +1,30 @@
+<h1>Character Stats</h1>
+
+<%= form_for @character do |f| %>
+<p><%= f.label :level, "Level" %></p>
+<%= f.number_field :level %>
+
+<p><%= f.label :strength, "Strength" %></p>
+<%= f.number_field :strength %>
+
+<p><%= f.label :dexterity, "Dexterity" %></p>
+<%= f.number_field :dexterity %>
+
+<p><%= f.label :constitution, "Constitution" %></p>
+<%= f.number_field :constitution %>
+
+<p><%= f.label :intelligence, "Intelligence" %></p>
+<%= f.number_field :intelligence %>
+
+<p><%= f.label :wisdom, "Wisdom" %></p>
+<%= f.number_field :wisdom %>
+
+<p><%= f.label :charisma, "Charisma" %></p>
+<%= f.number_field :charisma %>
+
+<p><%= f.label :hp, "hp" %></p>
+<%= f.number_field :hp %>
+
+
+<%= f.submit %>
+<% end %>

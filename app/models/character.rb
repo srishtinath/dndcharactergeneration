@@ -6,5 +6,5 @@ class Character < ApplicationRecord
     has_many :spells, through: :character_spells
 
     belongs_to :job
-    belongs_to :user
+    # belongs_to :user
 end

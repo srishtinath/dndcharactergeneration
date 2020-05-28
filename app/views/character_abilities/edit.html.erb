@@ -1,0 +1,10 @@
+<h1>Edit character abilities!</h1>
+
+<%= form_for @char_ability do |f| %>
+<%= f.label :character_id, "Character" %>
+<%= f.collection_select(:character_id, @characters, :id, :name) %>
+<p></p>
+<%= f.label :ability_id, "Ability" %>
+<%= f.collection_select(:ability_id, @abilities, :id, :name) %>
+<%= f.submit %>
+<% end %>
