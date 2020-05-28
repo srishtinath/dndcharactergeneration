@@ -11,25 +11,31 @@ class CharactersController < ApplicationController
   end
 
   def create
-    @character = Character.create(char_params)
-    flash[:character] = @character
+    @user = User.find(User.last.id)
+    @character = Character.create(user: @user)
+    @character.update(char_params)
+    session[:character] = @character
+    byebug
     redirect_to stats_path(@character)
   end
   
   def stats
-    id = flash[:character]["id"].to_i
+    id = session[:character]["id"]
     @character = Character.find(id)
+    byebug
   end
 
   def edit
+    byebug
     @jobs = Job.all
   end
   
   def update
+    byebug
     @character.update(char_params)
     if @character.level != nil
-      flash[:character] = @character
-      flash[:job] = @character.job
+      session[:character] = @character
+      session[:job] = @character.job
       @character.define_proficiency_bonus
       redirect_to new_character_ability_path
     else

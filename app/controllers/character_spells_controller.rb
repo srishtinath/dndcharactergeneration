@@ -1,9 +1,22 @@
 class CharacterSpellsController < ApplicationController
   before_action :find_cs, only: [:edit, :show, :update]
   
+
+  def index
+    if session[:character]
+      @character = Character.find(session[:character]["id"])
+      @spells = CharacterSpell.where(character: @character)
+    else
+      @spells = Spell.all
+    end
+  end
+  
+  def show
+  end
+
   def new
-    if flash[:character]
-      @character = Character.find(flash[:character]["id"])
+    if session[:character]
+      @character = Character.find(session[:character]["id"])
     else
       @character = Character.last
     end
@@ -19,11 +32,14 @@ class CharacterSpellsController < ApplicationController
   end
 
   def edit
-    @character_spells = CharacterSpell.all.where(character: @character_spell.character)
+    @characters = Character.all
+    @job = @character_spell.character.job
+    @spells = @job.spells
   end
 
   def update
-    
+    @character_spell.update(cs_params)
+    redirect_to character_path(@character_spell.character)
   end
 
   

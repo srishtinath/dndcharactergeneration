@@ -6,7 +6,7 @@ class Character < ApplicationRecord
     has_many :spells, through: :character_spells
 
     belongs_to :job
-    # belongs_to :user
+    belongs_to :user
 
     def define_proficiency_bonus
         case self.level

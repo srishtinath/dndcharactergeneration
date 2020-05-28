@@ -1,6 +1,6 @@
 <h1>Edit character abilities!</h1>
 
-<%= form_for @char_ability do |f| %>
+<%= form_for @character_ability do |f| %>
 <%= f.label :character_id, "Character" %>
 <%= f.collection_select(:character_id, @characters, :id, :name) %>
 <p></p>
