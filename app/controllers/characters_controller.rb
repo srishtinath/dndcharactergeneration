@@ -2,7 +2,8 @@ class CharactersController < ApplicationController
   before_action :find_char, except: [:index, :new, :create, :stats]
 
   def index
-    @characters = Character.all
+    @user = User.find(session[:user]["id"])
+    @characters = Character.all.where(user: @user)
   end
 
   def new
@@ -11,14 +12,15 @@ class CharactersController < ApplicationController
   end
 
   def create
-    @character = Character.create(char_params)
-    flash[:character] = @character
+    @user = User.find(session[:user]["id"])
+    @character = Character.create(user: @user)
+    @character.update(char_params)
+    session[:character] = @character
     redirect_to stats_path(@character)
   end
   
   def stats
-    id = flash[:character]["id"].to_i
-    @character = Character.find(id)
+    @character = Character.find(session[:character]["id"])
   end
 
   def edit
@@ -28,8 +30,8 @@ class CharactersController < ApplicationController
   def update
     @character.update(char_params)
     if @character.level != nil
-      flash[:character] = @character
-      flash[:job] = @character.job
+      session[:character] = @character
+      session[:job] = @character.job
       @character.define_proficiency_bonus
       redirect_to new_character_ability_path
     else
@@ -39,6 +41,7 @@ class CharactersController < ApplicationController
   end
 
   def show
+    session[:character] = @character
   end
   
   def destroy
@@ -53,6 +56,6 @@ class CharactersController < ApplicationController
   end
 
   def char_params
-    params.require(:character).permit(:user, :job_id, :name, :level, :strength, :dexterity, :constitution, :intelligence, :wisdom, :charisma, :hp, :proficiency_bonus, :passive_wisdom, :character_abilities, :character_spells)
+    params.require(:character).permit(:user, :job_id, :name, :level, :strength, :dexterity, :constitution, :intelligence, :wisdom, :charisma, :hp, :proficiency_bonus, :passive_wisdom)
   end
 end

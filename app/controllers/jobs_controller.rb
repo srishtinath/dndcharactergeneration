@@ -4,6 +4,7 @@ class JobsController < ApplicationController
 before_action :dnd_api, only: [:index]
 before_action :find_job, only: [:show]
 
+
     def index
         @jobs = Job.all
     end

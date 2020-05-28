@@ -13,11 +13,11 @@
 <p>Passive Wisdom: <%= @character.passive_wisdom %></p>
 <p>
 
-<% flash[:character] = @character %>
-
+<% session[:coming_from_show] = true %>
 <h2>Abilities</h2>
 <% @character.abilities.each do |ability| %>
-<p> <%= ability.name %> </p> 
+<% @char_abil = CharacterAbility.find_by(ability: ability, character: @character) %>
+<p> <%= link_to  ability.name, character_ability_path(@char_abil) %> </p> 
 <% end %>
 
 <p><%= button_to 'Add Ability', new_character_ability_path, method: :get %></p>
@@ -25,7 +25,8 @@
 
 <h2>Spells</h2>
 <% @character.spells.each do |spell| %>
-<p> <%= spell.name %> </p> 
+<% @char_spell = CharacterSpell.find_by(spell: spell, character: @character) %>
+<p> <%= link_to  spell.name, character_spell_path(@char_spell) %> </p> 
 <% end %>
 
 <p><%= button_to 'Add Spell', new_character_spell_path, method: :get %></p>
@@ -33,3 +34,5 @@
 
 
 <p> <%= button_to 'Edit Character Stats', edit_character_path(@character), method: :get %></p>
+
+<p><%= button_to 'View another character', characters_path, method: :get %></p>

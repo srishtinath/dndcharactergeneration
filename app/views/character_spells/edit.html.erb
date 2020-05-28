@@ -8,9 +8,9 @@
 
 
 
-<%= form_for @char_spell do |f| %>
+<%= form_for @character_spell do |f| %>
 <%= f.label :character_id, "Character" %>
-<%= f.collection_select(:character_id, @characters, :id, :name) %>
+<%= f.collection_select(:character_id, @characters, :id, :name, {:selected => session[:character]["id"]}) %>
 <p></p>
 <%= f.label :spell_id, "Spell" %>
 <%= f.collection_select(:spell_id, @spells, :id, :name) %>

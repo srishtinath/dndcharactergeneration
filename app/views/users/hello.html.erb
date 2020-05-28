@@ -1,0 +1,11 @@
+<% if session[:user] %>
+  <h1>Hi, <%= session[:user]["name"] %>.</h1>
+  <%= link_to  "All my characters", characters_path %>
+  <p><%= form_tag ({controller: 'sessions', action: 'destroy', method: 'post'}) do %>
+    <input type=submit value='logout'>
+  <% end %></p>
+<% else %>
+  <h1>You are not logged in</h1>
+  <%= link_to "Log in", login_path %>
+  <%= link_to "Create user", new_user_path %>
+<% end %>
