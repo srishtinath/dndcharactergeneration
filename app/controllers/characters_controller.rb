@@ -61,6 +61,11 @@ class CharactersController < ApplicationController
     redirect_to character_path(@character)
   end
 
+  def destroy
+    @character.destroy
+
+    redirect_to characters_path
+  end
   private
 
   def find_char
@@ -68,6 +73,6 @@ class CharactersController < ApplicationController
   end
 
   def char_params
-    params.require(:character).permit(:user, :job, :name, :level, :strength, :dexterity, :constitution, :intelligence, :wisdom, :charisma, :hp, :proficiency_bonus, :passive_wisdom, :character_abilities, :character_spells)
+    params.require(:character).permit(:user, :job_id, :name, :level, :strength, :dexterity, :constitution, :intelligence, :wisdom, :charisma, :hp, :proficiency_bonus, :passive_wisdom, :character_abilities, :character_spells)
   end
 end

@@ -3,11 +3,11 @@
 <p>Level: <%= @character.level %> | HP: <%= @character.hp %></p>
 <p>
 <p>Strength: <%= @character.strength %></p>
-<p>Dexterity: <%= @character.strength %></p>
-<p>Constitution: <%= @character.strength %></p>
-<p>Intelligence: <%= @character.strength %></p>
-<p>Wisdom: <%= @character.strength %></p>
-<p>Charisma: <%= @character.strength %></p>
+<p>Dexterity: <%= @character.dexterity %></p>
+<p>Constitution: <%= @character.constitution %></p>
+<p>Intelligence: <%= @character.intelligence %></p>
+<p>Wisdom: <%= @character.wisdom %></p>
+<p>Charisma: <%= @character.charisma %></p>
 <p>
 <p>Proficiency Bonus: <%= @character.proficiency_bonus %></p>
 <p>Passive Wisdom: <%= @character.passive_wisdom %></p>
@@ -20,3 +20,4 @@
 <% @character.spells.each do |spell| %>
 <p> <%= spell.name %> </p> 
 <% end %>
+<p> <%= button_to 'Edit Character', edit_character_path(@character), method: :get %></p>
