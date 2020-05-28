@@ -2,10 +2,14 @@ class CharacterSpellsController < ApplicationController
   before_action :find_cs, only: [:edit, :show, :update]
   
   def new
-    @character = Character.find(flash[:character]["id"])
-    @characters = Character.all
-    @job = Job.find(flash[:job]["id"])
+    if flash[:character]
+      @character = Character.find(flash[:character]["id"])
+    else
+      @character = Character.last
+    end
+    @job = Job.find(@character.job.id)
     @spells = @job.spells
+    @characters = Character.all
     @char_spell = CharacterSpell.new
   end
 
@@ -15,9 +19,18 @@ class CharacterSpellsController < ApplicationController
   end
 
   def edit
+    @character_spells = CharacterSpell.all.where(character: @character_spell.character)
   end
 
   def update
+    
+  end
+
+  
+  def delete_all
+    @character = Character.find(flash[:character]["id"])
+    CharacterSpell.where(character: @character).delete_all
+    redirect_to character_path(@character)
   end
 
   private

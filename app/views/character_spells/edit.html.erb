@@ -1,5 +1,13 @@
 <h1>Update character spells!</h1>
 
+<h2> Current spells for <%= @character_spell.character.name %></h2>
+
+<% @character_spells.each do |spell| %>
+<p><%= spell.name %></p>
+<% end %>
+
+
+
 <%= form_for @char_spell do |f| %>
 <%= f.label :character_id, "Character" %>
 <%= f.collection_select(:character_id, @characters, :id, :name) %>

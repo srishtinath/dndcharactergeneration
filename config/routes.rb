@@ -5,4 +5,6 @@ Rails.application.routes.draw do
   get 'characters/:id/stats', to: "characters#stats", as: 'stats'
   patch 'characters/:id', to: "characters#stats_update", as: 'stats_update'
 
+  delete 'character_abilities', to: "character_abilities#delete_all", as: 'delete_abilities'
+  delete 'character_spells', to: "character_spells#delete_all", as: 'delete_spells'
 end

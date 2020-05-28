@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_05_27_235541) do
+ActiveRecord::Schema.define(version: 2020_05_28_044908) do
 
   create_table "abilities", force: :cascade do |t|
     t.string "name"
@@ -46,7 +46,7 @@ ActiveRecord::Schema.define(version: 2020_05_27_235541) do
     t.integer "wisdom"
     t.integer "charisma"
     t.integer "hp"
-    t.integer "proficiency_bonus"
+    t.string "proficiency_bonus"
     t.integer "passive_wisdom"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false

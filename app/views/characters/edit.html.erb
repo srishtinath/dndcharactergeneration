@@ -1,9 +1,5 @@
 <h1>Update character</h1>
 
-<% if flash[:error] %>
-<%= flash[:error] %>
-<% end %>
-
 
 <%= form_for @character do |f| %>
 <p><%= f.label :name, "Name" %></p>
@@ -40,4 +36,5 @@
 
 <% end %>
 
-<%# link to edit spells and abilities pages %>
+<p><%= link_to  "Edit Abilites", edit_character_ability_path(@character) %></p>
+<p><%= link_to  "Edit Spells", edit_character_spell_path(@character) %></p>

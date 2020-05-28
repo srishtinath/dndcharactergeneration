@@ -12,12 +12,24 @@
 <p>Proficiency Bonus: <%= @character.proficiency_bonus %></p>
 <p>Passive Wisdom: <%= @character.passive_wisdom %></p>
 <p>
-<p>Abilities</p>
+
+<% flash[:character] = @character %>
+
+<h2>Abilities</h2>
 <% @character.abilities.each do |ability| %>
 <p> <%= ability.name %> </p> 
 <% end %>
-<p>Spells</p>
+
+<p><%= button_to 'Add Ability', new_character_ability_path, method: :get %></p>
+<p><%= button_to 'Delete all abilities', delete_abilities_path, method: :delete %></p>
+
+<h2>Spells</h2>
 <% @character.spells.each do |spell| %>
 <p> <%= spell.name %> </p> 
 <% end %>
-<p> <%= button_to 'Edit Character', edit_character_path(@character), method: :get %></p>
+
+<p><%= button_to 'Add Spell', new_character_spell_path, method: :get %></p>
+<p><%= button_to 'Delete all spells', delete_spells_path, method: :delete %></p>
+
+
+<p> <%= button_to 'Edit Character Stats', edit_character_path(@character), method: :get %></p>

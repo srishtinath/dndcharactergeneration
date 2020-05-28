@@ -30,8 +30,10 @@ class CharactersController < ApplicationController
     if @character.level != nil
       flash[:character] = @character
       flash[:job] = @character.job
+      @character.define_proficiency_bonus
       redirect_to new_character_ability_path
     else
+      @character.define_proficiency_bonus
       redirect_to character_path(@character)
     end
   end
@@ -39,6 +41,11 @@ class CharactersController < ApplicationController
   def show
   end
   
+  def destroy
+    @character.destroy
+    redirect_to characters_path
+  end
+
   private
 
   def find_char
