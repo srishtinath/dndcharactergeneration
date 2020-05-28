@@ -1,13 +1,9 @@
 <h1>Add character abilities!</h1>
 
-<%= form_for @char_ability do |f| %>
-<%= f.label :character_id, "Character" %>
-<%= f.collection_select(:character_id, @characters, :id, :name) %>
-<p></p>
+<%= form_for @character do |f| %>
 
-<%= f.collection_check_boxes(:ability_id, @abilities, :id, :name) do |b|%>
-    <p><%= b.check_box %> <%= b.label %></p>
-    <% end %>
+<%= f.collection_check_boxes(:ability_ids, @abilities, :id, :name)%>
+
 <%= f.submit("Add ability") %>
 <% end %>
 
