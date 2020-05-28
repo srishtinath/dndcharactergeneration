@@ -4,4 +4,8 @@
 <p><%= link_to  character.name, character_path(character) %></p>
 <% end %>
 
+<p><%= link_to  "All my characters", characters_path %></p>
+
 <p><%= link_to  "Create a new character", new_character_path %></p>
+
+<p><%= link_to  "Logout", '/logout', method: :post %></p>

@@ -1,6 +1,11 @@
 <h1>Login</h1>
 
-<%= form_for @user do |f| %>
+<% if flash[:error] %>
+<%= flash[:error] %>
+<% end %>
+
+<p></p>
+<%= form_for @user, url: login_user_path do |f| %>
 <%= f.label :name, "Enter username" %>
 <%= f.text_field :name %>
 
@@ -8,5 +13,3 @@
 <%= f.password_field :password %>
 <%= f.submit("Login") %>
 <% end %>
-
-<%# Need to figure out how to not create a new one %>

@@ -2,7 +2,9 @@ class CharactersController < ApplicationController
   before_action :find_char, except: [:index, :new, :create, :stats]
 
   def index
-    @characters = Character.all
+    @user = User.find(session[:user]["id"])
+    @characters = Character.all.where(user: @user)
+    byebug
   end
 
   def new
@@ -15,14 +17,11 @@ class CharactersController < ApplicationController
     @character = Character.create(user: @user)
     @character.update(char_params)
     session[:character] = @character
-    byebug
     redirect_to stats_path(@character)
   end
   
   def stats
-    id = session[:character]["id"]
-    @character = Character.find(id)
-    byebug
+    @character = Character.find(session[:character]["id"])
   end
 
   def edit
