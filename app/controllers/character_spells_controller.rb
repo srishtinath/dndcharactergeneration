@@ -15,11 +15,12 @@ class CharacterSpellsController < ApplicationController
   end
 
   def new
-    if session[:character]
-      @character = Character.find(session[:character]["id"])
-    else
-      @character = Character.last
-    end
+    @character = Character.find(session[:character]["id"])
+    # if session[:character]
+    #   @character = Character.find(session[:character]["id"])
+    # else
+    #   @character = Character.last
+    # end
     @job = Job.find(@character.job.id)
     @spells = @job.spells
     @characters = Character.all
@@ -27,11 +28,15 @@ class CharacterSpellsController < ApplicationController
   end
 
   def create
-    @character_spell = CharacterSpell.create(cs_params)
-    redirect_to character_path(@character_spell.character)
+    @character = Character.find(session[:character]["id"])
+    @character_spell = CharacterSpell.create(character: @character)
+    @character_spell.update(cs_params)
+    redirect_to character_path(@character)
   end
-
+  
   def edit
+    @character = Character.find(session[:character]["id"])
+    @character_spells = @character.spells
     @characters = Character.all
     @job = @character_spell.character.job
     @spells = @job.spells

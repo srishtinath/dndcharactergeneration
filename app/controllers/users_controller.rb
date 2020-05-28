@@ -1,11 +1,13 @@
 class UsersController < ApplicationController
   before_action :find_user, only: [:show, :edit, :update, :destroy]
-  
+  skip_before_action :require_login, only: [:new, :create]
+
   def index
     @users = User.all
   end
 
   def show
+    session[:user] = @user
   end
 
   def new
@@ -14,6 +16,7 @@ class UsersController < ApplicationController
 
   def create
     @user = User.create(user_params)
+    session[:user] = @user
     redirect_to user_path(@user)
   end
 

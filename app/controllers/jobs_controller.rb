@@ -3,6 +3,8 @@ require 'dnd_api'
 class JobsController < ApplicationController
 before_action :dnd_api, only: [:index]
 before_action :find_job, only: [:show]
+skip_before_action :require_login, only: [:index, :show]
+
 
     def index
         @jobs = Job.all

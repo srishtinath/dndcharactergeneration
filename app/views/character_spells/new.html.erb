@@ -5,9 +5,9 @@
     <p><%= link_to  "Edit Character", character_path(@character) %></p>
 <% else %>
     <%= form_for @char_spell do |f| %>
-    <%= f.label :character_id, "Character" %>
-    <%= f.collection_select(:character_id, @characters, :id, :name) %>
-    <p></p>
+    <%# <%= f.label :character_id, "Character" %>
+    <%# <%= f.collection_select(:character_id, @characters, :id, :name) %>
+    <%# <p></p> %>
     <%= f.label :spell_id, "Spell" %>
     <%= f.collection_select(:spell_id, @spells, :id, :name) %>
     <%= f.submit %>

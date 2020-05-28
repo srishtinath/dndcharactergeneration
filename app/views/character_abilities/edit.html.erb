@@ -2,7 +2,7 @@
 
 <%= form_for @character_ability do |f| %>
 <%= f.label :character_id, "Character" %>
-<%= f.collection_select(:character_id, @characters, :id, :name) %>
+<%= f.collection_select(:character_id, @characters, :id, :name, {:selected => session[:character]["id"]}) %>
 <p></p>
 <%= f.label :ability_id, "Ability" %>
 <%= f.collection_select(:ability_id, @abilities, :id, :name) %>
