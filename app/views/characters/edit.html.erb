@@ -9,30 +9,30 @@
 <%= f.collection_select(:job_id, @jobs, :id, :name) %>
 
 <%= f.label :level, "Level" %>
-<%= f.number_field :level %>
+<%= f.number_field :level, in: 1..20, required: true %>
 
 <%= f.label :strength, "Strength" %>
-<%= f.number_field :strength %>
+<%= f.number_field :strength, in: 1..20, required: true %>
 
 <%= f.label :dexterity, "Dexterity" %>
-<%= f.number_field :dexterity %>
+<%= f.number_field :dexterity, in: 1..20, required: true %>
 
 <%= f.label :constitution, "Constitution" %>
-<%= f.number_field :constitution %>
+<%= f.number_field :constitution, in: 1..20, required: true %>
 
 <%= f.label :intelligence, "Intelligence" %>
-<%= f.number_field :intelligence %>
+<%= f.number_field :intelligence, in: 1..20, required: true %>
 
 <%= f.label :wisdom, "Wisdom" %>
-<%= f.number_field :wisdom %>
+<%= f.number_field :wisdom, in: 1..20, required: true %>
 
 <%= f.label :charisma, "Charisma" %>
-<%= f.number_field :charisma %>
+<%= f.number_field :charisma, in: 1..20, required: true %>
 
-<%= f.label :hp, "hp" %>
-<%= f.number_field :hp %>
+<%= f.label :hp, "HP" %>
+<%= f.number_field :hp, min: 1, required: true  %>
 
-<%= f.submit %>
+<%= f.submit "Update Character Stats"%>
 
 <% end %>
 

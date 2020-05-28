@@ -4,8 +4,10 @@
 <%= f.label :character_id, "Character" %>
 <%= f.collection_select(:character_id, @characters, :id, :name) %>
 <p></p>
-<%= f.label :ability_id, "Ability" %>
-<%= f.collection_select(:ability_id, @abilities, :id, :name) %>
+
+<%= f.collection_check_boxes(:ability_id, @abilities, :id, :name) do |b|%>
+    <p><%= b.check_box %> <%= b.label %></p>
+    <% end %>
 <%= f.submit("Add ability") %>
 <% end %>
 

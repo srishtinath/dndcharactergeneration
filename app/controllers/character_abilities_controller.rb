@@ -14,6 +14,9 @@ class CharacterAbilitiesController < ApplicationController
   end
 
   def create
+    @ability_array = ca_params[:ability_id]
+    @ability_array = @ability_array.reject(&:blank?)
+    byebug
     @character_ability = CharacterAbility.create(ca_params)
     flash[:character] = @character_ability.character
     flash[:job] = @character_ability.character.job
@@ -44,6 +47,7 @@ class CharacterAbilitiesController < ApplicationController
   end
 
   def ca_params
-    params.require(:character_ability).permit(:character_id, :ability_id)
+    # byebug
+    params.require(:character_ability).permit(:character_id, ability_id: [])
   end
 end

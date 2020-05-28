@@ -15,6 +15,8 @@
 
 <% flash[:character] = @character %>
 
+<p> <%= button_to 'Edit Character Stats', edit_character_path(@character), method: :get %></p>
+
 <h2>Abilities</h2>
 <% @character.abilities.each do |ability| %>
 <p> <%= ability.name %> </p> 
@@ -32,4 +34,4 @@
 <p><%= button_to 'Delete all spells', delete_spells_path, method: :delete %></p>
 
 
-<p> <%= button_to 'Edit Character Stats', edit_character_path(@character), method: :get %></p>
+
