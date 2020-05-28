@@ -4,7 +4,6 @@ class CharactersController < ApplicationController
   def index
     @user = User.find(session[:user]["id"])
     @characters = Character.all.where(user: @user)
-    byebug
   end
 
   def new
@@ -13,7 +12,7 @@ class CharactersController < ApplicationController
   end
 
   def create
-    @user = User.find(User.last.id)
+    @user = User.find(session[:user]["id"])
     @character = Character.create(user: @user)
     @character.update(char_params)
     session[:character] = @character
@@ -25,12 +24,10 @@ class CharactersController < ApplicationController
   end
 
   def edit
-    byebug
     @jobs = Job.all
   end
   
   def update
-    byebug
     @character.update(char_params)
     if @character.level != nil
       session[:character] = @character
@@ -44,6 +41,7 @@ class CharactersController < ApplicationController
   end
 
   def show
+    session[:character] = @character
   end
   
   def destroy
@@ -58,6 +56,6 @@ class CharactersController < ApplicationController
   end
 
   def char_params
-    params.require(:character).permit(:user, :job_id, :name, :level, :strength, :dexterity, :constitution, :intelligence, :wisdom, :charisma, :hp, :proficiency_bonus, :passive_wisdom, :character_abilities, :character_spells)
+    params.require(:character).permit(:user, :job_id, :name, :level, :strength, :dexterity, :constitution, :intelligence, :wisdom, :charisma, :hp, :proficiency_bonus, :passive_wisdom)
   end
 end

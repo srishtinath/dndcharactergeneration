@@ -8,19 +8,15 @@ class SessionsController < ApplicationController
 
   def create
     @user = User.find_by(name: params["user"]["name"])
-    byebug
     if !@user.nil? 
       if @user.authenticate(params["user"]["password"])
         session[:user] = @user
-        byebug
         redirect_to '/'  
       else
         flash[:error] = "Password incorrect"
         redirect_to login_path
-        byebug
       end
     else
-      byebug
       flash[:error] = "There is no user by that name"
       redirect_to login_path
     end

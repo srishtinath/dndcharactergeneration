@@ -13,8 +13,6 @@
 <p>Passive Wisdom: <%= @character.passive_wisdom %></p>
 <p>
 
-<% flash[:character] = @character %>
-
 <h2>Abilities</h2>
 <% @character.abilities.each do |ability| %>
 <% @char_abil = CharacterAbility.find_by(ability: ability, character: @character) %>
@@ -36,4 +34,4 @@
 
 <p> <%= button_to 'Edit Character Stats', edit_character_path(@character), method: :get %></p>
 
-<p><%= button_to 'View another character', '/new_character' %></p>
+<p><%= button_to 'View another character', characters_path, method: :get %></p>

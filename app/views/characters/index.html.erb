@@ -9,3 +9,5 @@
 <p> <%= link_to character.name, character_path(character) %> </p>
 <%= button_to 'Delete Character', character_path(character), method: :delete %>
 <% end %>
+
+<p><%= button_to  "Create a new character", new_character_path, method: 'get' %></p>
