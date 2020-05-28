@@ -3,7 +3,7 @@
 
 <%= form_for @character do |f| %>
 <%= f.label :name, "Name" %>
-<%= f.text_field :name %>
+<%= f.text_field :name, required: true, placeholder: "Your Character Name" %>
 <p></p>
 <%= f.label :job_id, "Choose Class" %>
 <%= f.collection_select(:job_id, @jobs, :id, :name) %>

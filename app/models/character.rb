@@ -8,6 +8,8 @@ class Character < ApplicationRecord
     belongs_to :job
     belongs_to :user
 
+    # validates :name, uniqueness: true
+
     def define_proficiency_bonus
         case self.level
         when 1..4

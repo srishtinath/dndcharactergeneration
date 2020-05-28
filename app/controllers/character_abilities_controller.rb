@@ -30,9 +30,9 @@ class CharacterAbilitiesController < ApplicationController
     #   session.delete :coming_from_show
     #   redirect_to character_path(@character_ability.character)
     # else
-      byebug
+      # byebug
       redirect_to new_character_spell_path
-    end
+    # end
   end
 
   def edit

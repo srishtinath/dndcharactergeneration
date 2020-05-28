@@ -1,17 +1,18 @@
 <h1><p>Name: <%= @character.name %></p></h1>
 <p>Class: <%= @character.job.name %></p>
 <p>Level: <%= @character.level %> | HP: <%= @character.hp %></p>
-<p>
+<p></p>
 <p>Strength: <%= @character.strength %></p>
 <p>Dexterity: <%= @character.dexterity %></p>
 <p>Constitution: <%= @character.constitution %></p>
 <p>Intelligence: <%= @character.intelligence %></p>
 <p>Wisdom: <%= @character.wisdom %></p>
 <p>Charisma: <%= @character.charisma %></p>
-<p>
+<p></p>
 <p>Proficiency Bonus: <%= @character.proficiency_bonus %></p>
-<p>Passive Wisdom: <%= @character.passive_wisdom %></p>
-<p>
+<p></p>
+
+<p> <%= button_to 'Edit Character Stats', edit_character_path(@character), method: :get %></p>
 
 <% session[:coming_from_show] = true %>
 <h2>Abilities</h2>
@@ -31,8 +32,5 @@
 
 <p><%= button_to 'Add Spell', new_character_spell_path, method: :get %></p>
 <p><%= button_to 'Delete all spells', delete_spells_path, method: :delete %></p>
-
-
-<p> <%= button_to 'Edit Character Stats', edit_character_path(@character), method: :get %></p>
 
 <p><%= button_to 'View another character', characters_path, method: :get %></p>
