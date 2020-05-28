@@ -1,12 +1,23 @@
-<h1><%= @character.name %></h1>
+<h1><p>Name: <%= @character.name %></p></h1>
 <p>Class: <%= @character.job.name %></p>
-
-<h2>Abilities</h2>
+<p>Level: <%= @character.level %> | HP: <%= @character.hp %></p>
+<p>
+<p>Strength: <%= @character.strength %></p>
+<p>Dexterity: <%= @character.dexterity %></p>
+<p>Constitution: <%= @character.constitution %></p>
+<p>Intelligence: <%= @character.intelligence %></p>
+<p>Wisdom: <%= @character.wisdom %></p>
+<p>Charisma: <%= @character.charisma %></p>
+<p>
+<p>Proficiency Bonus: <%= @character.proficiency_bonus %></p>
+<p>Passive Wisdom: <%= @character.passive_wisdom %></p>
+<p>
+<p>Abilities</p>
 <% @character.abilities.each do |ability| %>
-<p><%= ability.name %></p>
+<p> <%= ability.name %> </p> 
 <% end %>
-
-<h2>Spells</h2>
-<% @character.spells.each do |spell|%>
-<p><%= spell.name %></p>
+<p>Spells</p>
+<% @character.spells.each do |spell| %>
+<p> <%= spell.name %> </p> 
 <% end %>
+<p> <%= button_to 'Edit Character', edit_character_path(@character), method: :get %></p>

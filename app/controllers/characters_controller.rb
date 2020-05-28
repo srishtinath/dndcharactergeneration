@@ -45,11 +45,7 @@ class CharactersController < ApplicationController
     @character = Character.find(params[:id])
   end
 
-  def find_job
-    @job = Job.find(params[:job_id])
-  end
-
   def char_params
-    params.require(:character).permit(:user, :job_id, :name, :level, :strength, :dexterity, :constitution, :intelligence, :wisdom, :charisma, :hp)
+    params.require(:character).permit(:user, :job_id, :name, :level, :strength, :dexterity, :constitution, :intelligence, :wisdom, :charisma, :hp, :proficiency_bonus, :passive_wisdom, :character_abilities, :character_spells)
   end
 end
