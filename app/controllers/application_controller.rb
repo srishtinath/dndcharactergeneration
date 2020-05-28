@@ -3,7 +3,11 @@ class ApplicationController < ActionController::Base
     before_action :current_user
 
     def current_user
-        @user = (User.find(session[:user]["id"]) || User.new)
+        if session[:user]
+            @user = (User.find(session[:user]["id"]) || User.new)
+        else
+            redirect_to '/'
+        end
     end
 
     def logged_in?

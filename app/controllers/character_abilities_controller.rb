@@ -15,11 +15,6 @@ class CharacterAbilitiesController < ApplicationController
 
   def new
     @character = Character.find(session[:character]["id"])
-    # if session[:character]
-    #   @character = Character.find(session[:character]["id"])  
-    # else
-    #   @character = Character.last
-    # end
     @job = Job.find(@character.job.id)
     @abilities = @job.abilities
     @characters = Character.all
@@ -30,10 +25,14 @@ class CharacterAbilitiesController < ApplicationController
     @character = Character.find(session[:character]["id"])
     @character_ability = CharacterAbility.create(character: @character)
     @character_ability.update(ca_params)
-    redirect_to new_character_spell_path
-    # if flash[:coming_from_show]
-      # redirect_to character_path(@character_ability.character)
-    # end
+    # if !session[:coming_from_show].nil?
+    #   byebug
+    #   session.delete :coming_from_show
+    #   redirect_to character_path(@character_ability.character)
+    # else
+      byebug
+      redirect_to new_character_spell_path
+    end
   end
 
   def edit

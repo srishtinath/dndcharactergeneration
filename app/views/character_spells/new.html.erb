@@ -5,16 +5,9 @@
     <p><%= link_to  "View Character", character_path(@character) %></p>
 <% else %>
     <%= form_for @char_spell do |f| %>
-    <%# <%= f.label :character_id, "Character" %>
-    <%# <%= f.collection_select(:character_id, @characters, :id, :name) %>
-    <%# <p></p> %>
     <%= f.label :spell_id, "Spell" %>
     <%= f.collection_select(:spell_id, @spells, :id, :name) %>
     <%= f.submit %>
-    <% end %>
-<p><%= link_to  "Add another spell!", new_character_spell_path %></p>
-    
+    <% end %>    
 <% end %>
     
-
-<%# should we link back to adding abilities? %>

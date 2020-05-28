@@ -13,6 +13,7 @@
 <p>Passive Wisdom: <%= @character.passive_wisdom %></p>
 <p>
 
+<% session[:coming_from_show] = true %>
 <h2>Abilities</h2>
 <% @character.abilities.each do |ability| %>
 <% @char_abil = CharacterAbility.find_by(ability: ability, character: @character) %>

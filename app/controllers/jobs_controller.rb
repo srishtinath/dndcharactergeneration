@@ -3,7 +3,6 @@ require 'dnd_api'
 class JobsController < ApplicationController
 before_action :dnd_api, only: [:index]
 before_action :find_job, only: [:show]
-skip_before_action :current_user, only: [:index, :show]
 
 
     def index

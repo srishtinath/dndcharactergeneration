@@ -49,7 +49,7 @@ class CharacterSpellsController < ApplicationController
 
   
   def delete_all
-    @character = Character.find(flash[:character]["id"])
+    @character = Character.find(session[:character]["id"])
     CharacterSpell.where(character: @character).delete_all
     redirect_to character_path(@character)
   end
