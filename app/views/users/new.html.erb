@@ -1,6 +1,13 @@
 <h1>Create a user!</h1>
 <%= form_for @user do |f| %>
-<%= f.label :name, "Create username" %>
+<p><%= f.label :name, "Create username" %></p>
 <%= f.text_field :name %>
+
+<p><%= f.label :password, "Create password" %></p>
+<%= f.password_field :password %>
+
+<p><%= f.label :password, "Password Confirmation" %></p>
+<%= f.password_field :password_confirmation %>
+
 <%= f.submit %>
 <% end %>

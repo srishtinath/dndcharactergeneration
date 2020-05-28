@@ -1,5 +1,12 @@
+<h1>Login</h1>
+
 <%= form_for @user do |f| %>
-<%= f.label :name, "Username" %>
+<%= f.label :name, "Enter username" %>
 <%= f.text_field :name %>
-<%= f.submit %>
+
+<%= f.label :password, "Enter password" %>
+<%= f.password_field :password %>
+<%= f.submit("Login") %>
 <% end %>
+
+<%# Need to figure out how to not create a new one %>
