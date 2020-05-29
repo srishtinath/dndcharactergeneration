@@ -3,11 +3,7 @@
 <div class="dd_block">
   <h1><%= @greetings %>, <%= session[:user]["name"] %>!</h1>
   <%= button_to  "View All Your Characters", characters_path, method: :get, class: 'dd_button'  %>
-  <p><%= form_tag ({controller: 'sessions', action: 'destroy', method: 'post'}) do %>
-    <%= submit_tag 'Log Out', class: 'dd_button' %>
 </div>
-    <%# <input type=submit value='logout'> %>
-  <% end %></p>
 <% else %>
   <h1>You are not logged in</h1>
   <img src='/assets/dd_homepage.png' class='center_img'>
