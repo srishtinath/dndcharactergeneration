@@ -1,3 +1,5 @@
+<p>
+<div class = dd_block>
 <h1>Login</h1>
 
 <% if flash[:error] %>
@@ -6,10 +8,11 @@
 
 <p></p>
 <%= form_for @user, url: login_user_path do |f| %>
-<%= f.label :name, "Enter username" %>
+<%= f.label :name, "Enter Username:" %>
 <%= f.text_field :name %>
 
-<%= f.label :password, "Enter password" %>
+<%= f.label :password, "Enter Password:" %>
 <%= f.password_field :password %>
 <%= f.submit "Login", class: 'dd_button' %>
 <% end %>
+</div>

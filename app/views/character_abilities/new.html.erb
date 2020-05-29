@@ -1,8 +1,11 @@
-<h1>Add character abilities!</h1>
+<p>
+<div class = dd_block>
+<h1>Add <%= @character.name %>'s <%= @job.name %> Abilities!</h1>
 
 <%= form_for @char_ability do |f| %>
-<%= f.label :ability_id, "Ability" %>
+<%= f.label :ability_id, "Ability:" %>
 <%= f.collection_select(:ability_id, @abilities, :id, :name) %>
+<p>
 <%= f.submit "Add Ability", class: 'dd_button' %>
 <% end %>
-
+</div>

@@ -1,11 +1,14 @@
-
-<h1>Create a new character!</h1>
+<p>
+<div class = dd_block>
+<h1>Create A New Character!</h1>
 
 <%= form_for @character do |f| %>
-<%= f.label :name, "Name" %>
+<%= f.label :name, "Name:" %>
 <%= f.text_field :name, required: true, placeholder: "Your Character Name" %>
 <p></p>
-<%= f.label :job_id, "Choose Class" %>
+<%= f.label :job_id, "Choose Class:" %>
 <%= f.collection_select(:job_id, @jobs, :id, :name) %>
+<p>
 <%= f.submit nil, class: 'dd_button' %>
 <% end %>
+</div>

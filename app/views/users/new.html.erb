@@ -1,5 +1,6 @@
-<h1>Create a user!</h1>
-
+<p>
+<div class = dd_block>
+<h1>Create Your Username!</h1>
 
 <% if flash[:error] %>
 <% flash[:error].each do |error| %>
@@ -9,14 +10,18 @@
 
 
 <%= form_for @user do |f| %>
-<p><%= f.label :name, "Create username" %></p>
+<p>
+<%= f.label :name, "Create Username:" %>
 <%= f.text_field :name %>
-
-<p><%= f.label :password, "Create password" %></p>
+</p>
+<p>
+<%= f.label :password, "Create Password:" %>
 <%= f.password_field :password %>
-
-<p><%= f.label :password, "Password Confirmation" %></p>
+</p>
+<p>
+<%= f.label :password, "Password Confirmation:" %>
 <%= f.password_field :password_confirmation %>
-
+</p>
 <p><%= f.submit nil, class: 'dd_button'%></p>
 <% end %>
+</div>

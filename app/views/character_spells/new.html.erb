@@ -1,13 +1,15 @@
-<h1>Add character spells!</h1>
+<p>
+<div class = dd_block>
+<h1>Add <%= @character.name %>'s <%= @job.name %> Spells!</h1>
 
 <% if @spells.empty? %>
     <p>This character's class doesn't have any spells!</p>
-    <p><%= link_to  "View Character", character_path(@character) %></p>
+    <p><%= button_to  "View Character", character_path(@character), method: :get, class: 'dd_button' %></p>
 <% else %>
     <%= form_for @char_spell do |f| %>
     <%= f.label :spell_id, "Spell" %>
     <%= f.collection_select(:spell_id, @spells, :id, :name) %>
-    <%= f.submit nil, class: 'dd_button' %>
+    <%= f.submit "Add Spell", class: 'dd_button' %>
     <% end %>    
 <% end %>
-    
+</div>

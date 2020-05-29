@@ -1,7 +1,11 @@
-<h1><p>Name: <%= @character.name %></p></h1>
+<p> </p>
+<div class ="dd_block"><h1><p>Name: <%= @character.name %></p></h1></div>
+<div class ="dd_block">
 <h3><p>Class: <%= @character.job.name %></p></h3>
 <p>Level: <%= @character.level %> | HP: <%= @character.hp %></p>
+</div>
 <p></p>
+<div class ="dd_block">
 <h3>Stats</h3>
 <p>Strength: <%= @character.strength %> | Dexterity: <%= @character.dexterity %> | Constitution: <%= @character.constitution %></p>
 <p>Intelligence: <%= @character.intelligence %> | Wisdom: <%= @character.wisdom %> | Charisma: <%= @character.charisma %></p>
@@ -10,8 +14,9 @@
 <p></p>
 
 <p> <%= button_to 'Edit Character Stats', edit_character_path(@character), method: :get, class: 'dd_button' %></p>
-
+</div>
 <% session[:coming_from_show] = true %>
+<div class ="dd_block">
 <h3>Abilities</h3>
 <% @character.abilities.each do |ability| %>
 <% @char_abil = CharacterAbility.find_by(ability: ability, character: @character) %>
@@ -20,7 +25,8 @@
 
 <p><%= button_to 'Add Ability', new_character_ability_path, method: :get, class: 'dd_button' %></p>
 <p><%= button_to 'Delete all abilities', delete_abilities_path, method: :delete, class: 'dd_button' %></p>
-
+</div>
+<div class ="dd_block">
 <h3>Spells</h3>
 <% @character.spells.each do |spell| %>
 <% @char_spell = CharacterSpell.find_by(spell: spell, character: @character) %>
@@ -29,5 +35,5 @@
 
 <p><%= button_to 'Add Spell', new_character_spell_path, method: :get, class: 'dd_button' %></p>
 <p><%= button_to 'Delete all spells', delete_spells_path, method: :delete, class: 'dd_button' %></p>
-
+</div>
 <p><%= button_to 'View another character', characters_path, method: :get, class: 'dd_button' %></p>

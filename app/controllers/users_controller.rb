@@ -3,7 +3,8 @@ class UsersController < ApplicationController
   skip_before_action :current_user, only: [:hello, :new, :create]
 
   def hello
-
+    @greetings_array = ["Welcome", "Hello", "Greetings", "Bonjour", "Salut", "Hola", "Guten Tag", "Privyet", "Ni Hao", "Namaste", "Shalom", "Marhaba"]
+    @greetings = @greetings_array.sample
   end
 
   def index

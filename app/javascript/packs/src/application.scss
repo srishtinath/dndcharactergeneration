@@ -23,7 +23,36 @@ body {
 
 .dd_button {
     background-color: #E50712;
-    color: white;
+    color: #F8F9FA;
     // box-shadow: 2px 2px;
-    border-color: whitesmoke;
+    border-color: #E50712;
+    // transform: scale(0.8);
 }
+
+.dd_block {
+    background-color: #F8F9FA;
+    box-shadow: 3px 3px #E50712;
+    // padding: 10%;
+    // width: 300 px;
+    // height: 10 px;
+    // max-width: 500 px;
+    // border-style: solid;
+    // border-color: transparent transparent transparent #E50712;
+    border-right: 100px #E50712;
+}
+
+.center_img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    height: auto;
+  }
+
+  .center {
+    // display: block;
+    margin-left: auto;
+    margin-right: auto;
+    // width: 50%;
+    // height: auto;
+  }
