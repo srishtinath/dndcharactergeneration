@@ -1,6 +1,6 @@
 <p>
 <div class = dd_block>
-<h1>Add <%= @character.name %>'s <%= @job.name %> Abilities!</h1>
+<h1>Add <%= @character.name + "\'s"%> <%= @job.name %> Abilities!</h1>
 
 <%= form_for @char_ability do |f| %>
 <%= f.label :ability_id, "Ability:" %>

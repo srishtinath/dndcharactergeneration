@@ -7,6 +7,7 @@
 
 <% @characters.each do |character|%>
 <div class ="dd_block"><p><h2><%= link_to character.name, character_path(character) %></h2>
+<p></p>
 <%= button_to 'Delete Character', character_path(character), method: :delete, class: 'dd_button' %></p></div>
 <% end %>
 
