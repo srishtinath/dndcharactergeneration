@@ -3,6 +3,6 @@
 <%= form_for @char_ability do |f| %>
 <%= f.label :ability_id, "Ability" %>
 <%= f.collection_select(:ability_id, @abilities, :id, :name) %>
-<%= f.submit("Add ability") %>
+<%= f.submit "Add Ability", class: 'dd_button' %>
 <% end %>
 

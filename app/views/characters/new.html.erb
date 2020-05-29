@@ -7,5 +7,5 @@
 <p></p>
 <%= f.label :job_id, "Choose Class" %>
 <%= f.collection_select(:job_id, @jobs, :id, :name) %>
-<%= f.submit %>
+<%= f.submit nil, class: 'dd_button' %>
 <% end %>

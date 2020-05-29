@@ -12,7 +12,7 @@
 <p>Proficiency Bonus: <%= @character.proficiency_bonus %></p>
 <p></p>
 
-<p> <%= button_to 'Edit Character Stats', edit_character_path(@character), method: :get %></p>
+<p> <%= button_to 'Edit Character Stats', edit_character_path(@character), method: :get, class: 'dd_button' %></p>
 
 <% session[:coming_from_show] = true %>
 <h2>Abilities</h2>
@@ -21,8 +21,8 @@
 <p> <%= link_to  ability.name, character_ability_path(@char_abil) %> </p> 
 <% end %>
 
-<p><%= button_to 'Add Ability', new_character_ability_path, method: :get %></p>
-<p><%= button_to 'Delete all abilities', delete_abilities_path, method: :delete %></p>
+<p><%= button_to 'Add Ability', new_character_ability_path, method: :get, class: 'dd_button' %></p>
+<p><%= button_to 'Delete all abilities', delete_abilities_path, method: :delete, class: 'dd_button' %></p>
 
 <h2>Spells</h2>
 <% @character.spells.each do |spell| %>
@@ -30,7 +30,7 @@
 <p> <%= link_to  spell.name, character_spell_path(@char_spell) %> </p> 
 <% end %>
 
-<p><%= button_to 'Add Spell', new_character_spell_path, method: :get %></p>
-<p><%= button_to 'Delete all spells', delete_spells_path, method: :delete %></p>
+<p><%= button_to 'Add Spell', new_character_spell_path, method: :get, class: 'dd_button' %></p>
+<p><%= button_to 'Delete all spells', delete_spells_path, method: :delete, class: 'dd_button' %></p>
 
-<p><%= button_to 'View another character', characters_path, method: :get %></p>
+<p><%= button_to 'View another character', characters_path, method: :get, class: 'dd_button' %></p>

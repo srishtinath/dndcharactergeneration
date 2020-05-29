@@ -1,0 +1,29 @@
+@import "~bootstrap/scss/bootstrap";
+
+body {
+    background-image: url("/assets/dd_background.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 20%;
+}
+
+// .btn-success:active {
+//     /*formatting goes here*/
+//     background-color: #E50712;
+//     }
+
+// .btn-success:hover {
+//     /*formatting goes here*/
+//     background-color: #E50712;
+//     }
+    
+// .btn-success:focus {
+//     /*formatting goes here*/
+//     }
+
+.dd_button {
+    background-color: #E50712;
+    color: white;
+    // box-shadow: 2px 2px;
+    border-color: whitesmoke;
+}

@@ -30,7 +30,7 @@
 <%= f.number_field :charisma, in: 1..20, required: true  %>
 
 <%= f.label :hp, "HP" %>
-<%= f.number_field :hp, in: 1..20, required: true  %>
+<%= f.number_field :hp, min: 1, required: true  %>
 
 <%= f.submit "Update Character Stats"%>
 

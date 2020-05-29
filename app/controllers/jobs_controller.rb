@@ -1,7 +1,7 @@
 require 'dnd_api'
 
 class JobsController < ApplicationController
-before_action :dnd_api, only: [:index]
+# before_action :dnd_api, only: [:index]
 before_action :find_job, only: [:show]
 
 
@@ -14,10 +14,10 @@ before_action :find_job, only: [:show]
     end
 
 private
-    def dnd_api 
-        @jobs = DndApi.new
-        @jobs.classes
-    end
+    # def dnd_api 
+    #     @jobs = DndApi.new
+    #     @jobs.classes
+    # end
 
     def find_job
         @job = Job.find(params[:id])

@@ -3,7 +3,13 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '2.6.1'
 
-#faker for seed names
+# gems for styling
+gem 'bootstrap', '~> 4.0'
+gem 'jquery-rails', '~> 4.3', '>= 4.3.1'
+gem 'popper_js', '~> 1.16'
+
+
+# faker for seed names
 gem 'faker', '~> 1.6', '>= 1.6.6'
 # httparty for api calls
 gem 'httparty', '~> 0.13.7'

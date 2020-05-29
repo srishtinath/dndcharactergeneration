@@ -1,12 +1,15 @@
 
+<body>
+    
 <% if @characters.empty? || @characters.nil? %>
     <h1>You don't have any characters!</h1>
 <% end %>
 
-
 <% @characters.each do |character|%>
-<p> <%= link_to character.name, character_path(character) %> </p>
-<%= button_to 'Delete Character', character_path(character), method: :delete %>
+<h2><p> <%= link_to character.name, character_path(character) %> </p></h2>
+<%= button_to 'Delete Character', character_path(character), method: :delete, class: 'dd_button' %>
 <% end %>
 
-<p><%= button_to  "Create a new character", new_character_path, method: 'get' %></p>
+<p><%= button_to  "Create A New Character", new_character_path, method: 'get', class: 'dd_button' %></p>
+
+</body>

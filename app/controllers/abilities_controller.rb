@@ -1,7 +1,7 @@
 require 'dnd_api'
 class AbilitiesController < ApplicationController
   
-  before_action :dnd_api, only: [:index]
+  # before_action :dnd_api, only: [:index]
   
   def show
   end
@@ -12,8 +12,8 @@ class AbilitiesController < ApplicationController
 
   private
 
-  def dnd_api 
-    @get_abs = DndApi.new
-    @get_abs.abilities
-  end
+  # def dnd_api 
+  #   @get_abs = DndApi.new
+  #   @get_abs.abilities
+  # end
 end
