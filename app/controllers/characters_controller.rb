@@ -42,6 +42,8 @@ class CharactersController < ApplicationController
 
   def show
     session[:character] = @character
+    @job = Job.find(@character.job_id)
+    render 'show'
   end
   
   def destroy

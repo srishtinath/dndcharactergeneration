@@ -10,6 +10,7 @@
       <%# <li class="nav-item active">
         <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
       </li> %>
+      <% if session[:user] %>
       <li class="nav-item">
         <a class="nav-link" href="/characters">Characters</a>
       </li>
@@ -19,6 +20,19 @@
       <li class="nav-item">
         <a class="nav-link" href="/spells">Spells</a>
       </li>
+      <%= form_tag ({controller: 'sessions', action: 'destroy', method: 'post'}) do %>
+      <%= submit_tag 'Log Out', class: 'dd_button' %>
+      <% end %>
+      <% else %>
+      <li class="nav-item">
+        <%= link_to  "Log In", login_path %>
+      </li>
+      <li class="nav-item">
+      <%= link_to  "Create User", new_user_path %>
+      </li>
+      
+      <% end %>
+      
       <%# <li class="nav-item">
         <a class="nav-link disabled" href="#">Disabled</a>
       </li> %>
