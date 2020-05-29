@@ -16,4 +16,5 @@ Rails.application.routes.draw do
   post '/logout' => 'sessions#destroy'
   post '/new_character' => 'sessions#clear_character'
 
+
 end

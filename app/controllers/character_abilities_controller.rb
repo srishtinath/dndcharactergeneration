@@ -24,15 +24,16 @@ class CharacterAbilitiesController < ApplicationController
   def create
     @character = Character.find(session[:character]["id"])
     @character_ability = CharacterAbility.create(character: @character)
+    byebug
     @character_ability.update(ca_params)
+    byebug
     # if !session[:coming_from_show].nil?
     #   byebug
     #   session.delete :coming_from_show
     #   redirect_to character_path(@character_ability.character)
     # else
-      byebug
       redirect_to new_character_spell_path
-    end
+    # end
   end
 
   def edit
@@ -59,6 +60,6 @@ class CharacterAbilitiesController < ApplicationController
   end
 
   def ca_params
-    params.require(:character_ability).permit(:character_id, :ability_id)
+    params.require(:character_ability).permit(:character_id, :ability_id, :ability_ids => [])
   end
 end

@@ -1,6 +1,9 @@
 class Character < ApplicationRecord
     has_many :character_abilities
     has_many :abilities, through: :character_abilities
+    
+    accepts_nested_attributes_for :abilities
+    accepts_nested_attributes_for :character_abilities
 
     has_many :character_spells
     has_many :spells, through: :character_spells

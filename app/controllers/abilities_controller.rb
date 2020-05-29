@@ -16,4 +16,5 @@ class AbilitiesController < ApplicationController
     @get_abs = DndApi.new
     @get_abs.abilities
   end
+  
 end

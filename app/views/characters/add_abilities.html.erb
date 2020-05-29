@@ -1,0 +1,7 @@
+<h1>Add character abilities!</h1>
+
+<%= form_tag url: character_ability_path do %>
+<p><%= collection_check_boxes :ability_ids, @abilities, :id, :name %></p>
+<%= submit_tag("Add abilities") %>
+<% end %>
+
