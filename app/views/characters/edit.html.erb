@@ -1,16 +1,19 @@
 <h1>Update character</h1>
 
-
 <%= form_for @character do |f| %>
-<p><%= f.label :name, "Name" %></p>
+<p><b><%= f.label :name, "Name" %></b>
 <%= f.text_field :name %>
-
-<p><%= f.label :job_id, "Class" %></p>
+</p>
+<p><%= f.label :job_id, "Class" %>
 <%= f.collection_select(:job_id, @jobs, :id, :name) %>
 
 <%= f.label :level, "Level" %>
 <%= f.number_field :level, in: 1..20, required: true %>
 
+<%= f.label :hp, "HP" %>
+<%= f.number_field :hp, in: 1..200, required: true  %>
+</p>
+<p>
 <%= f.label :strength, "Strength" %>
 <%= f.number_field :strength, in: 1..20, required: true  %>
 
@@ -28,11 +31,8 @@
 
 <%= f.label :charisma, "Charisma" %>
 <%= f.number_field :charisma, in: 1..20, required: true  %>
-
-<%= f.label :hp, "HP" %>
-<%= f.number_field :hp, min: 1, required: true  %>
-
-<%= f.submit "Update Character Stats"%>
+</p>
+<%= f.submit "Update Character Stats", class: 'dd_button'%>
 
 <% end %>
 

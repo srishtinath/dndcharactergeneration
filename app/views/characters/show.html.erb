@@ -1,13 +1,10 @@
 <h1><p>Name: <%= @character.name %></p></h1>
-<p>Class: <%= @character.job.name %></p>
+<h3><p>Class: <%= @character.job.name %></p></h3>
 <p>Level: <%= @character.level %> | HP: <%= @character.hp %></p>
 <p></p>
-<p>Strength: <%= @character.strength %></p>
-<p>Dexterity: <%= @character.dexterity %></p>
-<p>Constitution: <%= @character.constitution %></p>
-<p>Intelligence: <%= @character.intelligence %></p>
-<p>Wisdom: <%= @character.wisdom %></p>
-<p>Charisma: <%= @character.charisma %></p>
+<h3>Stats</h3>
+<p>Strength: <%= @character.strength %> | Dexterity: <%= @character.dexterity %> | Constitution: <%= @character.constitution %></p>
+<p>Intelligence: <%= @character.intelligence %> | Wisdom: <%= @character.wisdom %> | Charisma: <%= @character.charisma %></p>
 <p></p>
 <p>Proficiency Bonus: <%= @character.proficiency_bonus %></p>
 <p></p>
@@ -15,7 +12,7 @@
 <p> <%= button_to 'Edit Character Stats', edit_character_path(@character), method: :get, class: 'dd_button' %></p>
 
 <% session[:coming_from_show] = true %>
-<h2>Abilities</h2>
+<h3>Abilities</h3>
 <% @character.abilities.each do |ability| %>
 <% @char_abil = CharacterAbility.find_by(ability: ability, character: @character) %>
 <p> <%= link_to  ability.name, character_ability_path(@char_abil) %> </p> 
@@ -24,7 +21,7 @@
 <p><%= button_to 'Add Ability', new_character_ability_path, method: :get, class: 'dd_button' %></p>
 <p><%= button_to 'Delete all abilities', delete_abilities_path, method: :delete, class: 'dd_button' %></p>
 
-<h2>Spells</h2>
+<h3>Spells</h3>
 <% @character.spells.each do |spell| %>
 <% @char_spell = CharacterSpell.find_by(spell: spell, character: @character) %>
 <p> <%= link_to  spell.name, character_spell_path(@char_spell) %> </p> 

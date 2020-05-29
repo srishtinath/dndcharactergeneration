@@ -1,29 +1,30 @@
 <h1>Character Stats</h1>
 
 <%= form_for @character do |f| %>
-<p><%= f.label :level, "Level" %></p>
+<p><%= f.label :level, "Level" %>
 <%= f.number_field :level, in: 1..20, required: true, placeholder: 1 %>
 
-<p><%= f.label :strength, "Strength" %></p>
+<%= f.label :hp, "HP" %>
+<%= f.number_field :hp, in: 1..200, required: true, placeholder: 1 %>
+</p>
+<p><%= f.label :strength, "Strength" %>
 <%= f.number_field :strength, in: 1..20, required: true, placeholder: 1 %>
 
-<p><%= f.label :dexterity, "Dexterity" %></p>
+<%= f.label :dexterity, "Dexterity" %>
 <%= f.number_field :dexterity, in: 1..20, required: true, placeholder: 1 %>
 
-<p><%= f.label :constitution, "Constitution" %></p>
+<%= f.label :constitution, "Constitution" %>
 <%= f.number_field :constitution, in: 1..20, required: true, placeholder: 1 %>
 
-<p><%= f.label :intelligence, "Intelligence" %></p>
+<%= f.label :intelligence, "Intelligence" %>
 <%= f.number_field :intelligence, in: 1..20, required: true, placeholder: 1 %>
 
-<p><%= f.label :wisdom, "Wisdom" %></p>
+<%= f.label :wisdom, "Wisdom" %>
 <%= f.number_field :wisdom, in: 1..20, required: true, placeholder: 1 %>
 
-<p><%= f.label :charisma, "Charisma" %></p>
+<%= f.label :charisma, "Charisma" %>
 <%= f.number_field :charisma, in: 1..20, required: true, placeholder: 1 %>
-
-<p><%= f.label :hp, "HP" %></p>
-<%= f.number_field :hp, min: 1, required: true, placeholder: 1 %>
-
+</p>
 <%= f.submit "Save Character Stats", class: 'dd_button'%>
+
 <% end %>
