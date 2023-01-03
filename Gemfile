@@ -12,7 +12,7 @@ gem 'popper_js', '~> 1.16'
 # faker for seed names
 gem 'faker', '~> 1.6', '>= 1.6.6'
 # httparty for api calls
-gem 'httparty', '~> 0.13.7'
+gem 'httparty', '~> 0.21.0'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 6.0.3', '>= 6.0.3.1'
 # Use sqlite3 as the database for Active Record
